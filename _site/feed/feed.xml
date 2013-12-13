@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+        <channel>
+                <title>torresmateo.github.io</title>
+                <description>A place to find rants and some videogame dev stuff!</description>
+                <link>http://torresmateo.github.io</link>
+                <atom:link href="http://torresmateo.github.io/feed.xml" rel="self" type="application/rss+xml" />
+                
+                        <item>
+                                <title>It&#39;s Alive!</title>
+                                <description>&lt;p&gt;At first I didn&amp;#39;t actually think about what to put in here. I mean, it&amp;#39;s been almost 4 years since I started developing web related stuff, 
+improving myself in the latest tools and techniques to make better, faster, stronger blogs, apps, and little systems to (hopefully) improve
+someone&amp;#39;s life by making their everyday work a little easier. All that hand by hand going through my undergraduate courses in Computer 
+Science. But let&amp;#39;s take you a little deeper into some of my thoughts.&lt;/p&gt;
+
+&lt;h1&gt;About Myself&lt;/h1&gt;
+
+&lt;p&gt;I&amp;#39;ve always loved videogames, ever since my dad bought Atari 2600 for me and my brothers, we &amp;quot;wasted away&amp;quot; entire days smashing that red 
+button, pushing harder that joystick as if it would make Pitfall Harry run faster or make Pac-Man reach the super-power fruit sooner. Games 
+taught me a LOT of things, and taught me better than most of my school teachers. &lt;/p&gt;
+
+&lt;p&gt;I discovered I loved learning, and videogames were the perfect way to make me learn. In school all I could see were meaningless numbers and 
+random drawings with the sole objective of turning me and my classmates into some kind of strange zombie-like mindless monster, and thus bore 
+me to death. But back home numbers and letters weren&amp;#39;t random, they were Megaman&amp;#39;s life-points, every 100 coins in Mario means a life and it 
+was USEFUL to make arithmetic stuff just to play better, it was just fun to learn that way!&lt;/p&gt;
+
+&lt;p&gt;So, after deciding all I wanted to do in my life was to play videogames, reality punched me right in the face with two facts:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;You can&amp;#39;t just play, you need to eat too! And in order to eat you need some strange and evil paper called money. (this isn&amp;#39;t actually true everywhere, but it is here in Paraguay, where I live) &lt;em&gt;well, but I want to play all my life anyways :/&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Then you need to DO something so you can have the almighty money to buy games and food so you don&amp;#39;t starve and die! &lt;em&gt;fiiiine, I&amp;#39;ll see what I can do u.u&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So I started thinking what I could do so I could spend most of my time playing and avoid boring stuff like school, teachers, and becoming a 
+mindless zombie. I searched and searched and then came up with the most awesome idea of all time:&lt;/p&gt;
+
+&lt;p&gt;What if... if... I.... start MAKING videogames?&lt;/p&gt;
+
+&lt;p&gt;My life was turned upside down, the idea was incredibly GENIUS!! I could almost kiss myself of joy, so I decided to start simple and program 
+something doable, like GTA... and poking here and there in the Internet turned out that making awesome games wasn&amp;#39;t THAT easy. I found stuff 
+like &amp;quot;level design&amp;quot; &amp;quot;shaders&amp;quot; &amp;quot;programming&amp;quot; &amp;quot;platform&amp;quot; &amp;quot;engine&amp;quot; &amp;quot;Direct3D&amp;quot; &amp;quot;3D-Modeling&amp;quot; &amp;quot;CAD&amp;quot; &amp;quot;AI&amp;quot;... I was overwhelmed, frustrated and back 
+to square 1. But this was the thing that could actually make me happy someday!! So I didn&amp;#39;t give up, I started to code and made a LOT of 
+mistakes. So I thought about getting into Computer Science so I could code better, faster and someday make awesome games! I started learning, 
+and learning and coding and doing math and a lot of stuff and got lost in the Computer Science world. Being able to MAKE stuff with random 
+words in notepad made me forget all about my dreams and hopes, I just loved to code!&lt;/p&gt;
+
+&lt;p&gt;In my code-fever I joined a little company and started making websites. They were a team of two designers, one of them was almost able to 
+code and it was super fun working with them. We made a lot of blogs, and even some little web apps, the company started to grow and 
+eventually I joined them and even got to own a third of what had been my first job! I was very happy and thought that was the start of my 
+future. But somewhere inside me, the flame for making videogames (which I think is the ultimate form of creativity) wasn&amp;#39;t ready to die yet. 
+I planned a new course for the company and wanted to make little games. With my friend&amp;#39;s abilities to draw cool stuff and me being capable of 
+coding (after almost 6 years since the original &amp;quot;I want to make games&amp;quot; idea) I thought we could actually do some fun games and maybe sell 
+them and be able to make a living out of someone else&amp;#39;s smiles and wasted time in silly iPhone games, and maybe after that become the most 
+awesome team in the whole universe and conquer the world funded by our own awesomeness!!&lt;/p&gt;
+
+&lt;p&gt;But life doesn&amp;#39;t always have the same plans as you do, and that start-up went down in what I think was a stupid argument (it wasn&amp;#39;t actually 
+an argument, but I don&amp;#39;t know a better word to describe why we went and decided that it was not possible to work together anymore). So, we 
+and the two programmers we hired finished the pending tasks and each one went his way. I was sad, and didn&amp;#39;t want to fail like that again. I 
+considered the most horrible idea ever, the one thing I hated the most: go and work for some big company in telecom and make tons of money in 
+exchange for almost all your time and brain power, and of course, your soul. And there was I, sad about the &amp;quot;break up&amp;quot; with my buddies and 
+considering joining the zombie-like brainless army of telecom coders (to be fair, I actually think telecom is awesome and know a lot of 
+amazing people making good work in that field, it&amp;#39;s just not my thing so I rant about it here!). But some of my school friends where there (2 
+of them were working with me in the company I joined) and wanted to make another start-up with me. It was one of the things you say in those 
+school trips when you are almost drunk from the first beer you&amp;#39;ve ever had: &amp;quot;we will work together in the future, and rule the world, and 
+there will only be one country called THE AWESOME REPUBLIC and the only rule will be to play videogames all day, get drunk and eat!&amp;quot;. It 
+turned out the first part of that idea wasn&amp;#39;t that crazy after all. I decided to give that a try, and found myself relieved about not having 
+to go to a scary telecom giant and ugly business, and keeping my soul clean was priceless.&lt;/p&gt;
+
+&lt;p&gt;We started almost where we left with the new team, they already knew some of the business mechanics and things were looking good, there was 
+some money coming in, not a lot, but enough to make us feel like we were doing things right. We managed to make some upgrades compared to the 
+previous company in the workflow and we didn&amp;#39;t even have an office (we were working from our houses, like some kind of secret coding society, 
+plotting against Comic Sans, Microsoft and poorly written HTML). I am still part of that start-up for the moment, but I&amp;#39;ve already told them 
+the current project (the biggest I&amp;#39;ve ever worked as a web developer) is the last one for me. I told them about my dream of becoming a game 
+developer, and that working in other stuff was nice, but not enough. It was a really difficult decision and it took me months of thinking and 
+about 17 drafts stored in my gmail for me to finally send that mail to my friends. I think the hardest thing I&amp;#39;ve learned in life is that you 
+just can&amp;#39;t reach your dreams without some kind of sacrifice.&lt;/p&gt;
+
+&lt;p&gt;I would be lying if I say I&amp;#39;m not scared, but I&amp;#39;m also excited about my next steps. I&amp;#39;ve got tons of stuff to wrap up before working full 
+time in becoming a true game developer (the project I mentioned earlier, my undergraduate thesis, and a lot of other stuff...), but I can 
+feel now that little flame burning stronger.&lt;/p&gt;
+
+&lt;p&gt;For now I think this pretty much sums the important stuff about myself.&lt;/p&gt;
+
+&lt;h1&gt;About this blog...ish website&lt;/h1&gt;
+
+&lt;p&gt;I&amp;#39;ve decided to make this with some pretty specific objectives:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;I&amp;#39;ve always wanted to create something to share with friends and family and everyone looking to read something about games and how much I 
+love them &amp;lt;3.&lt;/li&gt;
+&lt;li&gt;Its been years now since I&amp;#39;ve told myself &amp;quot;how come you spend almost all of your time coding websites and telling people what to do to get 
+more readers and make interesting stuff but do not do some of that yourself?&amp;quot;. The answer was always a mix of &amp;quot;I don&amp;#39;t have enough time&amp;quot;, 
+&amp;quot;I&amp;#39;m not THAT interesting to start a blog&amp;quot;, &amp;quot;It&amp;#39;s not trivial work&amp;quot; and other excuses. I think this is finally the time where I can stop 
+saying stupid stuff to myself and finally sit and write some.&lt;/li&gt;
+&lt;li&gt;It will help me keep a record of my &amp;quot;path&amp;quot; into game design and development, and give the people that help me or stand in my way to read 
+and enjoy (or feel guilty) about.&lt;/li&gt;
+&lt;li&gt;To keep me on track. If you&amp;#39;re reading this, you&amp;#39;ve seen how easily I get distracted by other stuff that seems to be interesting. I think (
+and hope) that thinking regularly about my actual dream will somehow help me achieve it. It&amp;#39;s silly, but I won&amp;#39;t lose anything more than a 
+few hours a week writing this and maybe some of my keyboard’s painting.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;That being said... I will write one entry every two weeks (more or less). I&amp;#39;ll try to keep them simple and easy to read for non-geeks and non-
+programmers and give at least a hint of what&amp;#39;s going on.&lt;/p&gt;
+</description>
+                                <pubDate>Fri, 13 Dec 2013 11:17:00 +0000</pubDate>
+                                <link>http://torresmateo.github.io//rants/2013/12/13/first-experiences.html</link>
+                                <guid isPermaLink="true">http://torresmateo.github.io//rants/2013/12/13/first-experiences.html</guid>
+                        </item>
+                
+        </channel>
+</rss>
