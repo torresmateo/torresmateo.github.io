@@ -1,9 +1,16 @@
 ---
 layout: default
+comments: yes
 ---
 
 <h2>{{ page.title }}</h2>
 <p class="meta">{{ page.date | date_to_string }}</p>
 <div class="post">
 	{{ content }}
+		<hr>
+		<h2>Comments</h2>
+		<div style="backgroung-color:#000000;">
+		<div class="fb-comments" data-colorscheme="dark"  data-href="{{ site.url page.url }}" data-num-posts="4" data-width="610" ></div>
+		</div>
+
 </div>

@@ -25,7 +25,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	</head>
 	<body>
-
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=382699801876314";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, "script", "facebook-jssdk"));
+		</script>
+		
 		<div class="wrapper">
 			<section>  
 				<div id="title">
@@ -131,6 +141,12 @@ few hours a week writing this and maybe some of my keyboard’s painting.</li>
 
 <p>That being said... I will write one entry every two weeks (more or less). I&#39;ll try to keep them simple and easy to read for non-geeks and non-
 programmers and give at least a hint of what&#39;s going on.</p>
+
+		<hr>
+		<h2>Comments</h2>
+		<div style="backgroung-color:#000000;">
+		<div class="fb-comments" data-colorscheme="dark"  data-href="http://torresmateo.github.io" data-num-posts="4" data-width="610" ></div>
+		</div>
 
 </div>
 			</section>  
