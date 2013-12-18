@@ -624,14 +624,14 @@ section img {
 }
 
 blockquote {
-  border-left: 3px solid #ffcc00;
+  border-left: 3px solid #36FF03;
   margin: 0;
   padding: 0 0 0 20px;
   font-style: italic;
 }
 
 code {
-  font-family: "Lucida Sans", Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace;
+  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace;
   color: #efefef;
   font-size: 13px;
   margin: 0 4px;

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Baby Steps: Console and Artificial "Intelligence"</title>
+		<meta name="viewport" content="width=device-width">
+		<meta property="fb:admins" content="618356035"/>
+
+		<!-- syntax highlighting CSS -->
+		<!--link rel="stylesheet" href="/css/syntax.css"-->
+
+		<!-- Custom CSS -->
+		<!--link rel="stylesheet" href="/css/main.css"-->
+		
+		<link rel="stylesheet" href="/stylesheets/styles.css">
+		<link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="/javascripts/respond.js"></script>
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!--[if lt IE 8]>
+		<link rel="stylesheet" href="stylesheets/ie.css">
+		<![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=382699801876314";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, "script", "facebook-jssdk"));
+		</script>
+		
+		<div class="wrapper">
+			<section>  
+				<div id="title">
+					<h1><a href="/">torresmateo.github.io</a></h1>
+					<p>A place to find rants and some videogame dev stuff!</p>
+					<hr>
+					<span class="credits left">GitHub: <a href="https://github.com/torresmateo">torresmateo</a></span>
+					<span class="credits right">twitter: <a href="http://twitter.com/#!/torresmateo">torresmateo</a></span>
+				</div>
+				<h2>Baby Steps: Console and Artificial "Intelligence"</h2>
+<p class="meta">20 Dec 2013</p>
+<div class="post">
+	<p>When you start coding, your entire world can change in little time. Or at least that happened for me. I can only describe it like being in
+opposite sides of a thick wall:</p>
+
+<ul>
+<li>On one side all you can see is the result: programs, websites, Operating Systems, yadda, yadda, yadda. </li>
+<li>On the other side though, you can see the clockwork of all that, and by seeing it, you can <em>understand</em> what&#39;s going on! You begin to appreciate the quality of 
+the structures, the speed, the design, and the challenge that it must have demanded from the developers. </li>
+</ul>
+
+<p>It&#39;s how I think the cooks probably can appreciate food better than most of us who can barely make a sandwich.</p>
+
+<h1>Baby Steps</h1>
+
+<h2>Gooey??</h2>
+
+<p>When I started coding, I did a lot of basic programs, and that felt great. But the first one I really enjoyed was this little project in college. We&#39;ve got to write
+a program that let the player:</p>
+
+<ul>
+<li>Play a game of <a href="http://en.wikipedia.org/wiki/Sudoku">Sudoku</a>.</li>
+<li>Resume a previous game.</li>
+<li>Show the mistakes.</li>
+<li>Keep a Score</li>
+</ul>
+
+<p>Pretty basic thinking of it now, but back then was a serious challenge. My friend (and classmate) Fernando Minardi (who I will call <em>Fer</em> from here) was my partner in 
+the project, and we decided to give the player a <a href="http://en.wikipedia.org/wiki/Graphical_user_interface">GUI</a> <em>(graphical user interface)</em> (it wasn&#39;t <em>necessary</em> for 
+the evaluation, but we wanted to &quot;get our hands dirty&quot;). We started coding and it was really fun! It ended up like this (it&#39;s in spanish since I live in Paraguay!):</p>
+
+<p><img src="/images/baby-steps/sudoku.png" alt="" title="Our First GUI!!"></p>
+
+<p>I won&#39;t lie... I don&#39;t like it that much either. But back then it was <em>AWESOME!!</em> ... Man!! our first GUI!! And it does what it&#39;s supposed to do!! (it didn&#39;t crash
+randomly like our first attempts!). We were happy, and run to show my family (we finished the program in my house) how amazing this was. With tears of joy in our eyes
+we went to the dining room, laptop in our hands, and showed them! :&#39;D .... The reaction was this:</p>
+
+<p><em>This... is..... hmmmm... niiiice</em> (read with the least convincing voice you can imagine). </p>
+
+<p>That&#39;s when I first realized it wasn&#39;t easy to get other people excited about this kind of stuff. Sure, it wasn&#39;t Crysis or Uncharted, but it was <em>hard</em> to make. But
+among our classmates, our program was one of the best.</p>
+
+<h2>OK, now make it <em>think</em></h2>
+
+<p>Our next gaming-related assignment (Fer was <em>always</em> my partner during college, and we both love games!) was <em>Batalla Naval ++</em>, an implementation of 
+<a href="http://en.wikipedia.org/wiki/Battleship_(game)">Battleship</a> with some modifications:</p>
+
+<ul>
+<li>2 levels for each player (surface and submarine)</li>
+<li>The player has 2 submarines (3 squares) and can move them, sink them or put them in the surface.</li>
+<li>If a submarine is damaged, automatically goes to the surface.</li>
+<li>New Tools:
+
+<ul>
+<li><strong>Spy Aircraft</strong> (2): the player selects a row, a column, or a diagonal, and can see everything in there for a turn.</li>
+<li><strong>Spy Bomb</strong> (3): the player selects a square, and the spy bomb shows everything in there for three turns.</li>
+<li><strong>Ballistic Missile</strong> (&infin;): the one from the original game, you select a square, shoot, and if hits, it&#39;s your turn again.</li>
+</ul></li>
+</ul>
+
+<p>And the program must fulfill these requirements:</p>
+
+<ul>
+<li>The use of <code>conio.h</code>, a Windows library for console interfaces ( no GUI this time :&#39;( )</li>
+<li>AI .... <strong>ARTIFICIAL INTELLIGENCE</strong> (OMG!! Our program must <em>play</em> against a human player! <em>A W E S O M E !!!</em>.</li>
+</ul>
+
+<p>So, we started playing on paper the modified version of the game, and thinking about some strategies for the AI, and we ended with a nice one, which was pretty clever. 
+We started with the airplanes, and then the bombs, and then firing at everything that we found, this is one of the spying layouts, it maximizes the spied area:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">|a|_|_|_|X|X|X|_|_|b|
+|_|A|_|_|X|E|X|_|B|_|
+|_|_|X|_|X|X|X|X|_|_|
+|X|X|X|X|_|_|X|_|_|_|
+|X|E|X|_|X|X|_|X|X|X|
+|X|X|X|_|X|X|_|X|E|X|
+|_|_|_|X|_|_|X|X|X|X|
+|_|_|X|_|_|_|_|X|_|_|
+|_|X|_|_|_|_|_|_|X|_|
+|X|_|_|_|_|_|_|_|_|X|
+</code></pre></div>
+<p>And it looked like this:</p>
+
+<p><img src="/images/baby-steps/battleship.png" alt="" title="Our First AI!!"></p>
+
+<p>Writing those program was incredibly fun!! We were learning a lot about coding, and we felt very proud when our own game was beating us 9 of every 10 matches (sometimes,
+if the CPU was given the first turn, it could play a perfect game, and beat you at the second turn!)</p>
+
+<blockquote>
+<p>Note for geeks:</p>
+</blockquote>
+
+<p>You can download Sudoku&#39;s Source from <a href="https://github.com/torresmateo/TAI1-Sudoku">here</a>, and Batalla-Naval from <a href="https://github.com/torresmateo/Batalla-Naval">here</a></p>
+
+<p>Both programs were written in C, and in <em>ONE FILE</em> per project (<code>main.c</code>)... I know, that&#39;s wrong. But hey!!, we were absolute beginners!!</p>
+
+		<hr>
+		<h2>Comments</h2>
+		<div style="backgroung-color:#000000;">
+		<div class="fb-comments" data-colorscheme="dark"  data-href="http://torresmateo.github.io/evolution/gaming/dev/2013/12/20/baby-steps.html" data-num-posts="4" data-width="610" ></div>
+		</div>
+
+</div>
+			</section>  
+		</div>
+
+	</body>
+</html>
