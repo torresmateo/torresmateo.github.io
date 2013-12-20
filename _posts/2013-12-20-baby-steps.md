@@ -88,5 +88,5 @@ You can download Sudoku's source code from [here](https://github.com/torresmateo
 
 Both programs were written in C, and using only *ONE FILE* per project (`main.c`)... I know, that's bad. But hey!! We were absolute beginners!!
 
-[sudoku]:/images/baby-steps/sudoku.png "Our First GUI!!"
-[battleship]:/images/baby-steps/battleship.png "Our First AI!!"
+[sudoku]:{{ site.url }}/images/baby-steps/sudoku.png "Our First GUI!!"
+[battleship]:{{ site.url }}/images/baby-steps/battleship.png "Our First AI!!"
