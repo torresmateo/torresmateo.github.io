@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Baby Steps: Console and Artificial \"Intelligence\""
+title:  "Baby Steps: GUI, Console and Artificial \"Intelligence\""
 date:   2013-12-20 11:17:00
 categories: evolution gaming dev
 ---
 
-When you start coding, your entire world can change in little time. Or at least that happened for me. I can only describe it like being in
+When you start coding, your entire world can change in little time. Or at least that happened to me. I can only describe it like being in
 opposite sides of a thick wall:
 
 * On one side all you can see is the result: programs, websites, Operating Systems, yadda, yadda, yadda. 
@@ -18,22 +18,22 @@ It's how I think the cooks probably can appreciate food better than most of us w
 
 ##Gooey??
 
-When I started coding, I did a lot of basic programs, and that felt great. But the first one I really enjoyed was this little project in college. We've got to write
+When I started coding, I did a lot of basic programs, and that felt great. But the first one I really enjoyed was this little project in college. We had to write
 a program that let the player:
 
 * Play a game of [Sudoku](http://en.wikipedia.org/wiki/Sudoku).
 * Resume a previous game.
 * Show the mistakes.
-* Keep a Score
+* Keep a Score.
 
-Pretty basic thinking of it now, but back then was a serious challenge. My friend (and classmate) Fernando Minardi (who I will call *Fer* from here) was my partner in 
+Pretty basic, thinking of it now, but back then was a serious challenge. My friend (and classmate) Fernando Minardi (who I will call *Fer* from here) was my partner in 
 the project, and we decided to give the player a [GUI](http://en.wikipedia.org/wiki/Graphical_user_interface) *(graphical user interface)* (it wasn't *necessary* for 
 the evaluation, but we wanted to "get our hands dirty"). We started coding and it was really fun! It ended up like this (it's in spanish since I live in Paraguay!):
 
 ![][sudoku]
 
 I won't lie... I don't like it that much either. But back then it was *AWESOME!!* ... Man!! our first GUI!! And it does what it's supposed to do!! (it didn't crash
-randomly like our first attempts!). We were happy, and run to show my family (we finished the program in my house) how amazing this was. With tears of joy in our eyes
+randomly like our first attempts!). We were happy, and run to my family as we finished the program in my house to show how amazing it was. With tears of joy in our eyes
 we went to the dining room, laptop in our hands, and showed them! :'D .... The reaction was this:
 
 *This... is..... hmmmm... niiiice* (read with the least convincing voice you can imagine). 
@@ -43,7 +43,7 @@ among our classmates, our program was one of the best.
 
 ##OK, now make it *think*
 
-Our next gaming-related assignment (Fer was *always* my partner during college, and we both love games!) was *Batalla Naval ++*, an implementation of 
+I think it’s important to mention that Fer was always my coding partner in college. So, our next game-related assignment was Batalla Naval ++, an implementation of 
 [Battleship]( http://en.wikipedia.org/wiki/Battleship_\(game\) ) with some modifications:
 
 * 2 levels for each player (surface and submarine)
@@ -56,11 +56,13 @@ Our next gaming-related assignment (Fer was *always* my partner during college, 
 
 And the program must fulfill these requirements:
 
-* The use of `conio.h`, a Windows library for console interfaces ( no GUI this time :'( )
-* AI .... **ARTIFICIAL INTELLIGENCE** (OMG!! Our program must *play* against a human player! *A W E S O M E !!!*.
+* The usage of `conio.h`, a Windows library for console interfaces ( no GUI this time T_T )
+* AI .... **ARTIFICIAL INTELLIGENCE** (OMG!! As a must, our program had to *play* against a human player! *A W E S O M E !!!*.
 
-So, we started playing on paper the modified version of the game, and thinking about some strategies for the AI, and we ended with a nice one, which was pretty clever. 
-We started with the airplanes, and then the bombs, and then firing at everything that we found, this is one of the spying layouts, it maximizes the spied area:
+So, we started playing  the modified version of the game on a piece of paper, thinking about some strategies for the AI. We ended with a nice one, which was pretty clever. 
+We started with the airplanes, and then the bombs, and then firing at everything that we found. 
+
+This is one of the spying layouts, it maximizes the spied area:
 
     |a|_|_|_|X|X|X|_|_|b|
     |_|A|_|_|X|E|X|_|B|_|
@@ -77,14 +79,14 @@ And it looked like this:
 
 ![][battleship]
 
-Writing those program was incredibly fun!! We were learning a lot about coding, and we felt very proud when our own game was beating us 9 of every 10 matches (sometimes,
-if the CPU was given the first turn, it could play a perfect game, and beat you at the second turn!)
+Writing those programs was incredibly fun!! We were learning a lot about coding, and when our own game got to beat us 9 of every 10 matches, we felt very proud (In 
+some cases, if the CPU got the first turn, it would play a perfect game, and beat us at the second turn!)
 
 > Note for geeks:
 
-You can download Sudoku's Source from [here](https://github.com/torresmateo/TAI1-Sudoku), and Batalla-Naval from [here](https://github.com/torresmateo/Batalla-Naval)
+You can download Sudoku's source code from [here](https://github.com/torresmateo/TAI1-Sudoku), and Batalla-Naval from [here](https://github.com/torresmateo/Batalla-Naval)
 
-Both programs were written in C, and in *ONE FILE* per project (`main.c`)... I know, that's wrong. But hey!!, we were absolute beginners!!
+Both programs were written in C, and using only *ONE FILE* per project (`main.c`)... I know, that's bad. But hey!! We were absolute beginners!!
 
 [sudoku]:/images/baby-steps/sudoku.png "Our First GUI!!"
 [battleship]:/images/baby-steps/battleship.png "Our First AI!!"

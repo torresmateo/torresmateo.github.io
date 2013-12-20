@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Baby Steps: Console and Artificial "Intelligence"</title>
+		<title>Baby Steps: GUI, Console and Artificial "Intelligence"</title>
 		<meta name="viewport" content="width=device-width">
 		<meta property="fb:admins" content="618356035"/>
 
@@ -46,10 +46,10 @@
 					<span class="credits left">GitHub: <a href="https://github.com/torresmateo">torresmateo</a></span>
 					<span class="credits right">twitter: <a href="http://twitter.com/#!/torresmateo">torresmateo</a></span>
 				</div>
-				<h2>Baby Steps: Console and Artificial "Intelligence"</h2>
+				<h2>Baby Steps: GUI, Console and Artificial "Intelligence"</h2>
 <p class="meta">20 Dec 2013</p>
 <div class="post">
-	<p>When you start coding, your entire world can change in little time. Or at least that happened for me. I can only describe it like being in
+	<p>When you start coding, your entire world can change in little time. Or at least that happened to me. I can only describe it like being in
 opposite sides of a thick wall:</p>
 
 <ul>
@@ -64,24 +64,24 @@ the structures, the speed, the design, and the challenge that it must have deman
 
 <h2>Gooey??</h2>
 
-<p>When I started coding, I did a lot of basic programs, and that felt great. But the first one I really enjoyed was this little project in college. We&#39;ve got to write
+<p>When I started coding, I did a lot of basic programs, and that felt great. But the first one I really enjoyed was this little project in college. We had to write
 a program that let the player:</p>
 
 <ul>
 <li>Play a game of <a href="http://en.wikipedia.org/wiki/Sudoku">Sudoku</a>.</li>
 <li>Resume a previous game.</li>
 <li>Show the mistakes.</li>
-<li>Keep a Score</li>
+<li>Keep a Score.</li>
 </ul>
 
-<p>Pretty basic thinking of it now, but back then was a serious challenge. My friend (and classmate) Fernando Minardi (who I will call <em>Fer</em> from here) was my partner in 
+<p>Pretty basic, thinking of it now, but back then was a serious challenge. My friend (and classmate) Fernando Minardi (who I will call <em>Fer</em> from here) was my partner in 
 the project, and we decided to give the player a <a href="http://en.wikipedia.org/wiki/Graphical_user_interface">GUI</a> <em>(graphical user interface)</em> (it wasn&#39;t <em>necessary</em> for 
 the evaluation, but we wanted to &quot;get our hands dirty&quot;). We started coding and it was really fun! It ended up like this (it&#39;s in spanish since I live in Paraguay!):</p>
 
 <p><img src="/images/baby-steps/sudoku.png" alt="" title="Our First GUI!!"></p>
 
 <p>I won&#39;t lie... I don&#39;t like it that much either. But back then it was <em>AWESOME!!</em> ... Man!! our first GUI!! And it does what it&#39;s supposed to do!! (it didn&#39;t crash
-randomly like our first attempts!). We were happy, and run to show my family (we finished the program in my house) how amazing this was. With tears of joy in our eyes
+randomly like our first attempts!). We were happy, and run to my family as we finished the program in my house to show how amazing it was. With tears of joy in our eyes
 we went to the dining room, laptop in our hands, and showed them! :&#39;D .... The reaction was this:</p>
 
 <p><em>This... is..... hmmmm... niiiice</em> (read with the least convincing voice you can imagine). </p>
@@ -91,7 +91,7 @@ among our classmates, our program was one of the best.</p>
 
 <h2>OK, now make it <em>think</em></h2>
 
-<p>Our next gaming-related assignment (Fer was <em>always</em> my partner during college, and we both love games!) was <em>Batalla Naval ++</em>, an implementation of 
+<p>I think it’s important to mention that Fer was always my coding partner in college. So, our next game-related assignment was Batalla Naval ++, an implementation of 
 <a href="http://en.wikipedia.org/wiki/Battleship_(game)">Battleship</a> with some modifications:</p>
 
 <ul>
@@ -110,12 +110,14 @@ among our classmates, our program was one of the best.</p>
 <p>And the program must fulfill these requirements:</p>
 
 <ul>
-<li>The use of <code>conio.h</code>, a Windows library for console interfaces ( no GUI this time :&#39;( )</li>
-<li>AI .... <strong>ARTIFICIAL INTELLIGENCE</strong> (OMG!! Our program must <em>play</em> against a human player! <em>A W E S O M E !!!</em>.</li>
+<li>The usage of <code>conio.h</code>, a Windows library for console interfaces ( no GUI this time T_T )</li>
+<li>AI .... <strong>ARTIFICIAL INTELLIGENCE</strong> (OMG!! As a must, our program had to <em>play</em> against a human player! <em>A W E S O M E !!!</em>.</li>
 </ul>
 
-<p>So, we started playing on paper the modified version of the game, and thinking about some strategies for the AI, and we ended with a nice one, which was pretty clever. 
-We started with the airplanes, and then the bombs, and then firing at everything that we found, this is one of the spying layouts, it maximizes the spied area:</p>
+<p>So, we started playing  the modified version of the game on a piece of paper, thinking about some strategies for the AI. We ended with a nice one, which was pretty clever. 
+We started with the airplanes, and then the bombs, and then firing at everything that we found. </p>
+
+<p>This is one of the spying layouts, it maximizes the spied area:</p>
 <div class="highlight"><pre><code class="text language-text" data-lang="text">|a|_|_|_|X|X|X|_|_|b|
 |_|A|_|_|X|E|X|_|B|_|
 |_|_|X|_|X|X|X|X|_|_|
@@ -131,16 +133,16 @@ We started with the airplanes, and then the bombs, and then firing at everything
 
 <p><img src="/images/baby-steps/battleship.png" alt="" title="Our First AI!!"></p>
 
-<p>Writing those program was incredibly fun!! We were learning a lot about coding, and we felt very proud when our own game was beating us 9 of every 10 matches (sometimes,
-if the CPU was given the first turn, it could play a perfect game, and beat you at the second turn!)</p>
+<p>Writing those programs was incredibly fun!! We were learning a lot about coding, and when our own game got to beat us 9 of every 10 matches, we felt very proud (In 
+some cases, if the CPU got the first turn, it would play a perfect game, and beat us at the second turn!)</p>
 
 <blockquote>
 <p>Note for geeks:</p>
 </blockquote>
 
-<p>You can download Sudoku&#39;s Source from <a href="https://github.com/torresmateo/TAI1-Sudoku">here</a>, and Batalla-Naval from <a href="https://github.com/torresmateo/Batalla-Naval">here</a></p>
+<p>You can download Sudoku&#39;s source code from <a href="https://github.com/torresmateo/TAI1-Sudoku">here</a>, and Batalla-Naval from <a href="https://github.com/torresmateo/Batalla-Naval">here</a></p>
 
-<p>Both programs were written in C, and in <em>ONE FILE</em> per project (<code>main.c</code>)... I know, that&#39;s wrong. But hey!!, we were absolute beginners!!</p>
+<p>Both programs were written in C, and using only <em>ONE FILE</em> per project (<code>main.c</code>)... I know, that&#39;s bad. But hey!! We were absolute beginners!!</p>
 
 		<hr>
 		<h2>Comments</h2>
