@@ -7,6 +7,105 @@
                 <atom:link href="http://torresmateo.github.io/feed.xml" rel="self" type="application/rss+xml" />
                 
                         <item>
+                                <title>Bacteria, Part 1: UI Design</title>
+                                <description>&lt;p&gt;One of the projects I feel proud about is called Bacteria (a modified version of &lt;a href=&quot;http://hexxagon.com/&quot;&gt;Hexxagon&lt;/a&gt;). It&amp;#39;s the first
+serious game challenge that we (Fer and I) had in college. This post is about the first set of problems we had to deal with in
+the proccess.&lt;/p&gt;
+
+&lt;p&gt;This project covers a lot of things, and I decided to split it in at least two posts, since it&amp;#39;s taking me longer
+than expected. This post is very rich in images for those who like to watch stuff rather than read.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;WARNING: this post contains some technical words.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h1&gt;The First BIG (and scary) Project&lt;/h1&gt;
+
+&lt;p&gt;First of all, this project was like a titan for us at the beginning. We had absolutely no clue of what to do, nor where to start.
+There were just too many thing to take into account.&lt;/p&gt;
+
+&lt;p&gt;Hexxagon is a board game. The board is hexagonal (what??... &lt;em&gt;first challenge&lt;/em&gt;). The goal is to own more cells than the opponent.
+To make it fun, it &lt;em&gt;needs&lt;/em&gt; a good &lt;a href=&quot;http://en.wikipedia.org/wiki/Graphical_user_interface&quot;&gt;GUI&lt;/a&gt;, and a LOT of interactive features. &lt;/p&gt;
+
+&lt;p&gt;To make it easy, here is one possible board, each hexagon is a cell:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://torresmateo.github.io/images/bacteria/hexboard.png&quot; alt=&quot;&quot; title=&quot;possible board&quot;&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Rules:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Same as Hexxagon, two types of moves, you can &lt;em&gt;multiply&lt;/em&gt; to a cell next to yours, or you can &lt;em&gt;jump&lt;/em&gt;  over one cell
+in an hexagonal board.&lt;/li&gt;
+&lt;li&gt;The winner is the player who owns more cells when the board has no free cells.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;For our particular implementation, we had to add this:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A hint about where you can jump, or multiply.&lt;/li&gt;
+&lt;li&gt;A board editor.&lt;/li&gt;
+&lt;li&gt;Multiplayer Feature based on a given XML Protocol (Maybe I&amp;#39;ll describe the protocol in the next post).&lt;/li&gt;
+&lt;li&gt;Sound.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So, at first sight, it doesn&amp;#39;t seem like a LOT, but we wanted to make a great game out of this.&lt;/p&gt;
+
+&lt;h2&gt;Rules and Logic&lt;/h2&gt;
+
+&lt;p&gt;Programming the game logic wasn&amp;#39;t really hard. In the first day we had a working console implementation and we could &amp;quot;play&amp;quot; the
+game having absolutely no fun because we had to write every command to make a simple move, something like&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;multiply cell A8 to A9
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;and the output was really awful, a lot of debug using &lt;code&gt;printf&lt;/code&gt; and also tons of (apparently) meaningless garbage. But we were enjoying
+the development proccess like a child who gets a Nintendo 64 on Christmas! When it was clear that the logic was done, we were ready
+for te REAL FUN!&lt;/p&gt;
+
+&lt;h2&gt;GUI&lt;/h2&gt;
+
+&lt;p&gt;Remember the Sudoku project we made with WinAPI? Well, we considered that UI awful. We wanted to make a game that could make
+people say &amp;quot;ooooohhhhh&amp;quot;. So we started searching for 2D game engines and libraries, and there were a few interesting options.
+After reading about SDL, GTK and other options we ended up using &lt;a href=&quot;http://alleg.sourceforge.net/&quot;&gt;Allegro&lt;/a&gt;, a Game Programming
+Library.&lt;/p&gt;
+
+&lt;p&gt;The first challenge was &amp;quot;how the hell are we going to make this pretty&amp;quot;. I started making drafts in paper and we would discuss with Fer
+the good and the bad of every menu and how it should work. It was clear we needed a cell that worked like a brick, so we
+can build many different boards (with holes, or two separate &amp;quot;islands&amp;quot;).&lt;/p&gt;
+
+&lt;p&gt;This image shows a possible board, the first image is our board editor, and the second is the game view with the statistics.
+I still look at this and can&amp;#39;t help a little smile of satisfaction and pride :&amp;#39;D&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://torresmateo.github.io/images/bacteria/board_editor.png&quot; alt=&quot;&quot; title=&quot;Our Board Editor&quot;&gt;
+&lt;img src=&quot;http://torresmateo.github.io/images/bacteria/game_view.png&quot; alt=&quot;&quot; title=&quot;Game View&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Note the cell borders in the game view. To draw this borders we had to step into every cell and check for adjacent objects!&lt;/p&gt;
+
+&lt;p&gt;Another Challenge was menus. Since Allegro gives you &amp;quot;per-pixel&amp;quot; control, we wanted to take advantage of that and make buttons
+with nice shapes, effects and colors. We came up with a technique using color masks to detect when a user hovers or clicks inside
+a button or anything we wanted to be interactive (it turned out it was a well-known technique, but back then we feel awed by our
+own witts). Here&amp;#39;s an Image of the mask, and the menu with one of the buttons highlighted.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://torresmateo.github.io/images/bacteria/ingame_shape.jpg&quot; alt=&quot;&quot; title=&quot;Mask&quot;&gt;
+&lt;img src=&quot;http://torresmateo.github.io/images/bacteria/button_highlight.jpg&quot; alt=&quot;&quot; title=&quot;Button Highlighted&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Note how the mask color matches the shape of the blue bacteria. If the user clicked on our GUI, we asked for the pointer position,
+and looked what color was clicked in the mask, easy right? Here&amp;#39;s a visual explanation, the red line is intended to show how
+mask and design share positions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://torresmateo.github.io/images/bacteria/explanation.png&quot; alt=&quot;&quot; title=&quot;Mask and GUI Overlay&quot;&gt;&lt;/p&gt;
+
+&lt;h2&gt;To be continued..&lt;/h2&gt;
+
+&lt;p&gt;That&amp;#39;s all for the moment, I have a draft of the second part, it&amp;#39;s about how we faced gameplay, drag and drop, networking, and
+artificial intelligence. Give me feedback if you want me to explain a little further any aspect, maybe with code explanation or
+in a tutorial-like format.&lt;/p&gt;
+
+&lt;p&gt;Aaaaaaaaaaaaaaaaaaand last, but not least... here&amp;#39;s the &lt;a href=&quot;https://github.com/torresmateo/Bacteria&quot;&gt;code&lt;/a&gt;.&lt;/p&gt;
+</description>
+                                <pubDate>Fri, 10 Jan 2014 22:10:00 +0000</pubDate>
+                                <link>http://torresmateo.github.io//evolution/gaming/dev/2014/01/10/ui-design.html</link>
+                                <guid isPermaLink="true">http://torresmateo.github.io//evolution/gaming/dev/2014/01/10/ui-design.html</guid>
+                        </item>
+                
+                        <item>
                                 <title>Baby Steps: GUI, Console and Artificial &quot;Intelligence&quot;</title>
                                 <description>&lt;p&gt;When you start coding, your entire world can change in little time. Or at least that happened to me. I can only describe it like being in
 opposite sides of a thick wall:&lt;/p&gt;
