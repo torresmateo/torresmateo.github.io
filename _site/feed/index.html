@@ -7,6 +7,113 @@
                 <atom:link href="http://torresmateo.github.io/feed.xml" rel="self" type="application/rss+xml" />
                 
                         <item>
+                                <title>Bacteria, Part 2: Gameplay, Drag &amp; Drop and other Stuff</title>
+                                <description>&lt;p&gt;This is the second part of the Bacteria development, I&amp;#39;ll focus in gameplay, and the technique we used for implementing drag and drop
+with Allegro.&lt;/p&gt;
+
+&lt;h2&gt;Gameplay&lt;/h2&gt;
+
+&lt;p&gt;First, I&amp;#39;ll give a little introduction of what gameplay is:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Gameplay is the specific way in which players interact with a game, and in particular with video games. Gameplay is the pattern defined 
+through the game rules, connection between player and the game, challenges and overcoming them, plot and player&amp;#39;s connection with it. 
+Video game gameplay is distinct from graphics, and audio elements.
+&lt;div style=&quot;text-align:right;&quot;&gt;&amp;#8213;Random Dude in Wikipedia&lt;/div&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That should be clear enough.&lt;/p&gt;
+
+&lt;p&gt;For our game, we wanted the player to focus in the strategic part of the game, and not to deal with an uncomfortable way of interacting
+with objects in the screen. In our previous games the player had to learn a bunch of &amp;quot;complicated&amp;quot; controls to do things, and it wasn&amp;#39;t
+fun to play that way.&lt;/p&gt;
+
+&lt;h2&gt;Drag &amp;amp; Drop&lt;/h2&gt;
+
+&lt;p&gt;Since Bacteria is a board game, the intuitive way to interact with it is obviously the mouse. Here&amp;#39;s a list of the things you can do with
+any mouse:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Move pointer.&lt;/li&gt;
+&lt;li&gt;Click.&lt;/li&gt;
+&lt;li&gt;Right-CLick.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pretty limited. I didn&amp;#39;t include &lt;em&gt;scroll&lt;/em&gt; in that list because (sadly) not all mice have a scroll wheel. So, handling the mouse is 
+not as simple as it can appear at first sight... aaaand right-clicking sucks in a board game... so... here&amp;#39;s our new list:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Move pointer.&lt;/li&gt;
+&lt;li&gt;Click.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But wait!! If you think about it, there are special things about the click event, and it&amp;#39;s all about timing. In every mouse based interface
+you have more options:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Double-click:&lt;/strong&gt; Click two times, fast. It&amp;#39;s like clicking, but if almost every time a single-click is select, double click is &amp;quot;open&amp;quot; or, 
+in a more general way: &amp;quot;interact&amp;quot; with the double-clicked element.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Drag-and-Drop:&lt;/strong&gt; It&amp;#39;s done by pressing on the element, moving the mouse while still pressing the mouse button, and then releasing the button
+in another area in the screen.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These options are called &lt;em&gt;gestures&lt;/em&gt;. We were interested in &lt;em&gt;Drag-and-Drop&lt;/em&gt;, because it&amp;#39;s the simplest way to &amp;quot;move&amp;quot; one object over the scene.
+The basic idea is click and hold one of the little bacteria, and somehow give the player the feeling that s/he is &amp;quot;holding&amp;quot; the object as long
+as the mouse button is pressed. We implemented this feature by doing the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;On mouse press:&lt;/strong&gt; Quickly swap the bacteria with a &amp;quot;phantom&amp;quot; version, useful to know the original position in the board. Also, replace the
+mouse pointer, our choice was the same pointer with a bacteria attached to it, so wherever the player moved the mouse, the bacteria seemed
+to be glued to the pointer.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;On mouse release:&lt;/strong&gt; Swap the pointer image to the original (the one without the bacteria attached). If the player released in a valid cell, 
+the original cell now looks like an empty cell, and the new cell now hold a bacteria. If the player released in any other place, the phantom
+version returns to be the normal bacteria.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It worked like a charm!!&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#39;s an image showing the empty cell, the &amp;quot;phantom&amp;quot; bacteria , the &amp;quot;infected&amp;quot; cell, and both pointers. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://torresmateo.github.io/images/bacteria-part-2/blue_bacteria.png&quot; alt=&quot;&quot; title=&quot;Blue Bacteria&quot;&gt;&lt;/p&gt;
+
+&lt;h2&gt;Artificial Intelligence&lt;/h2&gt;
+
+&lt;p&gt;Some words about the intelligence.&lt;/p&gt;
+
+&lt;p&gt;First of all, we knew absolutely NOTHING about game theory at the time, and I think we did pretty well taking that into account. &lt;/p&gt;
+
+&lt;p&gt;Our implementation was a tree-like decision structure. We started by assuming the enemy played the best he could, and the AI moves acted accordingly.
+It&amp;#39;s pretty clever after reading the code almost 4 years later =). It&amp;#39;s not very hard to beat the computer with this AI, but not ultra-easy though, 
+it takes to think at least two moves ahead to win. &lt;/p&gt;
+
+&lt;h1&gt;Finally&lt;/h1&gt;
+
+&lt;p&gt;Well... I wrote a LOT about Bacteria, and after reading it myself I decided it was long and boring, so I erased all of it and instead made a 
+video of myself showing what I think are the best parts of this game:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Menus... they look AWESOME!!.&lt;/li&gt;
+&lt;li&gt;Board Editor.&lt;/li&gt;
+&lt;li&gt;Game.&lt;/li&gt;
+&lt;li&gt;Instruction Pages.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It&amp;#39;s not a long video, and I lose (in my defense, the purpose of this wasn&amp;#39;t for me to win, but to show the features).&lt;/p&gt;
+
+&lt;iframe width=&quot;600&quot; height=&quot;450&quot; src=&quot;//www.youtube.com/embed/H9hrEwQNlbw?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1&gt;To be continued...&lt;/h1&gt;
+
+&lt;p&gt;The next post is not about Bacteria. It&amp;#39;s about Backgammon, but only the AI part, since all the rest is pretty similar to Bacteria, the interesting
+part is the intelligence. I plan to make another video for that post, since it&amp;#39;s much easier for me to show the features that way, and maybe
+it&amp;#39;s a better experience to you to actually see the interactivity and other things that can&amp;#39;t be seen properly in still images.&lt;/p&gt;
+</description>
+                                <pubDate>Tue, 04 Feb 2014 01:00:00 +0000</pubDate>
+                                <link>http://torresmateo.github.io//evolution/gaming/dev/2014/02/04/bacteria-part-2.html</link>
+                                <guid isPermaLink="true">http://torresmateo.github.io//evolution/gaming/dev/2014/02/04/bacteria-part-2.html</guid>
+                        </item>
+                
+                        <item>
                                 <title>Bacteria, Part 1: UI Design</title>
                                 <description>&lt;p&gt;One of the projects I feel proud about is called Bacteria (a modified version of &lt;a href=&quot;http://hexxagon.com/&quot;&gt;Hexxagon&lt;/a&gt;). It&amp;#39;s the first
 serious game challenge that we (Fer and I) had in college. This post is about the first set of problems we had to deal with in
