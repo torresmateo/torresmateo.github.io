@@ -25,7 +25,7 @@ Video game gameplay is distinct from graphics, and audio elements.
 &lt;p&gt;That should be clear enough.&lt;/p&gt;
 
 &lt;p&gt;For our game, we wanted the player to focus in the strategic part of the game, and not to deal with an uncomfortable way of interacting
-with objects in the screen. In our previous games the player had to learn a bunch of &amp;quot;complicated&amp;quot; controls to do things, and it wasn&amp;#39;t
+with objects on the screen. In our previous games the player had to learn a bunch of &amp;quot;complicated&amp;quot; controls to do things, and it wasn&amp;#39;t
 fun to play that way.&lt;/p&gt;
 
 &lt;h2&gt;Drag &amp;amp; Drop&lt;/h2&gt;
@@ -36,7 +36,7 @@ any mouse:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Move pointer.&lt;/li&gt;
 &lt;li&gt;Click.&lt;/li&gt;
-&lt;li&gt;Right-CLick.&lt;/li&gt;
+&lt;li&gt;Right-Click.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Pretty limited. I didn&amp;#39;t include &lt;em&gt;scroll&lt;/em&gt; in that list because (sadly) not all mice have a scroll wheel. So, handling the mouse is 
@@ -51,8 +51,8 @@ not as simple as it can appear at first sight... aaaand right-clicking sucks in 
 you have more options:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Double-click:&lt;/strong&gt; Click two times, fast. It&amp;#39;s like clicking, but if almost every time a single-click is select, double click is &amp;quot;open&amp;quot; or, 
-in a more general way: &amp;quot;interact&amp;quot; with the double-clicked element.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Double-click:&lt;/strong&gt; Click two times, fast. It&amp;#39;s like clicking, but if almost every time a single-click is &lt;code&gt;select&lt;/code&gt;, double click is &amp;quot;open&amp;quot; or, 
+in a more general way: &lt;code&gt;interact&lt;/code&gt; with the double-clicked element.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Drag-and-Drop:&lt;/strong&gt; It&amp;#39;s done by pressing on the element, moving the mouse while still pressing the mouse button, and then releasing the button
 in another area in the screen.&lt;/li&gt;
 &lt;/ul&gt;

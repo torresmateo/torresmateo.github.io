@@ -20,7 +20,7 @@ First, I'll give a little introduction of what gameplay is:
 That should be clear enough.
 
 For our game, we wanted the player to focus in the strategic part of the game, and not to deal with an uncomfortable way of interacting
-with objects in the screen. In our previous games the player had to learn a bunch of "complicated" controls to do things, and it wasn't
+with objects on the screen. In our previous games the player had to learn a bunch of "complicated" controls to do things, and it wasn't
 fun to play that way.
 
 ##Drag & Drop
@@ -30,7 +30,7 @@ any mouse:
 
 * Move pointer.
 * Click.
-* Right-CLick.
+* Right-Click.
 
 Pretty limited. I didn't include *scroll* in that list because (sadly) not all mice have a scroll wheel. So, handling the mouse is 
 not as simple as it can appear at first sight... aaaand right-clicking sucks in a board game... so... here's our new list:
@@ -41,8 +41,8 @@ not as simple as it can appear at first sight... aaaand right-clicking sucks in 
 But wait!! If you think about it, there are special things about the click event, and it's all about timing. In every mouse based interface
 you have more options:
 
-* **Double-click:** Click two times, fast. It's like clicking, but if almost every time a single-click is select, double click is "open" or, 
-  in a more general way: "interact" with the double-clicked element.
+* **Double-click:** Click two times, fast. It's like clicking, but if almost every time a single-click is `select`, double click is "open" or, 
+  in a more general way: `interact` with the double-clicked element.
 * **Drag-and-Drop:** It's done by pressing on the element, moving the mouse while still pressing the mouse button, and then releasing the button
   in another area in the screen.
 
