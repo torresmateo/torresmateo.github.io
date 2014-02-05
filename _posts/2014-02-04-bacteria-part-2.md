@@ -41,7 +41,7 @@ not as simple as it can appear at first sight... aaaand right-clicking sucks in 
 But wait!! If you think about it, there are special things about the click event, and it's all about timing. In every mouse based interface
 you have more options:
 
-* **Double-click:** Click two times, fast. It's like clicking, but if almost every time a single-click is `select`, double click is "open" or, 
+* **Double-click:** Click two times, fast. It's like clicking, but if almost every time a single-click is `select`, double click is `open` or, 
   in a more general way: `interact` with the double-clicked element.
 * **Drag-and-Drop:** It's done by pressing on the element, moving the mouse while still pressing the mouse button, and then releasing the button
   in another area in the screen.

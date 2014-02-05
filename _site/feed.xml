@@ -51,7 +51,7 @@ not as simple as it can appear at first sight... aaaand right-clicking sucks in 
 you have more options:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Double-click:&lt;/strong&gt; Click two times, fast. It&amp;#39;s like clicking, but if almost every time a single-click is &lt;code&gt;select&lt;/code&gt;, double click is &amp;quot;open&amp;quot; or, 
+&lt;li&gt;&lt;strong&gt;Double-click:&lt;/strong&gt; Click two times, fast. It&amp;#39;s like clicking, but if almost every time a single-click is &lt;code&gt;select&lt;/code&gt;, double click is &lt;code&gt;open&lt;/code&gt; or, 
 in a more general way: &lt;code&gt;interact&lt;/code&gt; with the double-clicked element.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Drag-and-Drop:&lt;/strong&gt; It&amp;#39;s done by pressing on the element, moving the mouse while still pressing the mouse button, and then releasing the button
 in another area in the screen.&lt;/li&gt;
