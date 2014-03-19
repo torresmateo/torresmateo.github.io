@@ -7,6 +7,98 @@
                 <atom:link href="http://torresmateo.github.io/feed.xml" rel="self" type="application/rss+xml" />
                 
                         <item>
+                                <title>Backgammon Madness</title>
+                                <description>&lt;p&gt;Artificial Intelligence is the heart of a Player vs. PC game, and there are a lot of options to have a program &lt;em&gt;thinking&lt;/em&gt;. For instance,
+if you have to make a game like &lt;a href=&quot;/evolution/gaming/dev/2014/01/10/ui-design.html&quot;&gt;Bacteria&lt;/a&gt;, the obvious choice is
+&lt;a href=&quot;http://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning&quot;&gt;Alpha-Beta pruning&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;The Story&lt;/h2&gt;
+
+&lt;p&gt;The assignment Fer and I had was &lt;a href=&quot;http://en.wikipedia.org/wiki/Backgammon&quot;&gt;Backgammon&lt;/a&gt;. It&amp;#39;s a board game with checkers and dices. The
+main goal is to move your checkers from your &amp;quot;house&amp;quot; to the opponent&amp;#39;s. In your turn you throw a pair of dices, and move the checkers forward.
+If you&amp;#39;ve got the same result in both dices, you earn a double turn, moving four times.&lt;/p&gt;
+
+&lt;p&gt;It&amp;#39;s actually a boring game, compared to chess, but Fer and I learned how to play, and even watched YouTube videos of the world championship.&lt;/p&gt;
+
+&lt;p&gt;When this assignment was given, one of the requirements was to use alpha-beta pruning for the AI. It didn&amp;#39;t feel right to me, because adding
+dices to the mix leaves you with a lot of randomness. Of course you can modify alpha-beta to deal with the randomness, but as I&amp;#39;ve said above,
+there are A LOT of options, and it&amp;#39;s part of the art of problem solving to pick the right tool for the job.&lt;/p&gt;
+
+&lt;p&gt;In class, I asked our teacher about this, and he didn&amp;#39;t answer my question. I stayed after class to him again, and we had an argument about the
+right algorithm to use for the game.&lt;/p&gt;
+
+&lt;h2&gt;The implementation&lt;/h2&gt;
+
+&lt;p&gt;Graphically, it&amp;#39;s the same as &lt;a href=&quot;/evolution/gaming/dev/2014/01/10/ui-design.html&quot;&gt;Bacteria&lt;/a&gt;. Even the mouse handler is 90% taken from our previous
+implementation, we used color masks and sprites. &lt;a href=&quot;http://alleg.sourceforge.net/&quot;&gt;Allegro&lt;/a&gt; was also the library we used again.&lt;/p&gt;
+
+&lt;p&gt;The difference was AI. We had to learn some useful strategies for backgammon. The game has two logical stages. In the first stage, the opponent
+can block your checkers, and this means a lot of computation towards avoiding that, and focusing on desirable board configurations. In the
+second stage it&amp;#39;s simply a &amp;quot;race&amp;quot;, the first player to reach the opponent&amp;#39;s &amp;quot;home&amp;quot; wins the game. We implemented a weight based heuristic for
+both stages.&lt;/p&gt;
+
+&lt;p&gt;The first heuristic was focused in achieving good board configurations, we had points for:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Distance to the opponent&amp;#39;s home (low priority)&lt;/li&gt;
+&lt;li&gt;Avoid blocked checkers (medium priority)&lt;/li&gt;
+&lt;li&gt;Block opponent&amp;#39;s checkers (medium priority)&lt;/li&gt;
+&lt;li&gt;Occupy six adjacent columns (high priority)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There were other aspects, but these four are the most important. The last one was added after watching a lot of (boring) backgammon games online.
+Professional players seemed to aim for a particular board configuration. When you have two or more checkers in the same column, the opponent can&amp;#39;t
+block your checkers in that column, so having six consecutive columns occupied means you own a &amp;quot;wall&amp;quot; of columns that the other player can&amp;#39;t
+pass.&lt;/p&gt;
+
+&lt;p&gt;The second stage has the following priorities:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Distance to the opponent&amp;#39;s home (high priority)&lt;/li&gt;
+&lt;li&gt;Everything else (no priority)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Basically, it&amp;#39;s focused on reaching the opponent&amp;#39;s home.&lt;/p&gt;
+
+&lt;h2&gt;The tournament&lt;/h2&gt;
+
+&lt;p&gt;The main goal of this implementation was to make every team challenge other&amp;#39;s programs. It was fun, at first we won because most of our classmates&amp;#39;
+programs weren&amp;#39;t finished. We ended with 3 complete games (best of 3), the first two we won 2-0, and the last one (the final game of the tournament)
+was our program against Rafael Arias Michel and Daniel Ruffinelli&amp;#39;s implementation, I&amp;#39;ll refer to them as &lt;em&gt;Rafa&lt;/em&gt; and &lt;em&gt;Ruffo&lt;/em&gt; from now on unless they
+ask me not to, in which case I&amp;#39;ll probably keep calling them &lt;em&gt;Rafa&lt;/em&gt; and &lt;em&gt;Ruffo&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;They had a nice implementation in GTK, and if I remember correctly they had implemented Alpha-Beta Pruning. Our program won the first match, the second
+one we lost! By that moment we had an audience (about 6 classmates who were interested enough to stay and watch a bunch of nerds cheering for their
+own implementation of a complete boring board game). The last game was interesting, both programs made mistakes, specially at the end. We could not tell
+who had the advantage until the very end.&lt;/p&gt;
+
+&lt;p&gt;Luckily we won :)&lt;/p&gt;
+
+&lt;h2&gt;Video and Code&lt;/h2&gt;
+
+&lt;p&gt;Last, but not least, here&amp;#39;s the video of me playing (and winning!) against my own implementation. The interface this time isn&amp;#39;t as elaborated as in
+Bacteria, but the main reasons were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The objective was not to make a playable PC vs Player game, we did it for completeness.&lt;/li&gt;
+&lt;li&gt;Backgammon is boring.&lt;/li&gt;
+&lt;li&gt;We focused on the PC vs PC tournament instead of Interface and/or Design, I think it looks OK though.&lt;/li&gt;
+&lt;li&gt;Backgammon is boring.&lt;/li&gt;
+&lt;li&gt;Did I mention how boring Backgammon is?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;WARNING:&lt;/strong&gt; It&amp;#39;s about 4 minutes of myself playing a boring game :)&lt;/p&gt;
+
+&lt;iframe width=&quot;600&quot; height=&quot;450&quot; src=&quot;//www.youtube.com/embed/dKyYiN4sj7s?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;and as always... the &lt;a href=&quot;https://github.com/torresmateo/Backgammon&quot;&gt;code&lt;/a&gt;.&lt;/p&gt;
+</description>
+                                <pubDate>Wed, 19 Mar 2014 00:10:00 +0000</pubDate>
+                                <link>http://torresmateo.github.io//evolution/gaming/dev/2014/03/19/backgammon.html</link>
+                                <guid isPermaLink="true">http://torresmateo.github.io//evolution/gaming/dev/2014/03/19/backgammon.html</guid>
+                        </item>
+                
+                        <item>
                                 <title>Bacteria, Part 2: Gameplay, Drag &amp; Drop and other Stuff</title>
                                 <description>&lt;p&gt;This is the second part of the Bacteria development, I&amp;#39;ll focus in gameplay, and the technique we used for implementing drag and drop
 with Allegro.&lt;/p&gt;
