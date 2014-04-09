@@ -80,7 +80,7 @@ Bacteria, but the main reasons were:
 
 **WARNING:** It's about 4 minutes of myself playing a boring game :)
 
-<iframe width="600" height="450" src="//www.youtube.com/embed/dKyYiN4sj7s?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="900" height="675" src="//www.youtube.com/embed/dKyYiN4sj7s?rel=0" frameborder="0" allowfullscreen></iframe>
 
 and as always... the [code](https://github.com/torresmateo/Backgammon).
 

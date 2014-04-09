@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>torresmateo.github.io</title>
+		<title>{{ page.title }}</title>
 		<meta name="viewport" content="width=device-width">
 		<meta property="fb:admins" content="618356035"/>
 
@@ -51,29 +51,13 @@
 		<div class="wrapperHome">
 			<section>  
 				<div id="title">
-					<h1><a href="/">torresmateo.github.io</a></h1>
+					<h1><a href="/">{{ site.name }}</a></h1>
 					<p>A place to find rants and some videogame dev stuff!</p>
 					<hr>
 					<span class="credits left">GitHub: <a href="https://github.com/torresmateo">torresmateo</a></span>
 					<span class="credits right">twitter: <a href="http://twitter.com/#!/torresmateo">torresmateo</a></span>
 				</div>
-				<div id="home">
-  <h1>Posts (newer above)</h1>
-  <ul class="posts">
-    
-      <li><span>19 Mar 2014</span> &raquo; <a href="/evolution/gaming/dev/2014/03/19/backgammon.html">Backgammon Madness</a></li>
-    
-      <li><span>04 Feb 2014</span> &raquo; <a href="/evolution/gaming/dev/2014/02/04/bacteria-part-2.html">Bacteria, Part 2: Gameplay, Drag & Drop and other Stuff</a></li>
-    
-      <li><span>10 Jan 2014</span> &raquo; <a href="/evolution/gaming/dev/2014/01/10/ui-design.html">Bacteria, Part 1: UI Design</a></li>
-    
-      <li><span>20 Dec 2013</span> &raquo; <a href="/evolution/gaming/dev/2013/12/20/baby-steps.html">Baby Steps: GUI, Console and Artificial "Intelligence"</a></li>
-    
-      <li><span>13 Dec 2013</span> &raquo; <a href="/rants/2013/12/13/first-experiences.html">It's Alive!</a></li>
-    
-  </ul>
-</div>
-
+				{{ content }}
 			</section>  
 		</div>
 
