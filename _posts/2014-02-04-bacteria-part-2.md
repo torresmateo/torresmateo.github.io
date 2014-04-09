@@ -85,7 +85,7 @@ video of myself showing what I think are the best parts of this game:
 
 It's not a long video, and I lose (in my defense, the purpose of this wasn't for me to win, but to show the features).
 
-<iframe width="900" height="675" src="//www.youtube.com/embed/H9hrEwQNlbw?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="600" src="//www.youtube.com/embed/H9hrEwQNlbw?rel=0" frameborder="0" allowfullscreen></iframe>
 
 #To be continued...
 
