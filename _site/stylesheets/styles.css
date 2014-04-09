@@ -649,6 +649,8 @@ strong {
   margin: 0 auto;
   position: relative;
   /*padding: 0 20px;*/
+  font-size:2em;
+  line-height:1.5em;
 }
 
 .wrapperHome section{
