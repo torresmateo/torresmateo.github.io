@@ -1,5 +1,5 @@
-name: torresmateo.github.io
+name: blog.torresmateo.com
 markdown: redcarpet
 pygments: true
 description: A place to find rants and some videogame dev stuff!
-url: http://torresmateo.github.io
+url: http://blog.torresmateo.com
