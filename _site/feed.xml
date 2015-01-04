@@ -7,6 +7,75 @@
                 <atom:link href="http://blog.torresmateo.com/feed.xml" rel="self" type="application/rss+xml" />
                 
                         <item>
+                                <title>Hello World! (again)</title>
+                                <description>&lt;p&gt;Hello again my fellow readers!! (Hi Mom!)&lt;/p&gt;
+
+&lt;p&gt;It&amp;#39;s been a long time since my last post and I just wanted to post a little update on what&amp;#39;s going on with my life and this blog.&lt;/p&gt;
+
+&lt;p&gt;First of all, I&amp;#39;ve bought a new domain (&lt;a href=&quot;torresmateo.com&quot;&gt;torresmateo.com&lt;/a&gt;) and moved the blog here (you can still use the old url though, but it will just redirect here). This means that all those hundreds of thousands of facebook comments (for a total sum of 10 through all posts) are gone and comments are disabled until I come across a system that I like and it&amp;#39;s not so JavaScript related.&lt;/p&gt;
+
+&lt;p&gt;Secondly, a brief update on what I&amp;#39;ve been doing since August. I decided to organise this a little bit.&lt;/p&gt;
+
+&lt;h1&gt;College and Work Related Stuff&lt;/h1&gt;
+
+&lt;p&gt;I&amp;#39;ve been working on my thesis and it seems I&amp;#39;m on the last mile of that rode. I&amp;#39;ve published a paper in the process, which I&amp;#39;ll link in a future post. It&amp;#39;s about solving multi-dimensional optimisation problems using algorithms based on a particle swarm meta-heuristic. Cool right?&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;ve also been working in web development as always, it&amp;#39;s still fun, thanks for asking :D&lt;/p&gt;
+
+&lt;h1&gt;Game Related Stuff&lt;/h1&gt;
+
+&lt;p&gt;Now to the important business&lt;/p&gt;
+
+&lt;h2&gt;IGDA Paraguay&lt;/h2&gt;
+
+&lt;p&gt;Here in Paraguay the game development industry is almost nonexistent. I mean, there are many game developers and a lot of them are incredibly capable, but sadly there is almost no market here and we have some serious limitations like not being able to sell in Google Play (unless we partner with someone from another country). &lt;/p&gt;
+
+&lt;p&gt;The IGDA (International Game Developers Association) is the largest non-profit membership organization serving individuals that create games and now Paraguay is a proud member with it&amp;#39;s own chapter. We are starting making some noise here and for the first time (that I know of) we&amp;#39;re getting some serious attention from a lot of people. The videogame market is growing and a lot of developers, designers and artists are getting to know each other and it seems to me that very soon we&amp;#39;ll see Paraguayan games shining out there. You can get updates on our chapter &lt;a href=&quot;http://facebook.com/igdapy&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;ve been given the honor of collaborating on this amazing project as secretary!&lt;/p&gt;
+
+&lt;h2&gt;My Personal Projects&lt;/h2&gt;
+
+&lt;p&gt;While not writing this blog, or writing my thesis, or working, or doing survival related things like eating or sleeping.... I&amp;#39;ve been programming some games (kind of).&lt;/p&gt;
+
+&lt;h3&gt;Wolfenstein 3D Clone&lt;/h3&gt;
+
+&lt;p&gt;This project started as a way to teach myself &amp;quot;proper&amp;quot; 3D and OpenGL. I though &amp;quot;I should start with the very basic&amp;quot;. I know an infinite number of clones of this game are already out there, but I don&amp;#39;t care, the process was unbelievably fun and I learned a lot. I&amp;#39;m not sure about releasing the game because there&amp;#39;s nothing really exciting about the game itself. Also, I didn&amp;#39;t make a lot of effort in the assets of the game and it doesn&amp;#39;t look very pretty. I&amp;#39;m not sure... maybe I&amp;#39;ll do it in the future. Who knows?&lt;/p&gt;
+
+&lt;h3&gt;Mini Engine&lt;/h3&gt;
+
+&lt;p&gt;After finishing the Wolf3D clone, I wanted to keep learning OpenGL and I came across &lt;a href=&quot;https://www.youtube.com/user/thebennybox&quot;&gt;this&lt;/a&gt; YouTube Channel (which I then realised contains a tutorial on how to do a Wolf3D clone, kudos to me for not googling before coding!). It really is an invaluable source of knowledge for beginners who want to build a 3D game engine from scratch.&lt;/p&gt;
+
+&lt;h3&gt;Mobile Project&lt;/h3&gt;
+
+&lt;p&gt;The latest project is a mobile (or rather multi-platform) game. I&amp;#39;m using &lt;a href=&quot;http://www.cocos2d-x.org/&quot;&gt;Cocos2d-x&lt;/a&gt;, which is an open source 2D (and now 3D) game engine written in C++. So far it&amp;#39;s been amazingly easy and it lets me focus on the game mechanics rather than deal with the rendering and technical issues.&lt;/p&gt;
+
+&lt;p&gt;The main idea is to make a simple game but actually finish it and release it as a commercial product this year, or maybe in 2016. We&amp;#39;ll see. I&amp;#39;ll probably make a dev blog starting in march, when I expect to be working at least half time on this.&lt;/p&gt;
+
+&lt;h1&gt;This Blog&lt;/h1&gt;
+
+&lt;p&gt;The original idea remains (except the &amp;quot;one post every two weeks&amp;quot; part to be realistic). But there are some changes:&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;ll be writing some tutorials on some topics that I had a very difficult time to come across or had to read from several unrelated sources to understand. I think of it as a remainder and hopefully it&amp;#39;ll help someone else. They will mainly be about how to program this or that using Cocos2d-x or how to do specific things using OpenGL and GLSL, but there will also be tutorials on asset generation. So far, I&amp;#39;ve decided to start with these:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Blender Tutorial: How to setup a fully automated Isometric tile generation Scene (a tutorial for absolute Blender newbies like me). This is mostly a Python tutorial.&lt;/li&gt;
+&lt;li&gt;How to automate a tilesheet generation in Photoshop and Gimp (using scripts).&lt;/li&gt;
+&lt;li&gt;How to easily make an isometric scene in Cocos2d-x.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I don&amp;#39;t know when I&amp;#39;ll be releasing these tutorials, but the first one is already started, so it certainly wont be six months (I think).&lt;/p&gt;
+
+&lt;p&gt;What&amp;#39;s 100% true is the next post will be about the last complete game Fer and I made in College. I&amp;#39;ll try my best to post it by the end of January, but so far my schedule projections for this blogs are all but a lie. If you like to give some feedback on this, feel free to &lt;a href=&quot;mailto:torresmateo@gmail.com&quot;&gt;e-mail&lt;/a&gt; me. Please refer tho the post you&amp;#39;re talking about. &lt;/p&gt;
+
+&lt;p&gt;Aaaaaaaaand I think that&amp;#39;s all for now, see you next time!&lt;/p&gt;
+</description>
+                                <pubDate>Sun, 04 Jan 2015 00:25:00 +0000</pubDate>
+                                <link>http://blog.torresmateo.com//rants/2015/01/04/hello-world-again.html</link>
+                                <guid isPermaLink="true">http://blog.torresmateo.com//rants/2015/01/04/hello-world-again.html</guid>
+                        </item>
+                
+                        <item>
                                 <title>Backgammon Madness</title>
                                 <description>&lt;p&gt;Artificial Intelligence is the heart of a Player vs. PC game, and there are a lot of options to have a program &lt;em&gt;thinking&lt;/em&gt;. For instance,
 if you have to make a game like &lt;a href=&quot;/evolution/gaming/dev/2014/01/10/ui-design.html&quot;&gt;Bacteria&lt;/a&gt;, the obvious choice is
@@ -410,41 +479,41 @@ some cases, if the CPU got the first turn, it would play a perfect game, and bea
                                 <title>It&#39;s Alive!</title>
                                 <description>&lt;p&gt;At first I didn&amp;#39;t actually think about what to put in here. I mean, it&amp;#39;s been almost 4 years since I started developing web related stuff, 
 improving myself in the latest tools and techniques to make better, faster, stronger blogs, apps, and little systems to (hopefully) improve
-someone&amp;#39;s life by making their everyday work a little easier. All that hand by hand going through my undergraduate courses in Computer 
-Science. But let&amp;#39;s take you a little deeper into some of my thoughts.&lt;/p&gt;
+someone else&amp;#39;s life by making their everyday work a little easier. All that while going through my undergraduate courses in Computer 
+Science. But let&amp;#39;s get a little deeper into some of my thoughts.&lt;/p&gt;
 
 &lt;h1&gt;About Myself&lt;/h1&gt;
 
-&lt;p&gt;I&amp;#39;ve always loved videogames, ever since my dad bought Atari 2600 for me and my brothers, we &amp;quot;wasted away&amp;quot; entire days smashing that red 
+&lt;p&gt;I&amp;#39;ve always loved videogames, ever since my dad bought Atari 2600 for me and my brothers, we &amp;quot;wasted&amp;quot; entire days smashing that red 
 button, pushing harder that joystick as if it would make Pitfall Harry run faster or make Pac-Man reach the super-power fruit sooner. Games 
 taught me a LOT of things, and taught me better than most of my school teachers. &lt;/p&gt;
 
 &lt;p&gt;I discovered I loved learning, and videogames were the perfect way to make me learn. In school all I could see were meaningless numbers and 
-random drawings with the sole objective of turning me and my classmates into some kind of strange zombie-like mindless monster, and thus bore 
-me to death. But back home numbers and letters weren&amp;#39;t random, they were Megaman&amp;#39;s life-points, every 100 coins in Mario means a life and it 
-was USEFUL to make arithmetic stuff just to play better, it was just fun to learn that way!&lt;/p&gt;
+random drawings with the sole objective of turning me and my classmates into zombie-like mindless little monsters. But back home numbers and 
+letters weren&amp;#39;t random at all, they were Megaman&amp;#39;s life-points, every 100 coins in Mario means a life and it was USEFUL to think arithmetic 
+stuff just to play better, it was just FUN to learn that way!&lt;/p&gt;
 
-&lt;p&gt;So, after deciding all I wanted to do in my life was to play videogames, reality punched me right in the face with two facts:&lt;/p&gt;
+&lt;p&gt;So, after deciding that all I wanted to do with my life was to play videogames, reality punched me right in the face with two little facts:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;You can&amp;#39;t just play, you need to eat too! And in order to eat you need some strange and evil paper called money. (this isn&amp;#39;t actually true everywhere, but it is here in Paraguay, where I live) &lt;em&gt;well, but I want to play all my life anyways :/&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;You can&amp;#39;t just play, you need to eat too! And in order to eat you need this evil paper called money. (this isn&amp;#39;t actually true everywhere, but it is here in Paraguay, where I live) &lt;em&gt;well, but I want to play all my life anyways :/&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;Then you need to DO something so you can have the almighty money to buy games and food so you don&amp;#39;t starve and die! &lt;em&gt;fiiiine, I&amp;#39;ll see what I can do u.u&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;So I started thinking what I could do so I could spend most of my time playing and avoid boring stuff like school, teachers, and becoming a 
+&lt;p&gt;So I started thinking of what I could possibly do to spend most of my time playing and avoid boring stuff like school, teachers, and becoming a 
 mindless zombie. I searched and searched and then came up with the most awesome idea of all time:&lt;/p&gt;
 
 &lt;p&gt;What if... if... I.... start MAKING videogames?&lt;/p&gt;
 
 &lt;p&gt;My life was turned upside down, the idea was incredibly GENIUS!! I could almost kiss myself of joy, so I decided to start simple and program 
 something doable, like GTA... and poking here and there in the Internet turned out that making awesome games wasn&amp;#39;t THAT easy. I found stuff 
-like &amp;quot;level design&amp;quot; &amp;quot;shaders&amp;quot; &amp;quot;programming&amp;quot; &amp;quot;platform&amp;quot; &amp;quot;engine&amp;quot; &amp;quot;Direct3D&amp;quot; &amp;quot;3D-Modeling&amp;quot; &amp;quot;CAD&amp;quot; &amp;quot;AI&amp;quot;... I was overwhelmed, frustrated and back 
-to square 1. But this was the thing that could actually make me happy someday!! So I didn&amp;#39;t give up, I started to code and made a LOT of 
+like &amp;quot;level design&amp;quot;, &amp;quot;shaders&amp;quot;, &amp;quot;programming&amp;quot;, &amp;quot;platform&amp;quot;, &amp;quot;engine&amp;quot;, &amp;quot;Direct3D&amp;quot;, &amp;quot;3D-Modeling&amp;quot;, &amp;quot;CAD&amp;quot;, &amp;quot;AI&amp;quot;... I was overwhelmed, frustrated and back 
+to square one. But this was the only thing that could actually make me happy someday!! So I didn&amp;#39;t give up, I started to code and made a LOT of 
 mistakes. So I thought about getting into Computer Science so I could code better, faster and someday make awesome games! I started learning, 
 and learning and coding and doing math and a lot of stuff and got lost in the Computer Science world. Being able to MAKE stuff with random 
 words in notepad made me forget all about my dreams and hopes, I just loved to code!&lt;/p&gt;
 
-&lt;p&gt;In my code-fever I joined a little company and started making websites. They were a team of two designers, one of them was almost able to 
+&lt;p&gt;During my code-fever I joined a little company where my website-making phase started. They were a team of two designers, one of them was almost able to 
 code and it was super fun working with them. We made a lot of blogs, and even some little web apps, the company started to grow and 
 eventually I joined them and even got to own a third of what had been my first job! I was very happy and thought that was the start of my 
 future. But somewhere inside me, the flame for making videogames (which I think is the ultimate form of creativity) wasn&amp;#39;t ready to die yet. 
@@ -454,17 +523,16 @@ them and be able to make a living out of someone else&amp;#39;s smiles and waste
 awesome team in the whole universe and conquer the world funded by our own awesomeness!!&lt;/p&gt;
 
 &lt;p&gt;But life doesn&amp;#39;t always have the same plans as you do, and that start-up went down in what I think was a stupid argument (it wasn&amp;#39;t actually 
-an argument, but I don&amp;#39;t know a better word to describe why we went and decided that it was not possible to work together anymore). So, we 
+an argument, but I don&amp;#39;t know a better word to describe why we decided that it was not possible to work together anymore). So, we 
 and the two programmers we hired finished the pending tasks and each one went his way. I was sad, and didn&amp;#39;t want to fail like that again. I 
-considered the most horrible idea ever, the one thing I hated the most: go and work for some big company in telecom and make tons of money in 
-exchange for almost all your time and brain power, and of course, your soul. And there was I, sad about the &amp;quot;break up&amp;quot; with my buddies and 
+considered the most horrible idea ever, the one thing I hated the most: go and work for some big scary telecom company and make tons of money in 
+exchange for almost all my time and brain power, and of course, my soul. And there was I, sad about the &amp;quot;break up&amp;quot; with my buddies and 
 considering joining the zombie-like brainless army of telecom coders (to be fair, I actually think telecom is awesome and know a lot of 
-amazing people making good work in that field, it&amp;#39;s just not my thing so I rant about it here!). But some of my school friends where there (2 
-of them were working with me in the company I joined) and wanted to make another start-up with me. It was one of the things you say in those 
-school trips when you are almost drunk from the first beer you&amp;#39;ve ever had: &amp;quot;we will work together in the future, and rule the world, and 
-there will only be one country called THE AWESOME REPUBLIC and the only rule will be to play videogames all day, get drunk and eat!&amp;quot;. It 
-turned out the first part of that idea wasn&amp;#39;t that crazy after all. I decided to give that a try, and found myself relieved about not having 
-to go to a scary telecom giant and ugly business, and keeping my soul clean was priceless.&lt;/p&gt;
+amazing people making good work in that field, it&amp;#39;s just not my thing so I rant about it here!). &lt;/p&gt;
+
+&lt;p&gt;After a month of not wanting to do anything work-related. Those two programmers that we had hired in the first start-up told me that they would
+like to start a new company with me. They were my classmates at school. At first I didn&amp;#39;t want to risk to be disappointed again, but in the end 
+I decided to give that a try, and found myself relieved about not having to go to a scary telecom giant and ugly business, and keeping my soul clean was priceless.&lt;/p&gt;
 
 &lt;p&gt;We started almost where we left with the new team, they already knew some of the business mechanics and things were looking good, there was 
 some money coming in, not a lot, but enough to make us feel like we were doing things right. We managed to make some upgrades compared to the 
@@ -488,10 +556,10 @@ feel now that little flame burning stronger.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;I&amp;#39;ve always wanted to create something to share with friends and family and everyone looking to read something about games and how much I 
 love them &amp;lt;3.&lt;/li&gt;
-&lt;li&gt;Its been years now since I&amp;#39;ve told myself &amp;quot;how come you spend almost all of your time coding websites and telling people what to do to get 
+&lt;li&gt;It&amp;#39;s been years now since I&amp;#39;ve told myself &amp;quot;how come you spend almost all of your time coding websites and telling people what to do to get 
 more readers and make interesting stuff but do not do some of that yourself?&amp;quot;. The answer was always a mix of &amp;quot;I don&amp;#39;t have enough time&amp;quot;, 
 &amp;quot;I&amp;#39;m not THAT interesting to start a blog&amp;quot;, &amp;quot;It&amp;#39;s not trivial work&amp;quot; and other excuses. I think this is finally the time where I can stop 
-saying stupid stuff to myself and finally sit and write some.&lt;/li&gt;
+saying stupid stuff to myself and finally sit and write some stuff.&lt;/li&gt;
 &lt;li&gt;It will help me keep a record of my &amp;quot;path&amp;quot; into game design and development, and give the people that help me or stand in my way to read 
 and enjoy (or feel guilty) about.&lt;/li&gt;
 &lt;li&gt;To keep me on track. If you&amp;#39;re reading this, you&amp;#39;ve seen how easily I get distracted by other stuff that seems to be interesting. I think (
