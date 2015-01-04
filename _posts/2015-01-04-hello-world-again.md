@@ -61,7 +61,7 @@ I'll be writing some tutorials on some topics that I had a very difficult time t
 
 I don't know when I'll be releasing these tutorials, but the first one is already started, so it certainly wont be six months (I think).
 
-What's 100% true is the next post will be about the last complete game Fer and I made in College. I'll try my best to post it by the end of January, but so far my schedule projections for this blogs are nothing but a lie. If you like to give some feedback on this, feel free to [e-mail](mailto:torresmateo@gmail.com) me. Please refer tho the post you're talking about. 
+What's 100% true is the next post will be about the last complete game Fer and I made in College. I'll try my best to post it by the end of January, but so far my schedule projections for this blogs are nothing but lies. If you like to give some feedback on this, feel free to [e-mail](mailto:torresmateo@gmail.com) me. Please refer tho the post you're talking about. 
 
 Aaaaaaaaand I think that's all for now, see you next time!
 
