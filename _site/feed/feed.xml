@@ -7,6 +7,90 @@
                 <atom:link href="http://blog.torresmateo.com/feed.xml" rel="self" type="application/rss+xml" />
                 
                         <item>
+                                <title>Ingeniería, la vida... y World of Warcraft</title>
+                                <description>&lt;p&gt;Buenas a todos!!&lt;/p&gt;
+
+&lt;p&gt;Después de 5 meses y alguito decidí invertir un poco de tiempo en renovar el blog y justificar lo que gasté en el dominio!&lt;/p&gt;
+
+&lt;p&gt;Pasaron muchas cosas desde enero y van a ver en las siguientes secciones todo lo que estuve haciendo desde enero hasta acá, incluyendo algunas cosas de antes de enero que
+no incluí en otros posts porque no quería mezclar tanto temas generales con desarrollo de videojuegos y cosas de informática en general.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Antes de seguir con el post, enumero los cambios al blog que vinieron con este post!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Mejora general del estilo (desde mi punto de vista de programador!).&lt;/li&gt;
+&lt;li&gt;Sección en Español (para este tipo de posts que son más para mi familia/amigos que manuales de informática y cosas así). Prometo arreglar eventualmente los errores ortográficos!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Algunas cosas van a cambiar en el futuro, sobre todo cuando decida dedicarme un poco más a la parte visual del blog. Por ahora me parece cómodo de leer :)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1&gt;Ingeniería!&lt;/h1&gt;
+
+&lt;p&gt;Altas probabilidades de que si me conocés sabes que hace mas o menos un mes finalmente defendí la tesis :D. Fue un proceso largo (un poco más de dos años)
+y al principio los resultados eran poco favorables y desanimadores, pero finalmente defendí y saqué la máxima calificación posible. &lt;/p&gt;
+
+&lt;p&gt;Como este no es un post técnico, simplemente voy a listar algunas cosas que aprendí de la &lt;em&gt;experiencia&lt;/em&gt; de haber hecho la tesis&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Escribir el libro desde el principio&lt;/strong&gt;: El primer consejo de Benjamín Barán (mi excelente tutor!) y que como todo novato traté de seguir la primera
+semana pero no había caso. &lt;/p&gt;
+
+&lt;p&gt;Escribir el libro de tesis (después de terminar todo lo otro) es una de esas actividades en la vida que hacen que literalmente 
+cualquier &lt;em&gt;otra&lt;/em&gt; actividad se vuelva inmediatamente algo infinitamente fascinante. Yo atribuyo esto al hecho de que uno ya estuvo lidiando con el tema por tanto
+tiempo y desde tantos puntos de vista, que volver a encarar el problema resuelto pierde todo el atractivo y la emoción de todo lo que uno ignora. &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;A la madrugada se programa mejor&lt;/strong&gt;: Al menos en mi caso. Infinita pelea con Mamá y Papá (&amp;quot;voy a dormir temprano!! te juro!!&amp;quot;). &lt;/p&gt;
+
+&lt;p&gt;Esto es algo personal y estoy 100% seguro de que cada uno tiene su horario de iluminación y lastimosamente el mío es entre las 2 y 4 de la mañana. No sé como
+explicar la sensación de silencio y quietud que solamente se puede sentir a estas horas de la madrugada. Para mí es como que toda la ciudad se calla y me deja
+pensar con más claridad. No hay interrupciones... no hay ruidos... no hay apuros... sinceramente hasta ahora nunca logro concentrarme tan profundamente en otro
+horario.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;TODOS te pueden dar feedback SUPER VALIOSO!&lt;/strong&gt;: Fue una sorpresa cuando me di cuenta de esto. &lt;/p&gt;
+
+&lt;p&gt;Mi tema de tesis es &amp;quot;Optimización por Enjambre de Partículas en Problemas de Muchos Objetivos&amp;quot;, lo que &amp;quot;simplificado y resumido&amp;quot; significa utilizar un programa
+que simula un montón (enjambre) de elementos que se llaman partículas, para tratar de resolver problemas de muchas dimensiones (osea... más complejos que otros 
+problemas), y esto lo hace inspirado en el movimiento de animales como las abejas y aves que exploran una zona de manera colectiva. Prueben decirle eso a 
+cualquiera y van a conocer la expresión facial que expresa con total claridad &amp;quot;te volviste loco chera&amp;#39;a&amp;quot;.&lt;/p&gt;
+
+&lt;p&gt;Aun así, cuando estás con un dilema específico, la gente que está dispuesta a escucharte un rato y dejarte traducir toda la jerga a conceptos más simples puede 
+ayudarte de una manera impresionante a ver otro punto de vista que, por estar muy metido en el problema, no te resultaba obvio. Me cuesta dar un ejemplo específico
+que ilustre esto de forma espectacular, pero para mí uno de los más memorables fue hablar con Rocio (mi hermana) acerca de un tema nada relacionado a la tesis.
+No recuerdo el tema de conversación exacto, pero recuerdo que ella me dijo la frase &amp;quot;todos esos frasquitos tienen un uso, no importa si es chico, por lo menos una
+tierrita entra&amp;quot;. Esa frase arbitraria por algún motivo hizo &lt;em&gt;click&lt;/em&gt; en mi cabeza y me llevó a la solución de un bug que tenía en mi representación de hipercubos
+n-dimensionales en python.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;¡Investigar es divertido!&lt;/strong&gt;: Este es un punto simple de explicar para mí. Cuando era chiquito y no sabía cómo funcionaba algo, siempre le preguntaba a Papá 
+&amp;quot;¿cómo funciona la heladera? porque... osea... CREA frio ¿entendés?&amp;quot; &amp;quot;¿la fotocopiadora tiene un ojo o algo así verdad?&amp;quot; &amp;quot;¿cómo lo que las llaves son todas parecidas
+pero una nomas abre cada candado?&amp;quot;. Era prácticamente un juego para mi... Investigar es la expansión de ese juego!!&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;El #GAMEDEVPY&lt;/h1&gt;
+
+&lt;p&gt;Yo defendía la tesis un lunes... y el jueves de esa misma semana tenía que dar una charla acerca de música para videojuegos en un evento organizado por IGDA Paraguay.&lt;/p&gt;
+
+&lt;p&gt;El evento salió muchísimo mejor de lo que esperába todos, y estuve mostrando los juegos que hice con Fer (para saber quién es Fer, lee los posts viejos!). Fue 
+muchísima gente e incluso ese fin de semana hablamos del evento en radios locales! Espero que pronto tengamos eventos de este tipo nuevamente!&lt;/p&gt;
+
+&lt;p&gt;Para evitar alargar mucho este (ya medio kilométrico post) les dejo el &lt;a href=&quot;https://youtu.be/1iDo7U9VR7Y&quot;&gt;video&lt;/a&gt; de la charla y &lt;a href=&quot;https://www.facebook.com/media/set/?set=a.443927162434811.1073741833.301346146692914&amp;amp;type=3&quot;&gt;fotos&lt;/a&gt; del evento!&lt;/p&gt;
+
+&lt;h1&gt;La vida después de la tesis (World of Warcraft)&lt;/h1&gt;
+
+&lt;p&gt;Una breve lista de las cosas principales estoy haciendo por ahora:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Investigando el mismo tema de la tesis.&lt;/li&gt;
+&lt;li&gt;Trabajando a tiempo completo.&lt;/li&gt;
+&lt;li&gt;Preparando documentos y cosas para una posible beca.&lt;/li&gt;
+&lt;li&gt;Programando videojuegos! Con la gente de &lt;a href=&quot;http://arsisteam.com&quot;&gt;arsis&lt;/a&gt;, estamos preparando una versión mucho más increíble de Bacterias (quizás con otro nombre!).&lt;/li&gt;
+&lt;li&gt;Jugando! (Principalmente World of Warcraft, pero de una manera MUCHO más responsable y sensata que cuando estaba en el colegio!).&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                                <pubDate>Wed, 17 Jun 2015 02:17:00 -0400</pubDate>
+                                <link>http://blog.torresmateo.com//rants/es/2015/06/17/ingenieria-la-vida-y-wow.html</link>
+                                <guid isPermaLink="true">http://blog.torresmateo.com//rants/es/2015/06/17/ingenieria-la-vida-y-wow.html</guid>
+                        </item>
+                
+                        <item>
                                 <title>Hello World! (again)</title>
                                 <description>&lt;p&gt;Hello again my fellow readers!! (Hi Mom!)&lt;/p&gt;
 
@@ -18,7 +102,7 @@
 
 &lt;h1&gt;College and Work Related Stuff&lt;/h1&gt;
 
-&lt;p&gt;I&amp;#39;ve been working on my thesis and it seems I&amp;#39;m on the last mile of that rode. I&amp;#39;ve published a paper in the process, which I&amp;#39;ll link in a future post. It&amp;#39;s about solving multi-dimensional optimisation problems using algorithms based on a particle swarm meta-heuristic. Cool right?&lt;/p&gt;
+&lt;p&gt;I&amp;#39;ve been working on my thesis and it seems I&amp;#39;m on the last mile of that road. I&amp;#39;ve published a paper in the process, which I&amp;#39;ll link in a future post. It&amp;#39;s about solving multi-dimensional optimisation problems using algorithms based on a particle swarm meta-heuristic. Cool right?&lt;/p&gt;
 
 &lt;p&gt;I&amp;#39;ve also been working in web development as always, it&amp;#39;s still fun, thanks for asking :D&lt;/p&gt;
 
@@ -30,7 +114,7 @@
 
 &lt;p&gt;Here in Paraguay the game development industry is almost nonexistent. I mean, there are many game developers and a lot of them are incredibly capable, but sadly there is almost no market here and we have some serious limitations like not being able to sell in Google Play (unless we partner with someone from another country). &lt;/p&gt;
 
-&lt;p&gt;The IGDA (International Game Developers Association) is the largest non-profit membership organization serving individuals that create games and now Paraguay is a proud member with it&amp;#39;s own chapter. We are starting making some noise here and for the first time (that I know of) we&amp;#39;re getting some serious attention from a lot of people. The videogame market is growing and a lot of developers, designers and artists are getting to know each other and it seems to me that very soon we&amp;#39;ll see Paraguayan games shining out there. You can get updates on our chapter &lt;a href=&quot;http://facebook.com/igdapy&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The IGDA (International Game Developers Association) is the largest non-profit membership organization serving individuals that create games and now Paraguay is a proud member with its own chapter. We are starting making some noise here and for the first time (that I know of) we&amp;#39;re getting some serious attention from a lot of people. The videogame market is growing and a lot of developers, designers and artists are getting to know each other and it seems to me that very soon we&amp;#39;ll see Paraguayan games shining out there. You can get updates on our chapter &lt;a href=&quot;http://facebook.com/igdapy&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I&amp;#39;ve been given the honor of collaborating on this amazing project as secretary!&lt;/p&gt;
 
@@ -40,7 +124,7 @@
 
 &lt;h3&gt;Wolfenstein 3D Clone&lt;/h3&gt;
 
-&lt;p&gt;This project started as a way to teach myself &amp;quot;proper&amp;quot; 3D and OpenGL. I though &amp;quot;I should start with the very basic&amp;quot;. I know an infinite number of clones of this game are already out there, but I don&amp;#39;t care, the process was unbelievably fun and I learned a lot. I&amp;#39;m not sure about releasing the game because there&amp;#39;s nothing really exciting about the game itself. Also, I didn&amp;#39;t make a lot of effort in the assets of the game and it doesn&amp;#39;t look very pretty. I&amp;#39;m not sure... maybe I&amp;#39;ll do it in the future. Who knows?&lt;/p&gt;
+&lt;p&gt;This project started as a way to teach myself &amp;quot;proper&amp;quot; 3D and OpenGL. I though &amp;quot;I should start with the very basic&amp;quot;. I know an infinite number of clones of this game are already out there, but I don&amp;#39;t care, the process was unbelievably fun and I learned a lot. I&amp;#39;m not sure about releasing this because there&amp;#39;s nothing really exciting about the game itself. Also, I didn&amp;#39;t make a lot of effort in the assets of the game and it doesn&amp;#39;t look very pretty. I&amp;#39;m not sure... maybe I&amp;#39;ll do it in the future. Who knows?&lt;/p&gt;
 
 &lt;h3&gt;Mini Engine&lt;/h3&gt;
 
@@ -60,17 +144,17 @@
 
 &lt;ol&gt;
 &lt;li&gt;Blender Tutorial: How to setup a fully automated Isometric tile generation Scene (a tutorial for absolute Blender newbies like me). This is mostly a Python tutorial.&lt;/li&gt;
-&lt;li&gt;How to automate a tilesheet generation in Photoshop and Gimp (using scripts).&lt;/li&gt;
+&lt;li&gt;How to automate a tilesheet generation in Photoshop and Gimp for Tiled (using scripts).&lt;/li&gt;
 &lt;li&gt;How to easily make an isometric scene in Cocos2d-x.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;I don&amp;#39;t know when I&amp;#39;ll be releasing these tutorials, but the first one is already started, so it certainly wont be six months (I think).&lt;/p&gt;
 
-&lt;p&gt;What&amp;#39;s 100% true is the next post will be about the last complete game Fer and I made in College. I&amp;#39;ll try my best to post it by the end of January, but so far my schedule projections for this blogs are all but a lie. If you like to give some feedback on this, feel free to &lt;a href=&quot;mailto:torresmateo@gmail.com&quot;&gt;e-mail&lt;/a&gt; me. Please refer tho the post you&amp;#39;re talking about. &lt;/p&gt;
+&lt;p&gt;What&amp;#39;s 100% true is the next post will be about the last complete game Fer and I made in College. I&amp;#39;ll try my best to post it by the end of January, but so far my schedule projections for this blogs are nothing but lies. If you like to give some feedback on this, feel free to &lt;a href=&quot;mailto:torresmateo@gmail.com&quot;&gt;e-mail&lt;/a&gt; me. Please refer tho the post you&amp;#39;re talking about. &lt;/p&gt;
 
 &lt;p&gt;Aaaaaaaaand I think that&amp;#39;s all for now, see you next time!&lt;/p&gt;
 </description>
-                                <pubDate>Sun, 04 Jan 2015 00:25:00 +0000</pubDate>
+                                <pubDate>Sun, 04 Jan 2015 03:25:00 -0300</pubDate>
                                 <link>http://blog.torresmateo.com//rants/2015/01/04/hello-world-again.html</link>
                                 <guid isPermaLink="true">http://blog.torresmateo.com//rants/2015/01/04/hello-world-again.html</guid>
                         </item>
@@ -162,7 +246,7 @@ Bacteria, but the main reasons were:&lt;/p&gt;
 
 &lt;p&gt;and as always... the &lt;a href=&quot;https://github.com/torresmateo/Backgammon&quot;&gt;code&lt;/a&gt;.&lt;/p&gt;
 </description>
-                                <pubDate>Wed, 19 Mar 2014 00:10:00 +0000</pubDate>
+                                <pubDate>Wed, 19 Mar 2014 03:10:00 -0300</pubDate>
                                 <link>http://blog.torresmateo.com//evolution/gaming/dev/2014/03/19/backgammon.html</link>
                                 <guid isPermaLink="true">http://blog.torresmateo.com//evolution/gaming/dev/2014/03/19/backgammon.html</guid>
                         </item>
@@ -269,7 +353,7 @@ video of myself showing what I think are the best parts of this game:&lt;/p&gt;
 part is the intelligence. I plan to make another video for that post, since it&amp;#39;s much easier for me to show the features that way, and maybe
 it&amp;#39;s a better experience to you to actually see the interactivity and other things that can&amp;#39;t be seen properly in still images.&lt;/p&gt;
 </description>
-                                <pubDate>Tue, 04 Feb 2014 01:00:00 +0000</pubDate>
+                                <pubDate>Tue, 04 Feb 2014 03:00:00 -0300</pubDate>
                                 <link>http://blog.torresmateo.com//evolution/gaming/dev/2014/02/04/bacteria-part-2.html</link>
                                 <guid isPermaLink="true">http://blog.torresmateo.com//evolution/gaming/dev/2014/02/04/bacteria-part-2.html</guid>
                         </item>
@@ -321,7 +405,7 @@ in an hexagonal board.&lt;/li&gt;
 
 &lt;p&gt;Programming the game logic wasn&amp;#39;t really hard. In the first day we had a working console implementation and we could &amp;quot;play&amp;quot; the
 game having absolutely no fun because we had to write every command to make a simple move, something like&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;multiply cell A8 to A9
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;multiply cell A8 to A9
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;and the output was really awful, a lot of debug using &lt;code&gt;printf&lt;/code&gt; and also tons of (apparently) meaningless garbage. But we were enjoying
 the development proccess like a child who gets a Nintendo 64 on Christmas! When it was clear that the logic was done, we were ready
@@ -368,7 +452,7 @@ in a tutorial-like format.&lt;/p&gt;
 
 &lt;p&gt;Aaaaaaaaaaaaaaaaaaand last, but not least... here&amp;#39;s the &lt;a href=&quot;https://github.com/torresmateo/Bacteria&quot;&gt;code&lt;/a&gt;.&lt;/p&gt;
 </description>
-                                <pubDate>Fri, 10 Jan 2014 22:10:00 +0000</pubDate>
+                                <pubDate>Fri, 10 Jan 2014 19:10:00 -0300</pubDate>
                                 <link>http://blog.torresmateo.com//evolution/gaming/dev/2014/01/10/ui-design.html</link>
                                 <guid isPermaLink="true">http://blog.torresmateo.com//evolution/gaming/dev/2014/01/10/ui-design.html</guid>
                         </item>
@@ -444,7 +528,7 @@ among our classmates, our program was one of the best.&lt;/p&gt;
 We started with the airplanes, and then the bombs, and then firing at everything that we found. &lt;/p&gt;
 
 &lt;p&gt;This is one of the spying layouts, it maximizes the spied area:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;|a|_|_|_|X|X|X|_|_|b|
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;|a|_|_|_|X|X|X|_|_|b|
 |_|A|_|_|X|E|X|_|B|_|
 |_|_|X|_|X|X|X|X|_|_|
 |X|X|X|X|_|_|X|_|_|_|
@@ -470,7 +554,7 @@ some cases, if the CPU got the first turn, it would play a perfect game, and bea
 
 &lt;p&gt;Both programs were written in C, and using only &lt;em&gt;ONE FILE&lt;/em&gt; per project (&lt;code&gt;main.c&lt;/code&gt;)... I know, that&amp;#39;s bad. But hey!! We were absolute beginners!!&lt;/p&gt;
 </description>
-                                <pubDate>Fri, 20 Dec 2013 11:17:00 +0000</pubDate>
+                                <pubDate>Fri, 20 Dec 2013 08:17:00 -0300</pubDate>
                                 <link>http://blog.torresmateo.com//evolution/gaming/dev/2013/12/20/baby-steps.html</link>
                                 <guid isPermaLink="true">http://blog.torresmateo.com//evolution/gaming/dev/2013/12/20/baby-steps.html</guid>
                         </item>
@@ -570,7 +654,7 @@ few hours a week writing this and maybe some of my keyboard’s painting.&lt;/li
 &lt;p&gt;That being said... I will write one entry every two weeks (more or less). I&amp;#39;ll try to keep them simple and easy to read for non-geeks and non-
 programmers and give at least a hint of what&amp;#39;s going on.&lt;/p&gt;
 </description>
-                                <pubDate>Fri, 13 Dec 2013 11:17:00 +0000</pubDate>
+                                <pubDate>Fri, 13 Dec 2013 08:17:00 -0300</pubDate>
                                 <link>http://blog.torresmateo.com//rants/2013/12/13/first-experiences.html</link>
                                 <guid isPermaLink="true">http://blog.torresmateo.com//rants/2013/12/13/first-experiences.html</guid>
                         </item>

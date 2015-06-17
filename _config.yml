@@ -3,3 +3,4 @@ markdown: redcarpet
 pygments: true
 description: A place to find rants and some videogame dev stuff!
 url: http://blog.torresmateo.com
+timezone: "America/Asuncion"

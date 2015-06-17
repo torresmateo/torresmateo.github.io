@@ -1,0 +1,13 @@
+<div id="title">
+    <h1><a href="/">{{ site.name }}</a></h1>
+    <p>A place to find rants and some videogame dev stuff!</p>
+    {% for page in site.pages %}
+        {% if page.categories contains 'es' %}
+        <p><a href="{{ page.url }}">blog en castellano</a></p>
+        {% endif %}
+    {% endfor %}
+    <hr>
+    <span class="credits left">GitHub: <a href="https://github.com/torresmateo">torresmateo</a></span>
+    <span class="credits right">twitter: <a href="http://twitter.com/#!/torresmateo">torresmateo</a></span>
+</div>
+

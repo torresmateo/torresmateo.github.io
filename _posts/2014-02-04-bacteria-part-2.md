@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Bacteria, Part 2: Gameplay, Drag & Drop and other Stuff"
-date:   2014-02-04 01:00:00
+date:   2014-02-04 06:00:00
 categories: evolution gaming dev
 ---
 

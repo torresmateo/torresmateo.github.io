@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello World! (again)"
-date:   2015-01-04 00:25:00
+date:   2015-01-04 06:25:00
 categories: rants
 ---
 
