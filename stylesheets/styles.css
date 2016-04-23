@@ -574,7 +574,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: #577d96;
   margin: 0 0 10px;
-  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'chaparral-pro', 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
@@ -584,7 +584,7 @@ p, ul, ol, table, pre, dl {
 
 h1, h2, h3 {
   line-height: 1.2;
-  margin-bottom:1em;
+/*  margin-bottom:1em;*/
 }
 
 h1 {
@@ -859,6 +859,13 @@ section #title .credits.left {
 section #title .credits.right {
   float: right;
 }
+
+section .date{
+    color:white;
+    text-align:right;
+
+}
+
 
 @media print, screen and (max-width: 720px) {
   #title .credits {

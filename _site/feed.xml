@@ -7,6 +7,41 @@
                 <atom:link href="http://blog.torresmateo.com/feed.xml" rel="self" type="application/rss+xml" />
                 
                         <item>
+                                <title>Un buen juez</title>
+                                <description>&lt;p&gt;Unos días atrás estuve conversando con unos amigos sobre cualquier pavada en un grupo de WhatsApp. No recuerdo exactamente cómo, pero en algún momento la conversación se torna en una conversación acerca de como está el país y se inicia un ping pong de ideas. Convencionalmente esto terminaría en un ping pong de ideas políticas con diferentes grados de tendencias a la derecha o izquierda... pero no esta vez. &lt;/p&gt;
+
+&lt;p&gt;Hablamos de las ventajas y desventajas de la forma en que se maneja la justicia y se resuelven los conflictos en Paraguay, y como siempre esta discusión estaba bajo la sombra de la siempre presente corrupción y amiguismo que acompaña en la vida real todo el proceso.&lt;/p&gt;
+
+&lt;p&gt;En algún punto de la conversación propuse que se deje en manos de una computadora la resolución de casos simples y cuyos resultados sean obvios...&lt;/p&gt;
+
+&lt;p&gt;¿Una locura... verdad? &lt;/p&gt;
+
+&lt;p&gt;Este post es acerca de porqué yo creo que esto no es tan loco como parece y algunas ideas iniciales de cómo podría implementarse un &amp;quot;juez electrónico&amp;quot;. Me enfoco en los principales obstáculos de la implementación. &lt;/p&gt;
+
+&lt;h1&gt;La lógica de la justicia (la ley)&lt;/h1&gt;
+
+&lt;p&gt;Las leyes se basan en la lógica... En particular, en la lógica jurídica. La lógica jurídica a su vez depende del lenguaje en que están escritos los artículos y esta por supuesto sujeta a interpretación debido a las ambigüedades del lenguaje. Esto en mi opinión es razonable si asumimos que el juez es incorruptible e imparcial. En la vida real (y especialmente en Paraguay) esto no ocurre. Por lo tanto, se requiere de una lógica formal y no contradictoria que pueda modelar la ley actual.&lt;/p&gt;
+
+&lt;p&gt;Ciertamente modelar la lógica jurídica con artículos muy generales y sus miles de posibles interpretaciones es una tarea compleja. Pero el juez digital no precisa de esto, ya que existe una parte no contradictoria en la ley que es posible modelar como una lógica formal. Aunque el juez digital no pueda resolver los casos más complejos, podría alivianar la carga a seres humanos o al menos dar sugerencias fundamentadas en la ley en conflictos menores. &lt;/p&gt;
+
+&lt;p&gt;En mi opinión esto es más que suficiente para mejorar sustancialmente la justicia en Paraguay.&lt;/p&gt;
+
+&lt;h1&gt;Machine Learning y Big Data&lt;/h1&gt;
+
+&lt;p&gt;La ciencia de la computación en estos días es tal que permite utilizar la experiencia en otros campos para tomar mejores decisiones. En sus inicios esto estaba limitado por la escasez de datos disponibles para inferir cualquier tipo de patrón. &lt;/p&gt;
+
+&lt;p&gt;Hoy en día sin embargo, la cantidad de información disponible en cualquier campo de investigación es sin duda abrumadora para cualquier ser humano. Pero se ha demostrado (con &lt;a href=&quot;https://en.wikipedia.org/wiki/AlphaGo&quot;&gt;AlphaGo&lt;/a&gt; por ejemplo) que se vuelve posible este tipo de decisiones de forma exitosa.&lt;/p&gt;
+
+&lt;h1&gt;El juez perfecto&lt;/h1&gt;
+
+&lt;p&gt;Quizás el punto principal y más importante del juez digital es que no propongo un juez perfecto. Sólo propongo un juez que sea más justo y eficiente que el sistema actual. Estoy muy de acuerdo en que la tarea de hacer un juez automático que compita con un ser humano incorruptible es casi imposible. Pero teniendo en cuenta que hoy en día la justicia en Paraguay es en muchos casos un absurdo extremo, no veo porqué no darle una oportunidad a esta idea. Al final de cuentas, a este juez no se le va a poder comprar.&lt;/p&gt;
+</description>
+                                <pubDate>Sat, 23 Apr 2016 07:17:00 +0100</pubDate>
+                                <link>http://blog.torresmateo.com//es/opinion/2016/04/23/un-buen-juez.html</link>
+                                <guid isPermaLink="true">http://blog.torresmateo.com//es/opinion/2016/04/23/un-buen-juez.html</guid>
+                        </item>
+                
+                        <item>
                                 <title>First Month in the UK</title>
                                 <description>&lt;p&gt;It&amp;#39;s been a while since I updated this thingy... Hello!&lt;/p&gt;
 
@@ -51,7 +86,7 @@ This is.. a ... tuna thing! (or tuna cake, or tuna bread). I tried in the first 
 
 &lt;p&gt;People here is amazing, right now we are mostly from Paraguay (check the &amp;quot;people&amp;quot; section in the website) and I feel very good working with everybody! Also, I get to work in the same place as the creator of the amazing tool &lt;a href=&quot;http://igraph.org&quot;&gt;igraph&lt;/a&gt; used to work, which is AWESOME!!&lt;/p&gt;
 </description>
-                                <pubDate>Mon, 09 Nov 2015 17:19:00 -0300</pubDate>
+                                <pubDate>Mon, 09 Nov 2015 20:19:00 +0000</pubDate>
                                 <link>http://blog.torresmateo.com//life/uk/2015/11/09/first-month-in-the-uk.html</link>
                                 <guid isPermaLink="true">http://blog.torresmateo.com//life/uk/2015/11/09/first-month-in-the-uk.html</guid>
                         </item>
@@ -101,7 +136,7 @@ para la vida.&lt;/p&gt;
 &lt;p&gt;Advertencia: Este es un post basado en opiniones y una investigación informal y poco profunda de un tema que no conozco muy bien.&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
-                                <pubDate>Tue, 21 Jul 2015 02:17:00 -0400</pubDate>
+                                <pubDate>Tue, 21 Jul 2015 07:17:00 +0100</pubDate>
                                 <link>http://blog.torresmateo.com//es/opinion/2015/07/21/quedarse-colgado.html</link>
                                 <guid isPermaLink="true">http://blog.torresmateo.com//es/opinion/2015/07/21/quedarse-colgado.html</guid>
                         </item>
@@ -185,7 +220,7 @@ muchísima gente e incluso ese fin de semana hablamos del evento en radios local
 &lt;li&gt;Jugando! (Principalmente World of Warcraft, pero de una manera MUCHO más responsable y sensata que cuando estaba en el colegio!).&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-                                <pubDate>Wed, 17 Jun 2015 02:17:00 -0400</pubDate>
+                                <pubDate>Wed, 17 Jun 2015 07:17:00 +0100</pubDate>
                                 <link>http://blog.torresmateo.com//es/rants/2015/06/17/ingenieria-la-vida-y-wow.html</link>
                                 <guid isPermaLink="true">http://blog.torresmateo.com//es/rants/2015/06/17/ingenieria-la-vida-y-wow.html</guid>
                         </item>
@@ -254,7 +289,7 @@ muchísima gente e incluso ese fin de semana hablamos del evento en radios local
 
 &lt;p&gt;Aaaaaaaaand I think that&amp;#39;s all for now, see you next time!&lt;/p&gt;
 </description>
-                                <pubDate>Sun, 04 Jan 2015 03:25:00 -0300</pubDate>
+                                <pubDate>Sun, 04 Jan 2015 06:25:00 +0000</pubDate>
                                 <link>http://blog.torresmateo.com//rants/2015/01/04/hello-world-again.html</link>
                                 <guid isPermaLink="true">http://blog.torresmateo.com//rants/2015/01/04/hello-world-again.html</guid>
                         </item>
@@ -346,7 +381,7 @@ Bacteria, but the main reasons were:&lt;/p&gt;
 
 &lt;p&gt;and as always... the &lt;a href=&quot;https://github.com/torresmateo/Backgammon&quot;&gt;code&lt;/a&gt;.&lt;/p&gt;
 </description>
-                                <pubDate>Wed, 19 Mar 2014 03:10:00 -0300</pubDate>
+                                <pubDate>Wed, 19 Mar 2014 06:10:00 +0000</pubDate>
                                 <link>http://blog.torresmateo.com//evolution/gaming/dev/2014/03/19/backgammon.html</link>
                                 <guid isPermaLink="true">http://blog.torresmateo.com//evolution/gaming/dev/2014/03/19/backgammon.html</guid>
                         </item>
@@ -453,7 +488,7 @@ video of myself showing what I think are the best parts of this game:&lt;/p&gt;
 part is the intelligence. I plan to make another video for that post, since it&amp;#39;s much easier for me to show the features that way, and maybe
 it&amp;#39;s a better experience to you to actually see the interactivity and other things that can&amp;#39;t be seen properly in still images.&lt;/p&gt;
 </description>
-                                <pubDate>Tue, 04 Feb 2014 03:00:00 -0300</pubDate>
+                                <pubDate>Tue, 04 Feb 2014 06:00:00 +0000</pubDate>
                                 <link>http://blog.torresmateo.com//evolution/gaming/dev/2014/02/04/bacteria-part-2.html</link>
                                 <guid isPermaLink="true">http://blog.torresmateo.com//evolution/gaming/dev/2014/02/04/bacteria-part-2.html</guid>
                         </item>
@@ -505,8 +540,8 @@ in an hexagonal board.&lt;/li&gt;
 
 &lt;p&gt;Programming the game logic wasn&amp;#39;t really hard. In the first day we had a working console implementation and we could &amp;quot;play&amp;quot; the
 game having absolutely no fun because we had to write every command to make a simple move, something like&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;multiply cell A8 to A9
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;multiply cell A8 to A9
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;and the output was really awful, a lot of debug using &lt;code&gt;printf&lt;/code&gt; and also tons of (apparently) meaningless garbage. But we were enjoying
 the development proccess like a child who gets a Nintendo 64 on Christmas! When it was clear that the logic was done, we were ready
 for te REAL FUN!&lt;/p&gt;
@@ -552,7 +587,7 @@ in a tutorial-like format.&lt;/p&gt;
 
 &lt;p&gt;Aaaaaaaaaaaaaaaaaaand last, but not least... here&amp;#39;s the &lt;a href=&quot;https://github.com/torresmateo/Bacteria&quot;&gt;code&lt;/a&gt;.&lt;/p&gt;
 </description>
-                                <pubDate>Fri, 10 Jan 2014 19:10:00 -0300</pubDate>
+                                <pubDate>Fri, 10 Jan 2014 22:10:00 +0000</pubDate>
                                 <link>http://blog.torresmateo.com//evolution/gaming/dev/2014/01/10/ui-design.html</link>
                                 <guid isPermaLink="true">http://blog.torresmateo.com//evolution/gaming/dev/2014/01/10/ui-design.html</guid>
                         </item>
@@ -628,7 +663,7 @@ among our classmates, our program was one of the best.&lt;/p&gt;
 We started with the airplanes, and then the bombs, and then firing at everything that we found. &lt;/p&gt;
 
 &lt;p&gt;This is one of the spying layouts, it maximizes the spied area:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;|a|_|_|_|X|X|X|_|_|b|
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;|a|_|_|_|X|X|X|_|_|b|
 |_|A|_|_|X|E|X|_|B|_|
 |_|_|X|_|X|X|X|X|_|_|
 |X|X|X|X|_|_|X|_|_|_|
@@ -638,7 +673,7 @@ We started with the airplanes, and then the bombs, and then firing at everything
 |_|_|X|_|_|_|_|X|_|_|
 |_|X|_|_|_|_|_|_|X|_|
 |X|_|_|_|_|_|_|_|_|X|
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;And it looked like this:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/baby-steps/battleship.png&quot; alt=&quot;&quot; title=&quot;Our First AI!!&quot;&gt;&lt;/p&gt;
@@ -654,7 +689,7 @@ some cases, if the CPU got the first turn, it would play a perfect game, and bea
 
 &lt;p&gt;Both programs were written in C, and using only &lt;em&gt;ONE FILE&lt;/em&gt; per project (&lt;code&gt;main.c&lt;/code&gt;)... I know, that&amp;#39;s bad. But hey!! We were absolute beginners!!&lt;/p&gt;
 </description>
-                                <pubDate>Fri, 20 Dec 2013 08:17:00 -0300</pubDate>
+                                <pubDate>Fri, 20 Dec 2013 11:17:00 +0000</pubDate>
                                 <link>http://blog.torresmateo.com//evolution/gaming/dev/2013/12/20/baby-steps.html</link>
                                 <guid isPermaLink="true">http://blog.torresmateo.com//evolution/gaming/dev/2013/12/20/baby-steps.html</guid>
                         </item>
@@ -754,7 +789,7 @@ few hours a week writing this and maybe some of my keyboard’s painting.&lt;/li
 &lt;p&gt;That being said... I will write one entry every two weeks (more or less). I&amp;#39;ll try to keep them simple and easy to read for non-geeks and non-
 programmers and give at least a hint of what&amp;#39;s going on.&lt;/p&gt;
 </description>
-                                <pubDate>Fri, 13 Dec 2013 08:17:00 -0300</pubDate>
+                                <pubDate>Fri, 13 Dec 2013 11:17:00 +0000</pubDate>
                                 <link>http://blog.torresmateo.com//rants/2013/12/13/first-experiences.html</link>
                                 <guid isPermaLink="true">http://blog.torresmateo.com//rants/2013/12/13/first-experiences.html</guid>
                         </item>
