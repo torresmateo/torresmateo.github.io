@@ -2,7 +2,7 @@
     <h1><a href="/">{{ site.name }}</a></h1>
     <p>A place to find rants and some videogame dev stuff!</p>
     {% for page in site.pages %}
-        {% if page.categories contains 'es' %}
+        {% if page.categories contains 'ES' %}
         <p><a href="{{ page.url }}">blog en castellano</a></p>
         {% endif %}
     {% endfor %}
