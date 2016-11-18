@@ -5,3 +5,4 @@ description: A place to find rants and some videogame dev stuff!
 url: http://blog.torresmateo.com
 #url: http://localhost:4000/ 
 timezone: "Europe/London"
+permalink: /:title/
