@@ -7,6 +7,101 @@
                 <atom:link href="http://blog.torresmateo.com/feed.xml" rel="self" type="application/rss+xml" />
                 
                         <item>
+                                <title>Particle WHAT?!</title>
+                                <description>&lt;p&gt;One of the most frequent questions that I get is: &amp;quot;What is it that you did before?&amp;quot;. And the answer to that question always ends up in what my thesis was about. &lt;/p&gt;
+
+&lt;p&gt;So, the title of my thesis is &amp;quot;Particle Swarm Optimisation for solving many-objective problems&amp;quot;. This most often than not results in people just saying something like &amp;quot;riiiiight&amp;quot;. It is a bit frustrating not being able to share with everyone what is it that I actually did. This post is an attempt to explain it in simple terms.&lt;/p&gt;
+
+&lt;h1&gt;Optimisation&lt;/h1&gt;
+
+&lt;p&gt;So, to optimise something means to make it effective or efficient as much as possible. This means that we usually want to make something as big or as little as possible. For instance, &lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I want to optimise the amount of money I spend. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Therefore...&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I want to spend as &lt;u&gt;&lt;strong&gt;little&lt;/strong&gt;&lt;/u&gt; as possible. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Or...&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I want to optimise the amount of money I make&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So...&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I want to earn as &lt;u&gt;&lt;strong&gt;much&lt;/strong&gt;&lt;/u&gt; as possible. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This means that, depending on the case, to optimise something means to either &lt;strong&gt;maximise&lt;/strong&gt; or &lt;strong&gt;minimise&lt;/strong&gt; it. &lt;/p&gt;
+
+&lt;h1&gt;Many-objective&lt;/h1&gt;
+
+&lt;p&gt;This is perhaps the most difficult piece to explain. &lt;/p&gt;
+
+&lt;p&gt;An optimisation problem can have only one objective if we want to maximise or minimise only one thing. This is fine for simple problems, but it is not enough to model real life problems. The bigger problems tend to have several things that we want to optimise. For instance, when selecting which route to take when driving home, we want the route that is:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;fastest&lt;/strong&gt; (to get sooner).&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;shortest&lt;/strong&gt; (to spend less petrol).&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;cheapest&lt;/strong&gt; (in the case of toll roads).&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;safest&lt;/strong&gt; (if you live in a place with high crime rate).&lt;/li&gt;
+&lt;li&gt;At least &lt;strong&gt;one drive-thru on the way&lt;/strong&gt; (it is perhaps time for a snack).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It might not be super obvious at a first glance that these objectives are possibly conflicting. In rush hour, for instance, the shortest way might not be the fastest or the safest. As a consequence, a situation can arise in which you have two routes that are identically &amp;quot;good&amp;quot;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Route A will take 20 minutes in rush-hour, but it will cost 20£ of petrol because it&amp;#39;s long.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Route B will take 30 minutes in rush-hour, but it will cost only 10£ because it&amp;#39;s short.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;These are 2 possible solutions to the problem, and the decision between them is not obvious. If the long route was as cheap as the short one, then that is the best solution for sure, but now we have no option but to choose to have a &lt;code&gt;long-but-fast&lt;/code&gt; route or a &lt;code&gt;short-but-slow&lt;/code&gt; one.&lt;/p&gt;
+
+&lt;p&gt;When we have more than 3 objectives to optimise, we have a many-objective problem.&lt;/p&gt;
+
+&lt;h1&gt;Particle Swarm&lt;/h1&gt;
+
+&lt;p&gt;So, we know now what a many-objective problem is, and it&amp;#39;s kind of clear that they can be massively difficult to solve. Also, if you want to add more objectives it only gets harder. This motivated super intelligent people into thinking &amp;quot;so... what can we do to actually find solutions when we have a gazillion objectives?&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;Several things were proposed to solve this kind of problems. Some of them work kind of well. The one my thesis is based on is inspired by the behaviour of swarms of bees and pigeons. &lt;/p&gt;
+
+&lt;p&gt;I know, this is super cool! &lt;/p&gt;
+
+&lt;p&gt;So... what is it that the bees and pigeons do that is so cool to solve this kind of problem? They perform a collaborative search for food or shelter in a big space, and they do that in big groups. If a bee finds a particular place full of tasty flowers, she will tell all the swarm something like &amp;quot;hey guys, I&amp;#39;ve found some awesome flowers!&amp;quot;. The rest of the swarm will be attracted to that particular place and after some time all of the swarm will be happily feeding in a particular garden.&lt;/p&gt;
+
+&lt;p&gt;If we take this behaviour to the routes example, we can think of the same kind of method to solve our issue. We have many virtual &amp;quot;bees&amp;quot; that we call &amp;quot;particles&amp;quot;. They look for possible routes in the space of all possible ways home. When one of the particles finds a short path, all the other particles will be looking for even shorter paths and will be attracted by that solution. After a while, just like the real bees, the particles are overflying a particular spot in the space and that is the set of possible solutions.&lt;/p&gt;
+
+&lt;h1&gt;What we actually did&lt;/h1&gt;
+
+&lt;p&gt;Our job in all this thing was to implement the Particle Swarm solution to solve a set of many-objective problems. We compared that algorithm to a genetic algorithm that is the best algorithm to solve this kind of problems at the moment. &lt;/p&gt;
+
+&lt;p&gt;We showed that although the genetic algorithm comes up with better solutions for some problems, the swarm approach comes with better solutions in other problems and in a fraction of the time it takes the genetic algorithm to do it.&lt;/p&gt;
+
+&lt;p&gt;Finally, here you have a video I made of some (red) particles finding the (blue) solution on a 3D space :)&lt;/p&gt;
+
+&lt;iframe width=&quot;800&quot; height=&quot;600&quot; src=&quot;https://www.youtube.com/embed/YEgvX7X80x8&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;If you are interested in this stuff, please contact me. I&amp;#39;m more than happy to talk about it. There is a LOT that can be done with this kind of algorithms, and there is wide range of practical problems that can be tackled using them.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#39;re not happy with this explanation contact me as well and I&amp;#39;ll try to improve it!&lt;/p&gt;
+</description>
+                                <pubDate>Sat, 19 Nov 2016 06:00:00 +0000</pubDate>
+                                <link>http://blog.torresmateo.com//mopso/</link>
+                                <guid isPermaLink="true">http://blog.torresmateo.com//mopso/</guid>
+                        </item>
+                
+                        <item>
                                 <title>Un buen juez</title>
                                 <description>&lt;p&gt;Unos días atrás estuve conversando con unos amigos sobre cualquier pavada en un grupo de WhatsApp. No recuerdo exactamente cómo, pero en algún momento la conversación se torna en una conversación acerca de como está el país y se inicia un ping pong de ideas. Convencionalmente esto terminaría en un ping pong de ideas políticas con diferentes grados de tendencias a la derecha o izquierda... pero no esta vez. &lt;/p&gt;
 
@@ -37,8 +132,8 @@
 &lt;p&gt;Quizás el punto principal y más importante del juez digital es que no propongo un juez perfecto. Sólo propongo un juez que sea más justo y eficiente que el sistema actual. Estoy muy de acuerdo en que la tarea de hacer un juez automático que compita con un ser humano incorruptible es casi imposible. Pero teniendo en cuenta que hoy en día la justicia en Paraguay es en muchos casos un absurdo extremo, no veo porqué no darle una oportunidad a esta idea. Al final de cuentas, a este juez no se le va a poder comprar.&lt;/p&gt;
 </description>
                                 <pubDate>Sat, 23 Apr 2016 07:17:00 +0100</pubDate>
-                                <link>http://blog.torresmateo.com//opinion/es/2016/04/23/un-buen-juez.html</link>
-                                <guid isPermaLink="true">http://blog.torresmateo.com//opinion/es/2016/04/23/un-buen-juez.html</guid>
+                                <link>http://blog.torresmateo.com//un-buen-juez/</link>
+                                <guid isPermaLink="true">http://blog.torresmateo.com//un-buen-juez/</guid>
                         </item>
                 
                         <item>
@@ -87,8 +182,8 @@ This is.. a ... tuna thing! (or tuna cake, or tuna bread). I tried in the first 
 &lt;p&gt;People here is amazing, right now we are mostly from Paraguay (check the &amp;quot;people&amp;quot; section in the website) and I feel very good working with everybody! Also, I get to work in the same place as the creator of the amazing tool &lt;a href=&quot;http://igraph.org&quot;&gt;igraph&lt;/a&gt; used to work, which is AWESOME!!&lt;/p&gt;
 </description>
                                 <pubDate>Mon, 09 Nov 2015 20:19:00 +0000</pubDate>
-                                <link>http://blog.torresmateo.com//life/uk/2015/11/09/first-month-in-the-UK.html</link>
-                                <guid isPermaLink="true">http://blog.torresmateo.com//life/uk/2015/11/09/first-month-in-the-UK.html</guid>
+                                <link>http://blog.torresmateo.com//first-month-in-the-UK/</link>
+                                <guid isPermaLink="true">http://blog.torresmateo.com//first-month-in-the-UK/</guid>
                         </item>
                 
                         <item>
@@ -137,8 +232,8 @@ para la vida.&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
                                 <pubDate>Tue, 21 Jul 2015 07:17:00 +0100</pubDate>
-                                <link>http://blog.torresmateo.com//opinion/es/2015/07/21/quedarse-colgado.html</link>
-                                <guid isPermaLink="true">http://blog.torresmateo.com//opinion/es/2015/07/21/quedarse-colgado.html</guid>
+                                <link>http://blog.torresmateo.com//quedarse-colgado/</link>
+                                <guid isPermaLink="true">http://blog.torresmateo.com//quedarse-colgado/</guid>
                         </item>
                 
                         <item>
@@ -221,8 +316,8 @@ muchísima gente e incluso ese fin de semana hablamos del evento en radios local
 &lt;/ul&gt;
 </description>
                                 <pubDate>Wed, 17 Jun 2015 07:17:00 +0100</pubDate>
-                                <link>http://blog.torresmateo.com//rants/es/2015/06/17/ingenieria-la-vida-y-wow.html</link>
-                                <guid isPermaLink="true">http://blog.torresmateo.com//rants/es/2015/06/17/ingenieria-la-vida-y-wow.html</guid>
+                                <link>http://blog.torresmateo.com//ingenieria-la-vida-y-wow/</link>
+                                <guid isPermaLink="true">http://blog.torresmateo.com//ingenieria-la-vida-y-wow/</guid>
                         </item>
                 
                         <item>
@@ -290,14 +385,14 @@ muchísima gente e incluso ese fin de semana hablamos del evento en radios local
 &lt;p&gt;Aaaaaaaaand I think that&amp;#39;s all for now, see you next time!&lt;/p&gt;
 </description>
                                 <pubDate>Sun, 04 Jan 2015 06:25:00 +0000</pubDate>
-                                <link>http://blog.torresmateo.com//rants/2015/01/04/hello-world-again.html</link>
-                                <guid isPermaLink="true">http://blog.torresmateo.com//rants/2015/01/04/hello-world-again.html</guid>
+                                <link>http://blog.torresmateo.com//hello-world-again/</link>
+                                <guid isPermaLink="true">http://blog.torresmateo.com//hello-world-again/</guid>
                         </item>
                 
                         <item>
                                 <title>Backgammon Madness</title>
                                 <description>&lt;p&gt;Artificial Intelligence is the heart of a Player vs. PC game, and there are a lot of options to have a program &lt;em&gt;thinking&lt;/em&gt;. For instance,
-if you have to make a game like &lt;a href=&quot;/evolution/gaming/dev/2014/01/10/ui-design.html&quot;&gt;Bacteria&lt;/a&gt;, the obvious choice is
+if you have to make a game like &lt;a href=&quot;/ui-design/&quot;&gt;Bacteria&lt;/a&gt;, the obvious choice is
 &lt;a href=&quot;http://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning&quot;&gt;Alpha-Beta pruning&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2&gt;The Story&lt;/h2&gt;
@@ -317,7 +412,7 @@ right algorithm to use for the game.&lt;/p&gt;
 
 &lt;h2&gt;The implementation&lt;/h2&gt;
 
-&lt;p&gt;Graphically, it&amp;#39;s the same as &lt;a href=&quot;/evolution/gaming/dev/2014/01/10/ui-design.html&quot;&gt;Bacteria&lt;/a&gt;. Even the mouse handler is 90% taken from our previous
+&lt;p&gt;Graphically, it&amp;#39;s the same as &lt;a href=&quot;/ui-design/&quot;&gt;Bacteria&lt;/a&gt;. Even the mouse handler is 90% taken from our previous
 implementation, we used color masks and sprites. &lt;a href=&quot;http://alleg.sourceforge.net/&quot;&gt;Allegro&lt;/a&gt; was also the library we used again.&lt;/p&gt;
 
 &lt;p&gt;The difference was AI. We had to learn some useful strategies for backgammon. The game has two logical stages. In the first stage, the opponent
@@ -382,8 +477,8 @@ Bacteria, but the main reasons were:&lt;/p&gt;
 &lt;p&gt;and as always... the &lt;a href=&quot;https://github.com/torresmateo/Backgammon&quot;&gt;code&lt;/a&gt;.&lt;/p&gt;
 </description>
                                 <pubDate>Wed, 19 Mar 2014 06:10:00 +0000</pubDate>
-                                <link>http://blog.torresmateo.com//evolution/gaming/dev/2014/03/19/backgammon.html</link>
-                                <guid isPermaLink="true">http://blog.torresmateo.com//evolution/gaming/dev/2014/03/19/backgammon.html</guid>
+                                <link>http://blog.torresmateo.com//backgammon/</link>
+                                <guid isPermaLink="true">http://blog.torresmateo.com//backgammon/</guid>
                         </item>
                 
                         <item>
@@ -489,8 +584,8 @@ part is the intelligence. I plan to make another video for that post, since it&a
 it&amp;#39;s a better experience to you to actually see the interactivity and other things that can&amp;#39;t be seen properly in still images.&lt;/p&gt;
 </description>
                                 <pubDate>Tue, 04 Feb 2014 06:00:00 +0000</pubDate>
-                                <link>http://blog.torresmateo.com//evolution/gaming/dev/2014/02/04/bacteria-part-2.html</link>
-                                <guid isPermaLink="true">http://blog.torresmateo.com//evolution/gaming/dev/2014/02/04/bacteria-part-2.html</guid>
+                                <link>http://blog.torresmateo.com//bacteria-part-2/</link>
+                                <guid isPermaLink="true">http://blog.torresmateo.com//bacteria-part-2/</guid>
                         </item>
                 
                         <item>
@@ -588,8 +683,8 @@ in a tutorial-like format.&lt;/p&gt;
 &lt;p&gt;Aaaaaaaaaaaaaaaaaaand last, but not least... here&amp;#39;s the &lt;a href=&quot;https://github.com/torresmateo/Bacteria&quot;&gt;code&lt;/a&gt;.&lt;/p&gt;
 </description>
                                 <pubDate>Fri, 10 Jan 2014 22:10:00 +0000</pubDate>
-                                <link>http://blog.torresmateo.com//evolution/gaming/dev/2014/01/10/ui-design.html</link>
-                                <guid isPermaLink="true">http://blog.torresmateo.com//evolution/gaming/dev/2014/01/10/ui-design.html</guid>
+                                <link>http://blog.torresmateo.com//ui-design/</link>
+                                <guid isPermaLink="true">http://blog.torresmateo.com//ui-design/</guid>
                         </item>
                 
                         <item>
@@ -690,108 +785,8 @@ some cases, if the CPU got the first turn, it would play a perfect game, and bea
 &lt;p&gt;Both programs were written in C, and using only &lt;em&gt;ONE FILE&lt;/em&gt; per project (&lt;code&gt;main.c&lt;/code&gt;)... I know, that&amp;#39;s bad. But hey!! We were absolute beginners!!&lt;/p&gt;
 </description>
                                 <pubDate>Fri, 20 Dec 2013 11:17:00 +0000</pubDate>
-                                <link>http://blog.torresmateo.com//evolution/gaming/dev/2013/12/20/baby-steps.html</link>
-                                <guid isPermaLink="true">http://blog.torresmateo.com//evolution/gaming/dev/2013/12/20/baby-steps.html</guid>
-                        </item>
-                
-                        <item>
-                                <title>It&#39;s Alive!</title>
-                                <description>&lt;p&gt;At first I didn&amp;#39;t actually think about what to put in here. I mean, it&amp;#39;s been almost 4 years since I started developing web related stuff, 
-improving myself in the latest tools and techniques to make better, faster, stronger blogs, apps, and little systems to (hopefully) improve
-someone else&amp;#39;s life by making their everyday work a little easier. All that while going through my undergraduate courses in Computer 
-Science. But let&amp;#39;s get a little deeper into some of my thoughts.&lt;/p&gt;
-
-&lt;h1&gt;About Myself&lt;/h1&gt;
-
-&lt;p&gt;I&amp;#39;ve always loved videogames, ever since my dad bought Atari 2600 for me and my brothers, we &amp;quot;wasted&amp;quot; entire days smashing that red 
-button, pushing harder that joystick as if it would make Pitfall Harry run faster or make Pac-Man reach the super-power fruit sooner. Games 
-taught me a LOT of things, and taught me better than most of my school teachers. &lt;/p&gt;
-
-&lt;p&gt;I discovered I loved learning, and videogames were the perfect way to make me learn. In school all I could see were meaningless numbers and 
-random drawings with the sole objective of turning me and my classmates into zombie-like mindless little monsters. But back home numbers and 
-letters weren&amp;#39;t random at all, they were Megaman&amp;#39;s life-points, every 100 coins in Mario means a life and it was USEFUL to think arithmetic 
-stuff just to play better, it was just FUN to learn that way!&lt;/p&gt;
-
-&lt;p&gt;So, after deciding that all I wanted to do with my life was to play videogames, reality punched me right in the face with two little facts:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;You can&amp;#39;t just play, you need to eat too! And in order to eat you need this evil paper called money. (this isn&amp;#39;t actually true everywhere, but it is here in Paraguay, where I live) &lt;em&gt;well, but I want to play all my life anyways :/&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Then you need to DO something so you can have the almighty money to buy games and food so you don&amp;#39;t starve and die! &lt;em&gt;fiiiine, I&amp;#39;ll see what I can do u.u&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;So I started thinking of what I could possibly do to spend most of my time playing and avoid boring stuff like school, teachers, and becoming a 
-mindless zombie. I searched and searched and then came up with the most awesome idea of all time:&lt;/p&gt;
-
-&lt;p&gt;What if... if... I.... start MAKING videogames?&lt;/p&gt;
-
-&lt;p&gt;My life was turned upside down, the idea was incredibly GENIUS!! I could almost kiss myself of joy, so I decided to start simple and program 
-something doable, like GTA... and poking here and there in the Internet turned out that making awesome games wasn&amp;#39;t THAT easy. I found stuff 
-like &amp;quot;level design&amp;quot;, &amp;quot;shaders&amp;quot;, &amp;quot;programming&amp;quot;, &amp;quot;platform&amp;quot;, &amp;quot;engine&amp;quot;, &amp;quot;Direct3D&amp;quot;, &amp;quot;3D-Modeling&amp;quot;, &amp;quot;CAD&amp;quot;, &amp;quot;AI&amp;quot;... I was overwhelmed, frustrated and back 
-to square one. But this was the only thing that could actually make me happy someday!! So I didn&amp;#39;t give up, I started to code and made a LOT of 
-mistakes. So I thought about getting into Computer Science so I could code better, faster and someday make awesome games! I started learning, 
-and learning and coding and doing math and a lot of stuff and got lost in the Computer Science world. Being able to MAKE stuff with random 
-words in notepad made me forget all about my dreams and hopes, I just loved to code!&lt;/p&gt;
-
-&lt;p&gt;During my code-fever I joined a little company where my website-making phase started. They were a team of two designers, one of them was almost able to 
-code and it was super fun working with them. We made a lot of blogs, and even some little web apps, the company started to grow and 
-eventually I joined them and even got to own a third of what had been my first job! I was very happy and thought that was the start of my 
-future. But somewhere inside me, the flame for making videogames (which I think is the ultimate form of creativity) wasn&amp;#39;t ready to die yet. 
-I planned a new course for the company and wanted to make little games. With my friend&amp;#39;s abilities to draw cool stuff and me being capable of 
-coding (after almost 6 years since the original &amp;quot;I want to make games&amp;quot; idea) I thought we could actually do some fun games and maybe sell 
-them and be able to make a living out of someone else&amp;#39;s smiles and wasted time in silly iPhone games, and maybe after that become the most 
-awesome team in the whole universe and conquer the world funded by our own awesomeness!!&lt;/p&gt;
-
-&lt;p&gt;But life doesn&amp;#39;t always have the same plans as you do, and that start-up went down in what I think was a stupid argument (it wasn&amp;#39;t actually 
-an argument, but I don&amp;#39;t know a better word to describe why we decided that it was not possible to work together anymore). So, we 
-and the two programmers we hired finished the pending tasks and each one went his way. I was sad, and didn&amp;#39;t want to fail like that again. I 
-considered the most horrible idea ever, the one thing I hated the most: go and work for some big scary telecom company and make tons of money in 
-exchange for almost all my time and brain power, and of course, my soul. And there was I, sad about the &amp;quot;break up&amp;quot; with my buddies and 
-considering joining the zombie-like brainless army of telecom coders (to be fair, I actually think telecom is awesome and know a lot of 
-amazing people making good work in that field, it&amp;#39;s just not my thing so I rant about it here!). &lt;/p&gt;
-
-&lt;p&gt;After a month of not wanting to do anything work-related. Those two programmers that we had hired in the first start-up told me that they would
-like to start a new company with me. They were my classmates at school. At first I didn&amp;#39;t want to risk to be disappointed again, but in the end 
-I decided to give that a try, and found myself relieved about not having to go to a scary telecom giant and ugly business, and keeping my soul clean was priceless.&lt;/p&gt;
-
-&lt;p&gt;We started almost where we left with the new team, they already knew some of the business mechanics and things were looking good, there was 
-some money coming in, not a lot, but enough to make us feel like we were doing things right. We managed to make some upgrades compared to the 
-previous company in the workflow and we didn&amp;#39;t even have an office (we were working from our houses, like some kind of secret coding society, 
-plotting against Comic Sans, Microsoft and poorly written HTML). I am still part of that start-up for the moment, but I&amp;#39;ve already told them 
-the current project (the biggest I&amp;#39;ve ever worked as a web developer) is the last one for me. I told them about my dream of becoming a game 
-developer, and that working in other stuff was nice, but not enough. It was a really difficult decision and it took me months of thinking and 
-about 17 drafts stored in my gmail for me to finally send that mail to my friends. I think the hardest thing I&amp;#39;ve learned in life is that you 
-just can&amp;#39;t reach your dreams without some kind of sacrifice.&lt;/p&gt;
-
-&lt;p&gt;I would be lying if I say I&amp;#39;m not scared, but I&amp;#39;m also excited about my next steps. I&amp;#39;ve got tons of stuff to wrap up before working full 
-time in becoming a true game developer (the project I mentioned earlier, my undergraduate thesis, and a lot of other stuff...), but I can 
-feel now that little flame burning stronger.&lt;/p&gt;
-
-&lt;p&gt;For now I think this pretty much sums the important stuff about myself.&lt;/p&gt;
-
-&lt;h1&gt;About this blog...ish website&lt;/h1&gt;
-
-&lt;p&gt;I&amp;#39;ve decided to make this with some pretty specific objectives:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;I&amp;#39;ve always wanted to create something to share with friends and family and everyone looking to read something about games and how much I 
-love them &amp;lt;3.&lt;/li&gt;
-&lt;li&gt;It&amp;#39;s been years now since I&amp;#39;ve told myself &amp;quot;how come you spend almost all of your time coding websites and telling people what to do to get 
-more readers and make interesting stuff but do not do some of that yourself?&amp;quot;. The answer was always a mix of &amp;quot;I don&amp;#39;t have enough time&amp;quot;, 
-&amp;quot;I&amp;#39;m not THAT interesting to start a blog&amp;quot;, &amp;quot;It&amp;#39;s not trivial work&amp;quot; and other excuses. I think this is finally the time where I can stop 
-saying stupid stuff to myself and finally sit and write some stuff.&lt;/li&gt;
-&lt;li&gt;It will help me keep a record of my &amp;quot;path&amp;quot; into game design and development, and give the people that help me or stand in my way to read 
-and enjoy (or feel guilty) about.&lt;/li&gt;
-&lt;li&gt;To keep me on track. If you&amp;#39;re reading this, you&amp;#39;ve seen how easily I get distracted by other stuff that seems to be interesting. I think (
-and hope) that thinking regularly about my actual dream will somehow help me achieve it. It&amp;#39;s silly, but I won&amp;#39;t lose anything more than a 
-few hours a week writing this and maybe some of my keyboard’s painting.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;That being said... I will write one entry every two weeks (more or less). I&amp;#39;ll try to keep them simple and easy to read for non-geeks and non-
-programmers and give at least a hint of what&amp;#39;s going on.&lt;/p&gt;
-</description>
-                                <pubDate>Fri, 13 Dec 2013 11:17:00 +0000</pubDate>
-                                <link>http://blog.torresmateo.com//rants/2013/12/13/first-experiences.html</link>
-                                <guid isPermaLink="true">http://blog.torresmateo.com//rants/2013/12/13/first-experiences.html</guid>
+                                <link>http://blog.torresmateo.com//baby-steps/</link>
+                                <guid isPermaLink="true">http://blog.torresmateo.com//baby-steps/</guid>
                         </item>
                 
         </channel>

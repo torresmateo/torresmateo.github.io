@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Un buen juez</title>
+		<meta name="viewport" content="width=device-width">
+		<meta property="fb:admins" content="618356035"/>
+
+		<!-- syntax highlighting CSS -->
+		<!--link rel="stylesheet" href="/css/syntax.css"-->
+
+		<!-- Custom CSS -->
+		<!--link rel="stylesheet" href="/css/main.css"-->
+		<script type="text/javascript" src="//use.typekit.net/zhh0uta.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+		<link rel="stylesheet" href="/stylesheets/styles.css">
+		<link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="/javascripts/respond.js"></script>
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!--[if lt IE 8]>
+		<link rel="stylesheet" href="stylesheets/ie.css">
+		<![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	</head>
+	<body>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-58189384-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=382699801876314";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, "script", "facebook-jssdk"));
+		</script>
+		
+		<div class="wrapper">
+			<section>  
+				<div id="title">
+					<h1><a href="/">blog.torresmateo.com</a></h1>
+					<p>A place to find rants and some videogame dev stuff!</p>
+					<hr>
+					<span class="credits left">GitHub: <a href="https://github.com/torresmateo">torresmateo</a></span>
+					<span class="credits right">twitter: <a href="http://twitter.com/#!/torresmateo">torresmateo</a></span>
+				</div>
+				<h1>Un buen juez</h1>
+<p class="date">23 Apr 2016</p>
+<div class="post">
+	<p>Unos días atrás estuve conversando con unos amigos sobre cualquier pavada en un grupo de WhatsApp. No recuerdo exactamente cómo, pero en algún momento la conversación se torna en una conversación acerca de como está el país y se inicia un ping pong de ideas. Convencionalmente esto terminaría en un ping pong de ideas políticas con diferentes grados de tendencias a la derecha o izquierda... pero no esta vez. </p>
+
+<p>Hablamos de las ventajas y desventajas de la forma en que se maneja la justicia y se resuelven los conflictos en Paraguay, y como siempre esta discusión estaba bajo la sombra de la siempre presente corrupción y amiguismo que acompaña en la vida real todo el proceso.</p>
+
+<p>En algún punto de la conversación propuse que se deje en manos de una computadora la resolución de casos simples y cuyos resultados sean obvios...</p>
+
+<p>¿Una locura... verdad? </p>
+
+<p>Este post es acerca de porqué yo creo que esto no es tan loco como parece y algunas ideas iniciales de cómo podría implementarse un &quot;juez electrónico&quot;. Me enfoco en los principales obstáculos de la implementación. </p>
+
+<h1>La lógica de la justicia (la ley)</h1>
+
+<p>Las leyes se basan en la lógica... En particular, en la lógica jurídica. La lógica jurídica a su vez depende del lenguaje en que están escritos los artículos y esta por supuesto sujeta a interpretación debido a las ambigüedades del lenguaje. Esto en mi opinión es razonable si asumimos que el juez es incorruptible e imparcial. En la vida real (y especialmente en Paraguay) esto no ocurre. Por lo tanto, se requiere de una lógica formal y no contradictoria que pueda modelar la ley actual.</p>
+
+<p>Ciertamente modelar la lógica jurídica con artículos muy generales y sus miles de posibles interpretaciones es una tarea compleja. Pero el juez digital no precisa de esto, ya que existe una parte no contradictoria en la ley que es posible modelar como una lógica formal. Aunque el juez digital no pueda resolver los casos más complejos, podría alivianar la carga a seres humanos o al menos dar sugerencias fundamentadas en la ley en conflictos menores. </p>
+
+<p>En mi opinión esto es más que suficiente para mejorar sustancialmente la justicia en Paraguay.</p>
+
+<h1>Machine Learning y Big Data</h1>
+
+<p>La ciencia de la computación en estos días es tal que permite utilizar la experiencia en otros campos para tomar mejores decisiones. En sus inicios esto estaba limitado por la escasez de datos disponibles para inferir cualquier tipo de patrón. </p>
+
+<p>Hoy en día sin embargo, la cantidad de información disponible en cualquier campo de investigación es sin duda abrumadora para cualquier ser humano. Pero se ha demostrado (con <a href="https://en.wikipedia.org/wiki/AlphaGo">AlphaGo</a> por ejemplo) que se vuelve posible este tipo de decisiones de forma exitosa.</p>
+
+<h1>El juez perfecto</h1>
+
+<p>Quizás el punto principal y más importante del juez digital es que no propongo un juez perfecto. Sólo propongo un juez que sea más justo y eficiente que el sistema actual. Estoy muy de acuerdo en que la tarea de hacer un juez automático que compita con un ser humano incorruptible es casi imposible. Pero teniendo en cuenta que hoy en día la justicia en Paraguay es en muchos casos un absurdo extremo, no veo porqué no darle una oportunidad a esta idea. Al final de cuentas, a este juez no se le va a poder comprar.</p>
+
+		<!--hr>
+		<h3>Comments</h3>
+		<div style="backgroung-color:#000000;">
+		<div class="fb-comments" data-colorscheme="dark"  data-href="http://blog.torresmateo.com/un-buen-juez/" data-num-posts="4" data-width="800" ></div>
+		</div-->
+
+</div>
+
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'torresmateo';
+                    
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+			</section>  
+		</div>
+        
+	</body>
+</html>

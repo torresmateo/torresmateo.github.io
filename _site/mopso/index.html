@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Particle WHAT?!</title>
+		<meta name="viewport" content="width=device-width">
+		<meta property="fb:admins" content="618356035"/>
+
+		<!-- syntax highlighting CSS -->
+		<!--link rel="stylesheet" href="/css/syntax.css"-->
+
+		<!-- Custom CSS -->
+		<!--link rel="stylesheet" href="/css/main.css"-->
+		<script type="text/javascript" src="//use.typekit.net/zhh0uta.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+		<link rel="stylesheet" href="/stylesheets/styles.css">
+		<link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="/javascripts/respond.js"></script>
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!--[if lt IE 8]>
+		<link rel="stylesheet" href="stylesheets/ie.css">
+		<![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	</head>
+	<body>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-58189384-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=382699801876314";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, "script", "facebook-jssdk"));
+		</script>
+		
+		<div class="wrapper">
+			<section>  
+				<div id="title">
+					<h1><a href="/">blog.torresmateo.com</a></h1>
+					<p>A place to find rants and some videogame dev stuff!</p>
+					<hr>
+					<span class="credits left">GitHub: <a href="https://github.com/torresmateo">torresmateo</a></span>
+					<span class="credits right">twitter: <a href="http://twitter.com/#!/torresmateo">torresmateo</a></span>
+				</div>
+				<h1>Particle WHAT?!</h1>
+<p class="date">19 Nov 2016</p>
+<div class="post">
+	<p>One of the most frequent questions that I get is: &quot;What is it that you did before?&quot;. And the answer to that question always ends up in what my thesis was about. </p>
+
+<p>So, the title of my thesis is &quot;Particle Swarm Optimisation for solving many-objective problems&quot;. This most often than not results in people just saying something like &quot;riiiiight&quot;. It is a bit frustrating not being able to share with everyone what is it that I actually did. This post is an attempt to explain it in simple terms.</p>
+
+<h1>Optimisation</h1>
+
+<p>So, to optimise something means to make it effective or efficient as much as possible. This means that we usually want to make something as big or as little as possible. For instance, </p>
+
+<blockquote>
+<p>I want to optimise the amount of money I spend. </p>
+</blockquote>
+
+<p>Therefore...</p>
+
+<blockquote>
+<p>I want to spend as <u><strong>little</strong></u> as possible. </p>
+</blockquote>
+
+<p>Or...</p>
+
+<blockquote>
+<p>I want to optimise the amount of money I make</p>
+</blockquote>
+
+<p>So...</p>
+
+<blockquote>
+<p>I want to earn as <u><strong>much</strong></u> as possible. </p>
+</blockquote>
+
+<p>This means that, depending on the case, to optimise something means to either <strong>maximise</strong> or <strong>minimise</strong> it. </p>
+
+<h1>Many-objective</h1>
+
+<p>This is perhaps the most difficult piece to explain. </p>
+
+<p>An optimisation problem can have only one objective if we want to maximise or minimise only one thing. This is fine for simple problems, but it is not enough to model real life problems. The bigger problems tend to have several things that we want to optimise. For instance, when selecting which route to take when driving home, we want the route that is:</p>
+
+<ul>
+<li>The <strong>fastest</strong> (to get sooner).</li>
+<li>The <strong>shortest</strong> (to spend less petrol).</li>
+<li>The <strong>cheapest</strong> (in the case of toll roads).</li>
+<li>The <strong>safest</strong> (if you live in a place with high crime rate).</li>
+<li>At least <strong>one drive-thru on the way</strong> (it is perhaps time for a snack).</li>
+</ul>
+
+<p>It might not be super obvious at a first glance that these objectives are possibly conflicting. In rush hour, for instance, the shortest way might not be the fastest or the safest. As a consequence, a situation can arise in which you have two routes that are identically &quot;good&quot;:</p>
+
+<blockquote>
+<p>Route A will take 20 minutes in rush-hour, but it will cost 20£ of petrol because it&#39;s long.</p>
+</blockquote>
+
+<p>&nbsp;</p>
+
+<blockquote>
+<p>Route B will take 30 minutes in rush-hour, but it will cost only 10£ because it&#39;s short.</p>
+</blockquote>
+
+<p>These are 2 possible solutions to the problem, and the decision between them is not obvious. If the long route was as cheap as the short one, then that is the best solution for sure, but now we have no option but to choose to have a <code>long-but-fast</code> route or a <code>short-but-slow</code> one.</p>
+
+<p>When we have more than 3 objectives to optimise, we have a many-objective problem.</p>
+
+<h1>Particle Swarm</h1>
+
+<p>So, we know now what a many-objective problem is, and it&#39;s kind of clear that they can be massively difficult to solve. Also, if you want to add more objectives it only gets harder. This motivated super intelligent people into thinking &quot;so... what can we do to actually find solutions when we have a gazillion objectives?&quot;</p>
+
+<p>Several things were proposed to solve this kind of problems. Some of them work kind of well. The one my thesis is based on is inspired by the behaviour of swarms of bees and pigeons. </p>
+
+<p>I know, this is super cool! </p>
+
+<p>So... what is it that the bees and pigeons do that is so cool to solve this kind of problem? They perform a collaborative search for food or shelter in a big space, and they do that in big groups. If a bee finds a particular place full of tasty flowers, she will tell all the swarm something like &quot;hey guys, I&#39;ve found some awesome flowers!&quot;. The rest of the swarm will be attracted to that particular place and after some time all of the swarm will be happily feeding in a particular garden.</p>
+
+<p>If we take this behaviour to the routes example, we can think of the same kind of method to solve our issue. We have many virtual &quot;bees&quot; that we call &quot;particles&quot;. They look for possible routes in the space of all possible ways home. When one of the particles finds a short path, all the other particles will be looking for even shorter paths and will be attracted by that solution. After a while, just like the real bees, the particles are overflying a particular spot in the space and that is the set of possible solutions.</p>
+
+<h1>What we actually did</h1>
+
+<p>Our job in all this thing was to implement the Particle Swarm solution to solve a set of many-objective problems. We compared that algorithm to a genetic algorithm that is the best algorithm to solve this kind of problems at the moment. </p>
+
+<p>We showed that although the genetic algorithm comes up with better solutions for some problems, the swarm approach comes with better solutions in other problems and in a fraction of the time it takes the genetic algorithm to do it.</p>
+
+<p>Finally, here you have a video I made of some (red) particles finding the (blue) solution on a 3D space :)</p>
+
+<iframe width="800" height="600" src="https://www.youtube.com/embed/YEgvX7X80x8" frameborder="0" allowfullscreen></iframe>
+
+<p>If you are interested in this stuff, please contact me. I&#39;m more than happy to talk about it. There is a LOT that can be done with this kind of algorithms, and there is wide range of practical problems that can be tackled using them.</p>
+
+<p>If you&#39;re not happy with this explanation contact me as well and I&#39;ll try to improve it!</p>
+
+		<!--hr>
+		<h3>Comments</h3>
+		<div style="backgroung-color:#000000;">
+		<div class="fb-comments" data-colorscheme="dark"  data-href="http://blog.torresmateo.com/mopso/" data-num-posts="4" data-width="800" ></div>
+		</div-->
+
+</div>
+
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'torresmateo';
+                    
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+			</section>  
+		</div>
+        
+	</body>
+</html>
