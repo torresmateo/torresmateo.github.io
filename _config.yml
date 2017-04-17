@@ -1,5 +1,5 @@
 name: blog.torresmateo.com
-markdown: redcarpet
+markdown: kramdown
 highlighter: rouge
 description: A place to find rants and some videogame dev stuff!
 url: http://blog.torresmateo.com

@@ -65,60 +65,60 @@
 if you have to make a game like <a href="/ui-design/">Bacteria</a>, the obvious choice is
 <a href="http://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning">Alpha-Beta pruning</a>.</p>
 
-<h2>The Story</h2>
+<p>##The Story</p>
 
-<p>The assignment Fer and I had was <a href="http://en.wikipedia.org/wiki/Backgammon">Backgammon</a>. It&#39;s a board game with checkers and dices. The
-main goal is to move your checkers from your &quot;house&quot; to the opponent&#39;s. In your turn you throw a pair of dices, and move the checkers forward.
-If you&#39;ve got the same result in both dices, you earn a double turn, moving four times.</p>
+<p>The assignment Fer and I had was <a href="http://en.wikipedia.org/wiki/Backgammon">Backgammon</a>. It’s a board game with checkers and dices. The
+main goal is to move your checkers from your “house” to the opponent’s. In your turn you throw a pair of dices, and move the checkers forward.
+If you’ve got the same result in both dices, you earn a double turn, moving four times.</p>
 
-<p>It&#39;s actually a boring game, compared to chess, but Fer and I learned how to play, and even watched YouTube videos of the world championship.</p>
+<p>It’s actually a boring game, compared to chess, but Fer and I learned how to play, and even watched YouTube videos of the world championship.</p>
 
-<p>When this assignment was given, one of the requirements was to use alpha-beta pruning for the AI. It didn&#39;t feel right to me, because adding
-dices to the mix leaves you with a lot of randomness. Of course you can modify alpha-beta to deal with the randomness, but as I&#39;ve said above,
-there are A LOT of options, and it&#39;s part of the art of problem solving to pick the right tool for the job.</p>
+<p>When this assignment was given, one of the requirements was to use alpha-beta pruning for the AI. It didn’t feel right to me, because adding
+dices to the mix leaves you with a lot of randomness. Of course you can modify alpha-beta to deal with the randomness, but as I’ve said above,
+there are A LOT of options, and it’s part of the art of problem solving to pick the right tool for the job.</p>
 
-<p>In class, I asked our teacher about this, and he didn&#39;t answer my question. I stayed after class to him again, and we had an argument about the
+<p>In class, I asked our teacher about this, and he didn’t answer my question. I stayed after class to him again, and we had an argument about the
 right algorithm to use for the game.</p>
 
-<h2>The implementation</h2>
+<p>##The implementation</p>
 
-<p>Graphically, it&#39;s the same as <a href="/ui-design/">Bacteria</a>. Even the mouse handler is 90% taken from our previous
+<p>Graphically, it’s the same as <a href="/ui-design/">Bacteria</a>. Even the mouse handler is 90% taken from our previous
 implementation, we used color masks and sprites. <a href="http://alleg.sourceforge.net/">Allegro</a> was also the library we used again.</p>
 
 <p>The difference was AI. We had to learn some useful strategies for backgammon. The game has two logical stages. In the first stage, the opponent
 can block your checkers, and this means a lot of computation towards avoiding that, and focusing on desirable board configurations. In the
-second stage it&#39;s simply a &quot;race&quot;, the first player to reach the opponent&#39;s &quot;home&quot; wins the game. We implemented a weight based heuristic for
+second stage it’s simply a “race”, the first player to reach the opponent’s “home” wins the game. We implemented a weight based heuristic for
 both stages.</p>
 
 <p>The first heuristic was focused in achieving good board configurations, we had points for:</p>
 
 <ul>
-<li>Distance to the opponent&#39;s home (low priority)</li>
-<li>Avoid blocked checkers (medium priority)</li>
-<li>Block opponent&#39;s checkers (medium priority)</li>
-<li>Occupy six adjacent columns (high priority)</li>
+  <li>Distance to the opponent’s home (low priority)</li>
+  <li>Avoid blocked checkers (medium priority)</li>
+  <li>Block opponent’s checkers (medium priority)</li>
+  <li>Occupy six adjacent columns (high priority)</li>
 </ul>
 
 <p>There were other aspects, but these four are the most important. The last one was added after watching a lot of (boring) backgammon games online.
-Professional players seemed to aim for a particular board configuration. When you have two or more checkers in the same column, the opponent can&#39;t
-block your checkers in that column, so having six consecutive columns occupied means you own a &quot;wall&quot; of columns that the other player can&#39;t
+Professional players seemed to aim for a particular board configuration. When you have two or more checkers in the same column, the opponent can’t
+block your checkers in that column, so having six consecutive columns occupied means you own a “wall” of columns that the other player can’t
 pass.</p>
 
 <p>The second stage has the following priorities:</p>
 
 <ul>
-<li>Distance to the opponent&#39;s home (high priority)</li>
-<li>Everything else (no priority)</li>
+  <li>Distance to the opponent’s home (high priority)</li>
+  <li>Everything else (no priority)</li>
 </ul>
 
-<p>Basically, it&#39;s focused on reaching the opponent&#39;s home.</p>
+<p>Basically, it’s focused on reaching the opponent’s home.</p>
 
-<h2>The tournament</h2>
+<p>##The tournament</p>
 
-<p>The main goal of this implementation was to make every team challenge other&#39;s programs. It was fun, at first we won because most of our classmates&#39;
-programs weren&#39;t finished. We ended with 3 complete games (best of 3), the first two we won 2-0, and the last one (the final game of the tournament)
-was our program against Rafael Arias Michel and Daniel Ruffinelli&#39;s implementation, I&#39;ll refer to them as <em>Rafa</em> and <em>Ruffo</em> from now on unless they
-ask me not to, in which case I&#39;ll probably keep calling them <em>Rafa</em> and <em>Ruffo</em>.</p>
+<p>The main goal of this implementation was to make every team challenge other’s programs. It was fun, at first we won because most of our classmates’
+programs weren’t finished. We ended with 3 complete games (best of 3), the first two we won 2-0, and the last one (the final game of the tournament)
+was our program against Rafael Arias Michel and Daniel Ruffinelli’s implementation, I’ll refer to them as <em>Rafa</em> and <em>Ruffo</em> from now on unless they
+ask me not to, in which case I’ll probably keep calling them <em>Rafa</em> and <em>Ruffo</em>.</p>
 
 <p>They had a nice implementation in GTK, and if I remember correctly they had implemented Alpha-Beta Pruning. Our program won the first match, the second
 one we lost! By that moment we had an audience (about 6 classmates who were interested enough to stay and watch a bunch of nerds cheering for their
@@ -127,24 +127,25 @@ who had the advantage until the very end.</p>
 
 <p>Luckily we won :)</p>
 
-<h2>Video and Code</h2>
+<p>##Video and Code</p>
 
-<p>Last, but not least, here&#39;s the video of me playing (and winning!) against my own implementation. The interface this time isn&#39;t as elaborated as in
+<p>Last, but not least, here’s the video of me playing (and winning!) against my own implementation. The interface this time isn’t as elaborated as in
 Bacteria, but the main reasons were:</p>
 
 <ul>
-<li>The objective was not to make a playable PC vs Player game, we did it for completeness.</li>
-<li>Backgammon is boring.</li>
-<li>We focused on the PC vs PC tournament instead of Interface and/or Design, I think it looks OK though.</li>
-<li>Backgammon is boring.</li>
-<li>Did I mention how boring Backgammon is?</li>
+  <li>The objective was not to make a playable PC vs Player game, we did it for completeness.</li>
+  <li>Backgammon is boring.</li>
+  <li>We focused on the PC vs PC tournament instead of Interface and/or Design, I think it looks OK though.</li>
+  <li>Backgammon is boring.</li>
+  <li>Did I mention how boring Backgammon is?</li>
 </ul>
 
-<p><strong>WARNING:</strong> It&#39;s about 4 minutes of myself playing a boring game :)</p>
+<p><strong>WARNING:</strong> It’s about 4 minutes of myself playing a boring game :)</p>
 
-<iframe width="800" height="600" src="//www.youtube.com/embed/dKyYiN4sj7s?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="600" src="//www.youtube.com/embed/dKyYiN4sj7s?rel=0" frameborder="0" allowfullscreen=""></iframe>
 
-<p>and as always... the <a href="https://github.com/torresmateo/Backgammon">code</a>.</p>
+<p>and as always… the <a href="https://github.com/torresmateo/Backgammon">code</a>.</p>
+
 
 		<!--hr>
 		<h3>Comments</h3>
