@@ -635,8 +635,8 @@ in an hexagonal board.&lt;/li&gt;
 
 &lt;p&gt;Programming the game logic wasn&amp;#39;t really hard. In the first day we had a working console implementation and we could &amp;quot;play&amp;quot; the
 game having absolutely no fun because we had to write every command to make a simple move, something like&lt;/p&gt;
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;multiply cell A8 to A9
-&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;multiply cell A8 to A9
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;and the output was really awful, a lot of debug using &lt;code&gt;printf&lt;/code&gt; and also tons of (apparently) meaningless garbage. But we were enjoying
 the development proccess like a child who gets a Nintendo 64 on Christmas! When it was clear that the logic was done, we were ready
 for te REAL FUN!&lt;/p&gt;
@@ -758,7 +758,7 @@ among our classmates, our program was one of the best.&lt;/p&gt;
 We started with the airplanes, and then the bombs, and then firing at everything that we found. &lt;/p&gt;
 
 &lt;p&gt;This is one of the spying layouts, it maximizes the spied area:&lt;/p&gt;
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;|a|_|_|_|X|X|X|_|_|b|
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;|a|_|_|_|X|X|X|_|_|b|
 |_|A|_|_|X|E|X|_|B|_|
 |_|_|X|_|X|X|X|X|_|_|
 |X|X|X|X|_|_|X|_|_|_|
@@ -768,7 +768,7 @@ We started with the airplanes, and then the bombs, and then firing at everything
 |_|_|X|_|_|_|_|X|_|_|
 |_|X|_|_|_|_|_|_|X|_|
 |X|_|_|_|_|_|_|_|_|X|
-&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;And it looked like this:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/baby-steps/battleship.png&quot; alt=&quot;&quot; title=&quot;Our First AI!!&quot;&gt;&lt;/p&gt;
