@@ -8,92 +8,93 @@
                 
                         <item>
                                 <title>Particle WHAT?!</title>
-                                <description>&lt;p&gt;One of the most frequent questions that I get is: “What is it that you did before?”. And the answer to that question always ends up in what my thesis was about.&lt;/p&gt;
+                                <description>&lt;p&gt;One of the most frequent questions that I get is: &amp;quot;What is it that you did before?&amp;quot;. And the answer to that question always ends up in what my thesis was about. &lt;/p&gt;
 
-&lt;p&gt;So, the title of my thesis is “Particle Swarm Optimisation for solving many-objective problems”. This most often than not results in people just saying something like “riiiiight”. It is a bit frustrating not being able to share with everyone what is it that I actually did. This post is an attempt to explain it in simple terms.&lt;/p&gt;
+&lt;p&gt;So, the title of my thesis is &amp;quot;Particle Swarm Optimisation for solving many-objective problems&amp;quot;. This most often than not results in people just saying something like &amp;quot;riiiiight&amp;quot;. It is a bit frustrating not being able to share with everyone what is it that I actually did. This post is an attempt to explain it in simple terms.&lt;/p&gt;
 
-&lt;p&gt;#Optimisation&lt;/p&gt;
+&lt;h1&gt;Optimisation&lt;/h1&gt;
 
-&lt;p&gt;So, to optimise something means to make it effective or efficient as much as possible. This means that we usually want to make something as big or as little as possible. For instance,&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;I want to optimise the amount of money I spend.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Therefore…&lt;/p&gt;
+&lt;p&gt;So, to optimise something means to make it effective or efficient as much as possible. This means that we usually want to make something as big or as little as possible. For instance, &lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;I want to spend as &lt;u&gt;**little**&lt;/u&gt; as possible.&lt;/p&gt;
+&lt;p&gt;I want to optimise the amount of money I spend. &lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Or…&lt;/p&gt;
+&lt;p&gt;Therefore...&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;I want to optimise the amount of money I make&lt;/p&gt;
+&lt;p&gt;I want to spend as &lt;u&gt;&lt;strong&gt;little&lt;/strong&gt;&lt;/u&gt; as possible. &lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;So…&lt;/p&gt;
+&lt;p&gt;Or...&lt;/p&gt;
+
 &lt;blockquote&gt;
-  &lt;p&gt;I want to earn as &lt;u&gt;**much**&lt;/u&gt; as possible.&lt;/p&gt;
+&lt;p&gt;I want to optimise the amount of money I make&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;This means that, depending on the case, to optimise something means to either &lt;strong&gt;maximise&lt;/strong&gt; or &lt;strong&gt;minimise&lt;/strong&gt; it.&lt;/p&gt;
+&lt;p&gt;So...&lt;/p&gt;
 
-&lt;p&gt;#Many-objective&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I want to earn as &lt;u&gt;&lt;strong&gt;much&lt;/strong&gt;&lt;/u&gt; as possible. &lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;This is perhaps the most difficult piece to explain.&lt;/p&gt;
+&lt;p&gt;This means that, depending on the case, to optimise something means to either &lt;strong&gt;maximise&lt;/strong&gt; or &lt;strong&gt;minimise&lt;/strong&gt; it. &lt;/p&gt;
+
+&lt;h1&gt;Many-objective&lt;/h1&gt;
+
+&lt;p&gt;This is perhaps the most difficult piece to explain. &lt;/p&gt;
 
 &lt;p&gt;An optimisation problem can have only one objective if we want to maximise or minimise only one thing. This is fine for simple problems, but it is not enough to model real life problems. The bigger problems tend to have several things that we want to optimise. For instance, when selecting which route to take when driving home, we want the route that is:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;The &lt;strong&gt;fastest&lt;/strong&gt; (to get sooner).&lt;/li&gt;
-  &lt;li&gt;The &lt;strong&gt;shortest&lt;/strong&gt; (to spend less petrol).&lt;/li&gt;
-  &lt;li&gt;The &lt;strong&gt;cheapest&lt;/strong&gt; (in the case of toll roads).&lt;/li&gt;
-  &lt;li&gt;The &lt;strong&gt;safest&lt;/strong&gt; (if you live in a place with high crime rate).&lt;/li&gt;
-  &lt;li&gt;At least &lt;strong&gt;one drive-thru on the way&lt;/strong&gt; (it is perhaps time for a snack).&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;fastest&lt;/strong&gt; (to get sooner).&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;shortest&lt;/strong&gt; (to spend less petrol).&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;cheapest&lt;/strong&gt; (in the case of toll roads).&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;safest&lt;/strong&gt; (if you live in a place with high crime rate).&lt;/li&gt;
+&lt;li&gt;At least &lt;strong&gt;one drive-thru on the way&lt;/strong&gt; (it is perhaps time for a snack).&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;It might not be super obvious at a first glance that these objectives are possibly conflicting. In rush hour, for instance, the shortest way might not be the fastest or the safest. As a consequence, a situation can arise in which you have two routes that are identically “good”:&lt;/p&gt;
+&lt;p&gt;It might not be super obvious at a first glance that these objectives are possibly conflicting. In rush hour, for instance, the shortest way might not be the fastest or the safest. As a consequence, a situation can arise in which you have two routes that are identically &amp;quot;good&amp;quot;:&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Route A will take 20 minutes in rush-hour, but it will cost 20£ of petrol because it’s long.&lt;/p&gt;
+&lt;p&gt;Route A will take 20 minutes in rush-hour, but it will cost 20£ of petrol because it&amp;#39;s long.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Route B will take 30 minutes in rush-hour, but it will cost only 10£ because it’s short.&lt;/p&gt;
+&lt;p&gt;Route B will take 30 minutes in rush-hour, but it will cost only 10£ because it&amp;#39;s short.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;These are 2 possible solutions to the problem, and the decision between them is not obvious. If the long route was as cheap as the short one, then that is the best solution for sure, but now we have no option but to choose to have a &lt;code class=&quot;highlighter-rouge&quot;&gt;long-but-fast&lt;/code&gt; route or a &lt;code class=&quot;highlighter-rouge&quot;&gt;short-but-slow&lt;/code&gt; one.&lt;/p&gt;
+&lt;p&gt;These are 2 possible solutions to the problem, and the decision between them is not obvious. If the long route was as cheap as the short one, then that is the best solution for sure, but now we have no option but to choose to have a &lt;code&gt;long-but-fast&lt;/code&gt; route or a &lt;code&gt;short-but-slow&lt;/code&gt; one.&lt;/p&gt;
 
 &lt;p&gt;When we have more than 3 objectives to optimise, we have a many-objective problem.&lt;/p&gt;
 
-&lt;p&gt;#Particle Swarm&lt;/p&gt;
+&lt;h1&gt;Particle Swarm&lt;/h1&gt;
 
-&lt;p&gt;So, we know now what a many-objective problem is, and it’s kind of clear that they can be massively difficult to solve. Also, if you want to add more objectives it only gets harder. This motivated super intelligent people into thinking “so… what can we do to actually find solutions when we have a gazillion objectives?”&lt;/p&gt;
+&lt;p&gt;So, we know now what a many-objective problem is, and it&amp;#39;s kind of clear that they can be massively difficult to solve. Also, if you want to add more objectives it only gets harder. This motivated super intelligent people into thinking &amp;quot;so... what can we do to actually find solutions when we have a gazillion objectives?&amp;quot;&lt;/p&gt;
 
-&lt;p&gt;Several things were proposed to solve this kind of problems. Some of them work kind of well. The one my thesis is based on is inspired by the behaviour of swarms of bees and pigeons.&lt;/p&gt;
+&lt;p&gt;Several things were proposed to solve this kind of problems. Some of them work kind of well. The one my thesis is based on is inspired by the behaviour of swarms of bees and pigeons. &lt;/p&gt;
 
-&lt;p&gt;I know, this is super cool!&lt;/p&gt;
+&lt;p&gt;I know, this is super cool! &lt;/p&gt;
 
-&lt;p&gt;So… what is it that the bees and pigeons do that is so cool to solve this kind of problem? They perform a collaborative search for food or shelter in a big space, and they do that in big groups. If a bee finds a particular place full of tasty flowers, she will tell all the swarm something like “hey guys, I’ve found some awesome flowers!”. The rest of the swarm will be attracted to that particular place and after some time all of the swarm will be happily feeding in a particular garden.&lt;/p&gt;
+&lt;p&gt;So... what is it that the bees and pigeons do that is so cool to solve this kind of problem? They perform a collaborative search for food or shelter in a big space, and they do that in big groups. If a bee finds a particular place full of tasty flowers, she will tell all the swarm something like &amp;quot;hey guys, I&amp;#39;ve found some awesome flowers!&amp;quot;. The rest of the swarm will be attracted to that particular place and after some time all of the swarm will be happily feeding in a particular garden.&lt;/p&gt;
 
-&lt;p&gt;If we take this behaviour to the routes example, we can think of the same kind of method to solve our issue. We have many virtual “bees” that we call “particles”. They look for possible routes in the space of all possible ways home. When one of the particles finds a short path, all the other particles will be looking for even shorter paths and will be attracted by that solution. After a while, just like the real bees, the particles are overflying a particular spot in the space and that is the set of possible solutions.&lt;/p&gt;
+&lt;p&gt;If we take this behaviour to the routes example, we can think of the same kind of method to solve our issue. We have many virtual &amp;quot;bees&amp;quot; that we call &amp;quot;particles&amp;quot;. They look for possible routes in the space of all possible ways home. When one of the particles finds a short path, all the other particles will be looking for even shorter paths and will be attracted by that solution. After a while, just like the real bees, the particles are overflying a particular spot in the space and that is the set of possible solutions.&lt;/p&gt;
 
-&lt;p&gt;#What we actually did&lt;/p&gt;
+&lt;h1&gt;What we actually did&lt;/h1&gt;
 
-&lt;p&gt;Our job in all this thing was to implement the Particle Swarm solution to solve a set of many-objective problems. We compared that algorithm to a genetic algorithm that is the best algorithm to solve this kind of problems at the moment.&lt;/p&gt;
+&lt;p&gt;Our job in all this thing was to implement the Particle Swarm solution to solve a set of many-objective problems. We compared that algorithm to a genetic algorithm that is the best algorithm to solve this kind of problems at the moment. &lt;/p&gt;
 
 &lt;p&gt;We showed that although the genetic algorithm comes up with better solutions for some problems, the swarm approach comes with better solutions in other problems and in a fraction of the time it takes the genetic algorithm to do it.&lt;/p&gt;
 
 &lt;p&gt;Finally, here you have a video I made of some (red) particles finding the (blue) solution on a 3D space :)&lt;/p&gt;
 
-&lt;iframe width=&quot;800&quot; height=&quot;600&quot; src=&quot;https://www.youtube.com/embed/YEgvX7X80x8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;800&quot; height=&quot;600&quot; src=&quot;https://www.youtube.com/embed/YEgvX7X80x8&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;If you are interested in this stuff, please contact me. I’m more than happy to talk about it. There is a LOT that can be done with this kind of algorithms, and there is wide range of practical problems that can be tackled using them.&lt;/p&gt;
+&lt;p&gt;If you are interested in this stuff, please contact me. I&amp;#39;m more than happy to talk about it. There is a LOT that can be done with this kind of algorithms, and there is wide range of practical problems that can be tackled using them.&lt;/p&gt;
 
-&lt;p&gt;If you’re not happy with this explanation contact me as well and I’ll try to improve it!&lt;/p&gt;
+&lt;p&gt;If you&amp;#39;re not happy with this explanation contact me as well and I&amp;#39;ll try to improve it!&lt;/p&gt;
 </description>
                                 <pubDate>Sat, 19 Nov 2016 06:00:00 +0000</pubDate>
                                 <link>http://blog.torresmateo.com//mopso/</link>
@@ -102,31 +103,31 @@
                 
                         <item>
                                 <title>Un buen juez</title>
-                                <description>&lt;p&gt;Unos días atrás estuve conversando con unos amigos sobre cualquier pavada en un grupo de WhatsApp. No recuerdo exactamente cómo, pero en algún momento la conversación se torna en una conversación acerca de como está el país y se inicia un ping pong de ideas. Convencionalmente esto terminaría en un ping pong de ideas políticas con diferentes grados de tendencias a la derecha o izquierda… pero no esta vez.&lt;/p&gt;
+                                <description>&lt;p&gt;Unos días atrás estuve conversando con unos amigos sobre cualquier pavada en un grupo de WhatsApp. No recuerdo exactamente cómo, pero en algún momento la conversación se torna en una conversación acerca de como está el país y se inicia un ping pong de ideas. Convencionalmente esto terminaría en un ping pong de ideas políticas con diferentes grados de tendencias a la derecha o izquierda... pero no esta vez. &lt;/p&gt;
 
 &lt;p&gt;Hablamos de las ventajas y desventajas de la forma en que se maneja la justicia y se resuelven los conflictos en Paraguay, y como siempre esta discusión estaba bajo la sombra de la siempre presente corrupción y amiguismo que acompaña en la vida real todo el proceso.&lt;/p&gt;
 
-&lt;p&gt;En algún punto de la conversación propuse que se deje en manos de una computadora la resolución de casos simples y cuyos resultados sean obvios…&lt;/p&gt;
+&lt;p&gt;En algún punto de la conversación propuse que se deje en manos de una computadora la resolución de casos simples y cuyos resultados sean obvios...&lt;/p&gt;
 
-&lt;p&gt;¿Una locura… verdad?&lt;/p&gt;
+&lt;p&gt;¿Una locura... verdad? &lt;/p&gt;
 
-&lt;p&gt;Este post es acerca de porqué yo creo que esto no es tan loco como parece y algunas ideas iniciales de cómo podría implementarse un “juez electrónico”. Me enfoco en los principales obstáculos de la implementación.&lt;/p&gt;
+&lt;p&gt;Este post es acerca de porqué yo creo que esto no es tan loco como parece y algunas ideas iniciales de cómo podría implementarse un &amp;quot;juez electrónico&amp;quot;. Me enfoco en los principales obstáculos de la implementación. &lt;/p&gt;
 
-&lt;h1 id=&quot;la-lógica-de-la-justicia-la-ley&quot;&gt;La lógica de la justicia (la ley)&lt;/h1&gt;
+&lt;h1&gt;La lógica de la justicia (la ley)&lt;/h1&gt;
 
-&lt;p&gt;Las leyes se basan en la lógica… En particular, en la lógica jurídica. La lógica jurídica a su vez depende del lenguaje en que están escritos los artículos y esta por supuesto sujeta a interpretación debido a las ambigüedades del lenguaje. Esto en mi opinión es razonable si asumimos que el juez es incorruptible e imparcial. En la vida real (y especialmente en Paraguay) esto no ocurre. Por lo tanto, se requiere de una lógica formal y no contradictoria que pueda modelar la ley actual.&lt;/p&gt;
+&lt;p&gt;Las leyes se basan en la lógica... En particular, en la lógica jurídica. La lógica jurídica a su vez depende del lenguaje en que están escritos los artículos y esta por supuesto sujeta a interpretación debido a las ambigüedades del lenguaje. Esto en mi opinión es razonable si asumimos que el juez es incorruptible e imparcial. En la vida real (y especialmente en Paraguay) esto no ocurre. Por lo tanto, se requiere de una lógica formal y no contradictoria que pueda modelar la ley actual.&lt;/p&gt;
 
-&lt;p&gt;Ciertamente modelar la lógica jurídica con artículos muy generales y sus miles de posibles interpretaciones es una tarea compleja. Pero el juez digital no precisa de esto, ya que existe una parte no contradictoria en la ley que es posible modelar como una lógica formal. Aunque el juez digital no pueda resolver los casos más complejos, podría alivianar la carga a seres humanos o al menos dar sugerencias fundamentadas en la ley en conflictos menores.&lt;/p&gt;
+&lt;p&gt;Ciertamente modelar la lógica jurídica con artículos muy generales y sus miles de posibles interpretaciones es una tarea compleja. Pero el juez digital no precisa de esto, ya que existe una parte no contradictoria en la ley que es posible modelar como una lógica formal. Aunque el juez digital no pueda resolver los casos más complejos, podría alivianar la carga a seres humanos o al menos dar sugerencias fundamentadas en la ley en conflictos menores. &lt;/p&gt;
 
 &lt;p&gt;En mi opinión esto es más que suficiente para mejorar sustancialmente la justicia en Paraguay.&lt;/p&gt;
 
-&lt;h1 id=&quot;machine-learning-y-big-data&quot;&gt;Machine Learning y Big Data&lt;/h1&gt;
+&lt;h1&gt;Machine Learning y Big Data&lt;/h1&gt;
 
-&lt;p&gt;La ciencia de la computación en estos días es tal que permite utilizar la experiencia en otros campos para tomar mejores decisiones. En sus inicios esto estaba limitado por la escasez de datos disponibles para inferir cualquier tipo de patrón.&lt;/p&gt;
+&lt;p&gt;La ciencia de la computación en estos días es tal que permite utilizar la experiencia en otros campos para tomar mejores decisiones. En sus inicios esto estaba limitado por la escasez de datos disponibles para inferir cualquier tipo de patrón. &lt;/p&gt;
 
 &lt;p&gt;Hoy en día sin embargo, la cantidad de información disponible en cualquier campo de investigación es sin duda abrumadora para cualquier ser humano. Pero se ha demostrado (con &lt;a href=&quot;https://en.wikipedia.org/wiki/AlphaGo&quot;&gt;AlphaGo&lt;/a&gt; por ejemplo) que se vuelve posible este tipo de decisiones de forma exitosa.&lt;/p&gt;
 
-&lt;h1 id=&quot;el-juez-perfecto&quot;&gt;El juez perfecto&lt;/h1&gt;
+&lt;h1&gt;El juez perfecto&lt;/h1&gt;
 
 &lt;p&gt;Quizás el punto principal y más importante del juez digital es que no propongo un juez perfecto. Sólo propongo un juez que sea más justo y eficiente que el sistema actual. Estoy muy de acuerdo en que la tarea de hacer un juez automático que compita con un ser humano incorruptible es casi imposible. Pero teniendo en cuenta que hoy en día la justicia en Paraguay es en muchos casos un absurdo extremo, no veo porqué no darle una oportunidad a esta idea. Al final de cuentas, a este juez no se le va a poder comprar.&lt;/p&gt;
 </description>
@@ -137,49 +138,48 @@
                 
                         <item>
                                 <title>First Month in the UK</title>
-                                <description>&lt;p&gt;It’s been a while since I updated this thingy… Hello!&lt;/p&gt;
+                                <description>&lt;p&gt;It&amp;#39;s been a while since I updated this thingy... Hello!&lt;/p&gt;
 
-&lt;p&gt;Tonight it’s all about my first month in the UK. For a brief summary: I’m starting a PhD in Computer Science (Bioinformatics) at Royal Holloway, University of London. It will take four years counting from September 2015 (yes, I arrived a little bit late, more details below).&lt;/p&gt;
+&lt;p&gt;Tonight it&amp;#39;s all about my first month in the UK. For a brief summary: I&amp;#39;m starting a PhD in Computer Science (Bioinformatics) at Royal Holloway, University of London. It will take four years counting from September 2015 (yes, I arrived a little bit late, more details below).&lt;/p&gt;
 
-&lt;p&gt;#I’m going on an adventure!&lt;/p&gt;
+&lt;h1&gt;I&amp;#39;m going on an adventure!&lt;/h1&gt;
 
 &lt;p&gt;Leaving home is always exiting and frankly quite scary, especially since I never really spent long periods of time away from home. I was especially aware of everything thanks to both my mother and my sister (who are the ones that usually travel a lot in my family) who literally packed a lot of stuff in the suitcases that I thought were unnecessary but I was (obviously) utterly wrong.&lt;/p&gt;
 
-&lt;p&gt;Arriving here was quite a challenge, even after I had accepted the offer from Royal Holloway. The visa process takes a really long time and I had to go to Buenos Aires just to provide the required documents, and after that they process everything in Bogotá! (I hope they have a very good reason to spend so much in posting documents around instead of hiring some people to process the documents locally, but that’s not the point today). Nevertheless, I made it!&lt;/p&gt;
+&lt;p&gt;Arriving here was quite a challenge, even after I had accepted the offer from Royal Holloway. The visa process takes a really long time and I had to go to Buenos Aires just to provide the required documents, and after that they process everything in Bogotá! (I hope they have a very good reason to spend so much in posting documents around instead of hiring some people to process the documents locally, but that&amp;#39;s not the point today). Nevertheless, I made it! &lt;/p&gt;
 
-&lt;p&gt;#I can cook after all&lt;/p&gt;
+&lt;h1&gt;I can cook after all&lt;/h1&gt;
 
 &lt;p&gt;One of the things I am proud of is the fact that I can actually cook! (And this means more than assemble some ingredients into a sandwich or a pizza at best). But behold!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/fugazza.jpg&quot; alt=&quot;&quot; /&gt;
-This is a fugazza I made on the second weekend (and I realised I didn’t have a rolling pin!). It tasted very good!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/fugazza.jpg&quot; alt=&quot;&quot;&gt;
+This is a fugazza I made on the second weekend (and I realised I didn&amp;#39;t have a rolling pin!). It tasted very good! &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/tuna-thing.jpg&quot; alt=&quot;&quot; /&gt;
-This is.. a … tuna thing! (or tuna cake, or tuna bread). I tried in the first weekend here when I went to my supervisor’s house for a party. We were all so delighted by this that we asked for the recipe and I made it! (It wasn’t as good as the original one, but it tasted good nonetheless).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/tuna-thing.jpg&quot; alt=&quot;&quot;&gt;
+This is.. a ... tuna thing! (or tuna cake, or tuna bread). I tried in the first weekend here when I went to my supervisor&amp;#39;s house for a party. We were all so delighted by this that we asked for the recipe and I made it! (It wasn&amp;#39;t as good as the original one, but it tasted good nonetheless).&lt;/p&gt;
 
-&lt;p&gt;#The Place&lt;/p&gt;
+&lt;h1&gt;The Place&lt;/h1&gt;
 
 &lt;p&gt;I live in Egham, just outside London. It is far greener than I expected and walking is easier than in Asunción (because weather is not inhumanly hot). Here are 4 pictures of my first walk around Egham and Englefield Green (the town next to Egham).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/egham1.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/egham2.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/egham3.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/egham4.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/egham1.jpg&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/egham2.jpg&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/egham3.jpg&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/egham4.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;#Royal Holloway, University of London&lt;/p&gt;
+&lt;h1&gt;Royal Holloway, University of London&lt;/h1&gt;
 
-&lt;p&gt;It is beyond my ability to find the right words to describe the University, so… pictures!
-&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/rhul1.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/rhul2.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/rhul3.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/rhul4.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;It is beyond my ability to find the right words to describe the University, so... pictures!
+&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/rhul1.jpg&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/rhul2.jpg&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/rhul3.jpg&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/rhul4.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;#The Lab&lt;/p&gt;
+&lt;h1&gt;The Lab&lt;/h1&gt;
 
-&lt;p&gt;I’m currently in the Computer Science Department at Royal Holloway, working in &lt;a href=&quot;http://www.paccanarolab.org&quot;&gt;PaccanaroLab&lt;/a&gt; (run by Alberto Paccanaro, my supervisor).&lt;/p&gt;
+&lt;p&gt;I&amp;#39;m currently in the Computer Science Department at Royal Holloway, working in &lt;a href=&quot;http://www.paccanarolab.org&quot;&gt;PaccanaroLab&lt;/a&gt; (run by Alberto Paccanaro, my supervisor).&lt;/p&gt;
 
-&lt;p&gt;People here is amazing, right now we are mostly from Paraguay (check the “people” section in the website) and I feel very good working with everybody! Also, I get to work in the same place as the creator of the amazing tool &lt;a href=&quot;http://igraph.org&quot;&gt;igraph&lt;/a&gt; used to work, which is AWESOME!!&lt;/p&gt;
-
+&lt;p&gt;People here is amazing, right now we are mostly from Paraguay (check the &amp;quot;people&amp;quot; section in the website) and I feel very good working with everybody! Also, I get to work in the same place as the creator of the amazing tool &lt;a href=&quot;http://igraph.org&quot;&gt;igraph&lt;/a&gt; used to work, which is AWESOME!!&lt;/p&gt;
 </description>
                                 <pubDate>Mon, 09 Nov 2015 20:19:00 +0000</pubDate>
                                 <link>http://blog.torresmateo.com//first-month-in-the-UK/</link>
@@ -190,45 +190,45 @@ This is.. a … tuna thing! (or tuna cake, or tuna bread). I tried in the first 
                                 <title>¿Porqué me quedo colgado de repente?</title>
                                 <description>&lt;p&gt;En medio de una conversación fluida de repente PAF!, me quedo (aparentemente) congelado unos segundos antes de responder. Claramente
 esto afecta al ritmo de la conversación y a veces incluso genera que se pierda el &lt;em&gt;rapport&lt;/em&gt; que había hasta ese microsegundo anterior
-a que me quede colgado. Estoy seguro de que no solo me pasa a mi… pero ultimamente la verdaaad es que cada vez me lo hacen notar con
+a que me quede colgado. Estoy seguro de que no solo me pasa a mi... pero ultimamente la verdaaad es que cada vez me lo hacen notar con
 más frecuencia.&lt;/p&gt;
 
 &lt;p&gt;Para no dar muchas vueltas, la realidad es que en esos momentos NO me quedo colgado, pero estoy considerando que responder, y quizás 
 estoy considerando &lt;em&gt;varias&lt;/em&gt; cosas que responder. Algo que no me explico es ¿como es que esto se da en conversaciones triviales de 
-la vida? Sinceramente, NI IDEA…. PERO!! Tengo una teoría de porque me pasa a mi (y quizás también sea así para vos!).&lt;/p&gt;
+la vida? Sinceramente, NI IDEA.... PERO!! Tengo una teoría de porque me pasa a mi (y quizás también sea así para vos!).&lt;/p&gt;
 
 &lt;p&gt;Cada vez es más necesario para mí hacerme muchas preguntas. Esto se debe principalmente a que me estoy dedicando un poco más a la 
 investigación y a diseñar soluciones a diverso tipo de problemas (informáticos por lo general). Este ejercicio mental hace que la
-mayor parte de mi actividad productiva sea “dentro” de mi cabeza. Me gusta pensar que estoy progresando porque cada vez puedo considerar
-más factores al encarar un problema y las soluciones resultantes se vuelven mas “elegantes” que las soluciones que proponía hace un 
+mayor parte de mi actividad productiva sea &amp;quot;dentro&amp;quot; de mi cabeza. Me gusta pensar que estoy progresando porque cada vez puedo considerar
+más factores al encarar un problema y las soluciones resultantes se vuelven mas &amp;quot;elegantes&amp;quot; que las soluciones que proponía hace un 
 año.&lt;/p&gt;
 
 &lt;p&gt;Me parece que un efecto de estar mucho tiempo pensando de esta manera, hace que ante cualquier trivialidad tienda a analizar cada vez
-más factores dentro del contexto de la conversación. El efecto de esto? Estoy ahi como una computadora cuando se cuelga… &lt;em&gt;sin un
-output&lt;/em&gt; que de evidencia de que sigo en el “mundo real”.&lt;/p&gt;
+más factores dentro del contexto de la conversación. El efecto de esto? Estoy ahi como una computadora cuando se cuelga... &lt;em&gt;sin un
+output&lt;/em&gt; que de evidencia de que sigo en el &amp;quot;mundo real&amp;quot;. &lt;/p&gt;
 
-&lt;p&gt;#¿Es esto algo negativo?&lt;/p&gt;
+&lt;h1&gt;¿Es esto algo negativo?&lt;/h1&gt;
 
 &lt;p&gt;Si. Mantener una conversación fluida es un aspecto muy importante de la vida del ser humano. Y pensar mucho en algo innecesario es una
 pérdida de energía y tiempo que finalmente no lleva a nada. Ciertamente nada es absoluto y hay ocasiones en las que uno tiene que 
 considerar muchas cosas antes de responder (como por ejemplo una entrevista de trabajo, un debate, etc.)&lt;/p&gt;
 
-&lt;p&gt;#¿Que puedo hacer al respecto?&lt;/p&gt;
+&lt;h1&gt;¿Que puedo hacer al respecto?&lt;/h1&gt;
 
 &lt;p&gt;Personalmente, trato conscientemente de no irme mucho por las ramas de pensamiento cuando estoy conversando. Cuando creo que es algo
 demasiado importante como para evitar pensar bastante antes de responder, trato de dar algún tipo de &lt;em&gt;feedback&lt;/em&gt; al interlocutor (algo
-como “Dejame pensar un ratito” o ponerme un una típica pose de pensador, como agarrarme la barba).&lt;/p&gt;
+como &amp;quot;Dejame pensar un ratito&amp;quot; o ponerme un una típica pose de pensador, como agarrarme la barba).&lt;/p&gt;
 
-&lt;p&gt;#¿Eso funciona?&lt;/p&gt;
+&lt;h1&gt;¿Eso funciona?&lt;/h1&gt;
 
 &lt;p&gt;Más o menos. Este ejercicio mental hace que disminuya en cierto grado el corte en la fluidez de las conversaciones que tengo 
 cotidianamente. Si te pasa algo similar, te cuento que es un poco frustrante no tener la libertad de pensar mucho antes de responder 
-y “arriesgarte” a dar una respuesta de la que después te puedas arrepentir. Pero ayuda un poco pensar que hablar en “tiempo real” es 
+y &amp;quot;arriesgarte&amp;quot; a dar una respuesta de la que después te puedas arrepentir. Pero ayuda un poco pensar que hablar en &amp;quot;tiempo real&amp;quot; es 
 una habilidad muy buena, y optimizar la cantidad de pensamiento que se da a un tema antes de responder es una habilidad muy deseable 
 para la vida.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Advertencia: Este es un post basado en opiniones y una investigación informal y poco profunda de un tema que no conozco muy bien.&lt;/p&gt;
+&lt;p&gt;Advertencia: Este es un post basado en opiniones y una investigación informal y poco profunda de un tema que no conozco muy bien.&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
                                 <pubDate>Tue, 21 Jul 2015 07:17:00 +0100</pubDate>
@@ -246,83 +246,74 @@ para la vida.&lt;/p&gt;
 no incluí en otros posts porque no quería mezclar tanto temas generales con desarrollo de videojuegos y cosas de informática en general.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Antes de seguir con el post, enumero los cambios al blog que vinieron con este post!&lt;/p&gt;
+&lt;p&gt;Antes de seguir con el post, enumero los cambios al blog que vinieron con este post!&lt;/p&gt;
 
-  &lt;ul&gt;
-    &lt;li&gt;Mejora general del estilo (desde mi punto de vista de programador!).&lt;/li&gt;
-    &lt;li&gt;Sección en Español (para este tipo de posts que son más para mi familia/amigos que manuales de informática y cosas así). Prometo arreglar eventualmente los errores ortográficos!&lt;/li&gt;
-  &lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Mejora general del estilo (desde mi punto de vista de programador!).&lt;/li&gt;
+&lt;li&gt;Sección en Español (para este tipo de posts que son más para mi familia/amigos que manuales de informática y cosas así). Prometo arreglar eventualmente los errores ortográficos!&lt;/li&gt;
+&lt;/ul&gt;
 
-  &lt;p&gt;Algunas cosas van a cambiar en el futuro, sobre todo cuando decida dedicarme un poco más a la parte visual del blog. Por ahora me parece cómodo de leer :)&lt;/p&gt;
+&lt;p&gt;Algunas cosas van a cambiar en el futuro, sobre todo cuando decida dedicarme un poco más a la parte visual del blog. Por ahora me parece cómodo de leer :)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;#Ingeniería!&lt;/p&gt;
+&lt;h1&gt;Ingeniería!&lt;/h1&gt;
 
 &lt;p&gt;Altas probabilidades de que si me conocés sabes que hace mas o menos un mes finalmente defendí la tesis :D. Fue un proceso largo (un poco más de dos años)
-y al principio los resultados eran poco favorables y desanimadores, pero finalmente defendí y saqué la máxima calificación posible.&lt;/p&gt;
+y al principio los resultados eran poco favorables y desanimadores, pero finalmente defendí y saqué la máxima calificación posible. &lt;/p&gt;
 
 &lt;p&gt;Como este no es un post técnico, simplemente voy a listar algunas cosas que aprendí de la &lt;em&gt;experiencia&lt;/em&gt; de haber hecho la tesis&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Escribir el libro desde el principio&lt;/strong&gt;: El primer consejo de Benjamín Barán (mi excelente tutor!) y que como todo novato traté de seguir la primera
-semana pero no había caso.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Escribir el libro desde el principio&lt;/strong&gt;: El primer consejo de Benjamín Barán (mi excelente tutor!) y que como todo novato traté de seguir la primera
+semana pero no había caso. &lt;/p&gt;
 
-    &lt;p&gt;Escribir el libro de tesis (después de terminar todo lo otro) es una de esas actividades en la vida que hacen que literalmente 
+&lt;p&gt;Escribir el libro de tesis (después de terminar todo lo otro) es una de esas actividades en la vida que hacen que literalmente 
 cualquier &lt;em&gt;otra&lt;/em&gt; actividad se vuelva inmediatamente algo infinitamente fascinante. Yo atribuyo esto al hecho de que uno ya estuvo lidiando con el tema por tanto
-tiempo y desde tantos puntos de vista, que volver a encarar el problema resuelto pierde todo el atractivo y la emoción de todo lo que uno ignora.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;A la madrugada se programa mejor&lt;/strong&gt;: Al menos en mi caso. Infinita pelea con Mamá y Papá (“voy a dormir temprano!! te juro!!”).&lt;/p&gt;
+tiempo y desde tantos puntos de vista, que volver a encarar el problema resuelto pierde todo el atractivo y la emoción de todo lo que uno ignora. &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;A la madrugada se programa mejor&lt;/strong&gt;: Al menos en mi caso. Infinita pelea con Mamá y Papá (&amp;quot;voy a dormir temprano!! te juro!!&amp;quot;). &lt;/p&gt;
 
-    &lt;p&gt;Esto es algo personal y estoy 100% seguro de que cada uno tiene su horario de iluminación y lastimosamente el mío es entre las 2 y 4 de la mañana. No sé como
+&lt;p&gt;Esto es algo personal y estoy 100% seguro de que cada uno tiene su horario de iluminación y lastimosamente el mío es entre las 2 y 4 de la mañana. No sé como
 explicar la sensación de silencio y quietud que solamente se puede sentir a estas horas de la madrugada. Para mí es como que toda la ciudad se calla y me deja
-pensar con más claridad. No hay interrupciones… no hay ruidos… no hay apuros… sinceramente hasta ahora nunca logro concentrarme tan profundamente en otro
-horario.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;TODOS te pueden dar feedback SUPER VALIOSO!&lt;/strong&gt;: Fue una sorpresa cuando me di cuenta de esto.&lt;/p&gt;
+pensar con más claridad. No hay interrupciones... no hay ruidos... no hay apuros... sinceramente hasta ahora nunca logro concentrarme tan profundamente en otro
+horario.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;TODOS te pueden dar feedback SUPER VALIOSO!&lt;/strong&gt;: Fue una sorpresa cuando me di cuenta de esto. &lt;/p&gt;
 
-    &lt;p&gt;Mi tema de tesis es “Optimización por Enjambre de Partículas en Problemas de Muchos Objetivos”, lo que “simplificado y resumido” significa utilizar un programa
-que simula un montón (enjambre) de elementos que se llaman partículas, para tratar de resolver problemas de muchas dimensiones (osea… más complejos que otros 
+&lt;p&gt;Mi tema de tesis es &amp;quot;Optimización por Enjambre de Partículas en Problemas de Muchos Objetivos&amp;quot;, lo que &amp;quot;simplificado y resumido&amp;quot; significa utilizar un programa
+que simula un montón (enjambre) de elementos que se llaman partículas, para tratar de resolver problemas de muchas dimensiones (osea... más complejos que otros 
 problemas), y esto lo hace inspirado en el movimiento de animales como las abejas y aves que exploran una zona de manera colectiva. Prueben decirle eso a 
-cualquiera y van a conocer la expresión facial que expresa con total claridad “te volviste loco chera’a”.&lt;/p&gt;
+cualquiera y van a conocer la expresión facial que expresa con total claridad &amp;quot;te volviste loco chera&amp;#39;a&amp;quot;.&lt;/p&gt;
 
-    &lt;p&gt;Aun así, cuando estás con un dilema específico, la gente que está dispuesta a escucharte un rato y dejarte traducir toda la jerga a conceptos más simples puede 
+&lt;p&gt;Aun así, cuando estás con un dilema específico, la gente que está dispuesta a escucharte un rato y dejarte traducir toda la jerga a conceptos más simples puede 
 ayudarte de una manera impresionante a ver otro punto de vista que, por estar muy metido en el problema, no te resultaba obvio. Me cuesta dar un ejemplo específico
 que ilustre esto de forma espectacular, pero para mí uno de los más memorables fue hablar con Rocio (mi hermana) acerca de un tema nada relacionado a la tesis.
-No recuerdo el tema de conversación exacto, pero recuerdo que ella me dijo la frase “todos esos frasquitos tienen un uso, no importa si es chico, por lo menos una
-tierrita entra”. Esa frase arbitraria por algún motivo hizo &lt;em&gt;click&lt;/em&gt; en mi cabeza y me llevó a la solución de un bug que tenía en mi representación de hipercubos
-n-dimensionales en python.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;¡Investigar es divertido!&lt;/strong&gt;: Este es un punto simple de explicar para mí. Cuando era chiquito y no sabía cómo funcionaba algo, siempre le preguntaba a Papá 
-“¿cómo funciona la heladera? porque… osea… CREA frio ¿entendés?” “¿la fotocopiadora tiene un ojo o algo así verdad?” “¿cómo lo que las llaves son todas parecidas
-pero una nomas abre cada candado?”. Era prácticamente un juego para mi… Investigar es la expansión de ese juego!!&lt;/p&gt;
-  &lt;/li&gt;
+No recuerdo el tema de conversación exacto, pero recuerdo que ella me dijo la frase &amp;quot;todos esos frasquitos tienen un uso, no importa si es chico, por lo menos una
+tierrita entra&amp;quot;. Esa frase arbitraria por algún motivo hizo &lt;em&gt;click&lt;/em&gt; en mi cabeza y me llevó a la solución de un bug que tenía en mi representación de hipercubos
+n-dimensionales en python.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;¡Investigar es divertido!&lt;/strong&gt;: Este es un punto simple de explicar para mí. Cuando era chiquito y no sabía cómo funcionaba algo, siempre le preguntaba a Papá 
+&amp;quot;¿cómo funciona la heladera? porque... osea... CREA frio ¿entendés?&amp;quot; &amp;quot;¿la fotocopiadora tiene un ojo o algo así verdad?&amp;quot; &amp;quot;¿cómo lo que las llaves son todas parecidas
+pero una nomas abre cada candado?&amp;quot;. Era prácticamente un juego para mi... Investigar es la expansión de ese juego!!&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;#El #GAMEDEVPY&lt;/p&gt;
+&lt;h1&gt;El #GAMEDEVPY&lt;/h1&gt;
 
-&lt;p&gt;Yo defendía la tesis un lunes… y el jueves de esa misma semana tenía que dar una charla acerca de música para videojuegos en un evento organizado por IGDA Paraguay.&lt;/p&gt;
+&lt;p&gt;Yo defendía la tesis un lunes... y el jueves de esa misma semana tenía que dar una charla acerca de música para videojuegos en un evento organizado por IGDA Paraguay.&lt;/p&gt;
 
 &lt;p&gt;El evento salió muchísimo mejor de lo que esperába todos, y estuve mostrando los juegos que hice con Fer (para saber quién es Fer, lee los posts viejos!). Fue 
 muchísima gente e incluso ese fin de semana hablamos del evento en radios locales! Espero que pronto tengamos eventos de este tipo nuevamente!&lt;/p&gt;
 
 &lt;p&gt;Para evitar alargar mucho este (ya medio kilométrico post) les dejo el &lt;a href=&quot;https://youtu.be/1iDo7U9VR7Y&quot;&gt;video&lt;/a&gt; de la charla y &lt;a href=&quot;https://www.facebook.com/media/set/?set=a.443927162434811.1073741833.301346146692914&amp;amp;type=3&quot;&gt;fotos&lt;/a&gt; del evento!&lt;/p&gt;
 
-&lt;p&gt;#La vida después de la tesis (World of Warcraft)&lt;/p&gt;
+&lt;h1&gt;La vida después de la tesis (World of Warcraft)&lt;/h1&gt;
 
 &lt;p&gt;Una breve lista de las cosas principales estoy haciendo por ahora:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Investigando el mismo tema de la tesis.&lt;/li&gt;
-  &lt;li&gt;Trabajando a tiempo completo.&lt;/li&gt;
-  &lt;li&gt;Preparando documentos y cosas para una posible beca.&lt;/li&gt;
-  &lt;li&gt;Programando videojuegos! Con la gente de &lt;a href=&quot;http://arsisteam.com&quot;&gt;arsis&lt;/a&gt;, estamos preparando una versión mucho más increíble de Bacterias (quizás con otro nombre!).&lt;/li&gt;
-  &lt;li&gt;Jugando! (Principalmente World of Warcraft, pero de una manera MUCHO más responsable y sensata que cuando estaba en el colegio!).&lt;/li&gt;
+&lt;li&gt;Investigando el mismo tema de la tesis.&lt;/li&gt;
+&lt;li&gt;Trabajando a tiempo completo.&lt;/li&gt;
+&lt;li&gt;Preparando documentos y cosas para una posible beca.&lt;/li&gt;
+&lt;li&gt;Programando videojuegos! Con la gente de &lt;a href=&quot;http://arsisteam.com&quot;&gt;arsis&lt;/a&gt;, estamos preparando una versión mucho más increíble de Bacterias (quizás con otro nombre!).&lt;/li&gt;
+&lt;li&gt;Jugando! (Principalmente World of Warcraft, pero de una manera MUCHO más responsable y sensata que cuando estaba en el colegio!).&lt;/li&gt;
 &lt;/ul&gt;
-
 </description>
                                 <pubDate>Wed, 17 Jun 2015 07:17:00 +0100</pubDate>
                                 <link>http://blog.torresmateo.com//ingenieria-la-vida-y-wow/</link>
@@ -333,66 +324,65 @@ muchísima gente e incluso ese fin de semana hablamos del evento en radios local
                                 <title>Hello World! (again)</title>
                                 <description>&lt;p&gt;Hello again my fellow readers!! (Hi Mom!)&lt;/p&gt;
 
-&lt;p&gt;It’s been a long time since my last post and I just wanted to post a little update on what’s going on with my life and this blog.&lt;/p&gt;
+&lt;p&gt;It&amp;#39;s been a long time since my last post and I just wanted to post a little update on what&amp;#39;s going on with my life and this blog.&lt;/p&gt;
 
-&lt;p&gt;First of all, I’ve bought a new domain (&lt;a href=&quot;torresmateo.com&quot;&gt;torresmateo.com&lt;/a&gt;) and moved the blog here (you can still use the old url though, but it will just redirect here). This means that all those hundreds of thousands of facebook comments (for a total sum of 10 through all posts) are gone and comments are disabled until I come across a system that I like and it’s not so JavaScript related.&lt;/p&gt;
+&lt;p&gt;First of all, I&amp;#39;ve bought a new domain (&lt;a href=&quot;torresmateo.com&quot;&gt;torresmateo.com&lt;/a&gt;) and moved the blog here (you can still use the old url though, but it will just redirect here). This means that all those hundreds of thousands of facebook comments (for a total sum of 10 through all posts) are gone and comments are disabled until I come across a system that I like and it&amp;#39;s not so JavaScript related.&lt;/p&gt;
 
-&lt;p&gt;Secondly, a brief update on what I’ve been doing since August. I decided to organise this a little bit.&lt;/p&gt;
+&lt;p&gt;Secondly, a brief update on what I&amp;#39;ve been doing since August. I decided to organise this a little bit.&lt;/p&gt;
 
-&lt;p&gt;#College and Work Related Stuff&lt;/p&gt;
+&lt;h1&gt;College and Work Related Stuff&lt;/h1&gt;
 
-&lt;p&gt;I’ve been working on my thesis and it seems I’m on the last mile of that road. I’ve published a paper in the process, which I’ll link in a future post. It’s about solving multi-dimensional optimisation problems using algorithms based on a particle swarm meta-heuristic. Cool right?&lt;/p&gt;
+&lt;p&gt;I&amp;#39;ve been working on my thesis and it seems I&amp;#39;m on the last mile of that road. I&amp;#39;ve published a paper in the process, which I&amp;#39;ll link in a future post. It&amp;#39;s about solving multi-dimensional optimisation problems using algorithms based on a particle swarm meta-heuristic. Cool right?&lt;/p&gt;
 
-&lt;p&gt;I’ve also been working in web development as always, it’s still fun, thanks for asking :D&lt;/p&gt;
+&lt;p&gt;I&amp;#39;ve also been working in web development as always, it&amp;#39;s still fun, thanks for asking :D&lt;/p&gt;
 
-&lt;p&gt;#Game Related Stuff&lt;/p&gt;
+&lt;h1&gt;Game Related Stuff&lt;/h1&gt;
 
 &lt;p&gt;Now to the important business&lt;/p&gt;
 
-&lt;p&gt;##IGDA Paraguay&lt;/p&gt;
+&lt;h2&gt;IGDA Paraguay&lt;/h2&gt;
 
-&lt;p&gt;Here in Paraguay the game development industry is almost nonexistent. I mean, there are many game developers and a lot of them are incredibly capable, but sadly there is almost no market here and we have some serious limitations like not being able to sell in Google Play (unless we partner with someone from another country).&lt;/p&gt;
+&lt;p&gt;Here in Paraguay the game development industry is almost nonexistent. I mean, there are many game developers and a lot of them are incredibly capable, but sadly there is almost no market here and we have some serious limitations like not being able to sell in Google Play (unless we partner with someone from another country). &lt;/p&gt;
 
-&lt;p&gt;The IGDA (International Game Developers Association) is the largest non-profit membership organization serving individuals that create games and now Paraguay is a proud member with its own chapter. We are starting making some noise here and for the first time (that I know of) we’re getting some serious attention from a lot of people. The videogame market is growing and a lot of developers, designers and artists are getting to know each other and it seems to me that very soon we’ll see Paraguayan games shining out there. You can get updates on our chapter &lt;a href=&quot;http://facebook.com/igdapy&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The IGDA (International Game Developers Association) is the largest non-profit membership organization serving individuals that create games and now Paraguay is a proud member with its own chapter. We are starting making some noise here and for the first time (that I know of) we&amp;#39;re getting some serious attention from a lot of people. The videogame market is growing and a lot of developers, designers and artists are getting to know each other and it seems to me that very soon we&amp;#39;ll see Paraguayan games shining out there. You can get updates on our chapter &lt;a href=&quot;http://facebook.com/igdapy&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;I’ve been given the honor of collaborating on this amazing project as secretary!&lt;/p&gt;
+&lt;p&gt;I&amp;#39;ve been given the honor of collaborating on this amazing project as secretary!&lt;/p&gt;
 
-&lt;p&gt;##My Personal Projects&lt;/p&gt;
+&lt;h2&gt;My Personal Projects&lt;/h2&gt;
 
-&lt;p&gt;While not writing this blog, or writing my thesis, or working, or doing survival related things like eating or sleeping…. I’ve been programming some games (kind of).&lt;/p&gt;
+&lt;p&gt;While not writing this blog, or writing my thesis, or working, or doing survival related things like eating or sleeping.... I&amp;#39;ve been programming some games (kind of).&lt;/p&gt;
 
-&lt;p&gt;###Wolfenstein 3D Clone&lt;/p&gt;
+&lt;h3&gt;Wolfenstein 3D Clone&lt;/h3&gt;
 
-&lt;p&gt;This project started as a way to teach myself “proper” 3D and OpenGL. I though “I should start with the very basic”. I know an infinite number of clones of this game are already out there, but I don’t care, the process was unbelievably fun and I learned a lot. I’m not sure about releasing this because there’s nothing really exciting about the game itself. Also, I didn’t make a lot of effort in the assets of the game and it doesn’t look very pretty. I’m not sure… maybe I’ll do it in the future. Who knows?&lt;/p&gt;
+&lt;p&gt;This project started as a way to teach myself &amp;quot;proper&amp;quot; 3D and OpenGL. I though &amp;quot;I should start with the very basic&amp;quot;. I know an infinite number of clones of this game are already out there, but I don&amp;#39;t care, the process was unbelievably fun and I learned a lot. I&amp;#39;m not sure about releasing this because there&amp;#39;s nothing really exciting about the game itself. Also, I didn&amp;#39;t make a lot of effort in the assets of the game and it doesn&amp;#39;t look very pretty. I&amp;#39;m not sure... maybe I&amp;#39;ll do it in the future. Who knows?&lt;/p&gt;
 
-&lt;p&gt;###Mini Engine&lt;/p&gt;
+&lt;h3&gt;Mini Engine&lt;/h3&gt;
 
 &lt;p&gt;After finishing the Wolf3D clone, I wanted to keep learning OpenGL and I came across &lt;a href=&quot;https://www.youtube.com/user/thebennybox&quot;&gt;this&lt;/a&gt; YouTube Channel (which I then realised contains a tutorial on how to do a Wolf3D clone, kudos to me for not googling before coding!). It really is an invaluable source of knowledge for beginners who want to build a 3D game engine from scratch.&lt;/p&gt;
 
-&lt;p&gt;###Mobile Project&lt;/p&gt;
+&lt;h3&gt;Mobile Project&lt;/h3&gt;
 
-&lt;p&gt;The latest project is a mobile (or rather multi-platform) game. I’m using &lt;a href=&quot;http://www.cocos2d-x.org/&quot;&gt;Cocos2d-x&lt;/a&gt;, which is an open source 2D (and now 3D) game engine written in C++. So far it’s been amazingly easy and it lets me focus on the game mechanics rather than deal with the rendering and technical issues.&lt;/p&gt;
+&lt;p&gt;The latest project is a mobile (or rather multi-platform) game. I&amp;#39;m using &lt;a href=&quot;http://www.cocos2d-x.org/&quot;&gt;Cocos2d-x&lt;/a&gt;, which is an open source 2D (and now 3D) game engine written in C++. So far it&amp;#39;s been amazingly easy and it lets me focus on the game mechanics rather than deal with the rendering and technical issues.&lt;/p&gt;
 
-&lt;p&gt;The main idea is to make a simple game but actually finish it and release it as a commercial product this year, or maybe in 2016. We’ll see. I’ll probably make a dev blog starting in march, when I expect to be working at least half time on this.&lt;/p&gt;
+&lt;p&gt;The main idea is to make a simple game but actually finish it and release it as a commercial product this year, or maybe in 2016. We&amp;#39;ll see. I&amp;#39;ll probably make a dev blog starting in march, when I expect to be working at least half time on this.&lt;/p&gt;
 
-&lt;p&gt;#This Blog&lt;/p&gt;
+&lt;h1&gt;This Blog&lt;/h1&gt;
 
-&lt;p&gt;The original idea remains (except the “one post every two weeks” part to be realistic). But there are some changes:&lt;/p&gt;
+&lt;p&gt;The original idea remains (except the &amp;quot;one post every two weeks&amp;quot; part to be realistic). But there are some changes:&lt;/p&gt;
 
-&lt;p&gt;I’ll be writing some tutorials on some topics that I had a very difficult time to come across or had to read from several unrelated sources to understand. I think of it as a remainder and hopefully it’ll help someone else. They will mainly be about how to program this or that using Cocos2d-x or how to do specific things using OpenGL and GLSL, but there will also be tutorials on asset generation. So far, I’ve decided to start with these:&lt;/p&gt;
+&lt;p&gt;I&amp;#39;ll be writing some tutorials on some topics that I had a very difficult time to come across or had to read from several unrelated sources to understand. I think of it as a remainder and hopefully it&amp;#39;ll help someone else. They will mainly be about how to program this or that using Cocos2d-x or how to do specific things using OpenGL and GLSL, but there will also be tutorials on asset generation. So far, I&amp;#39;ve decided to start with these:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Blender Tutorial: How to setup a fully automated Isometric tile generation Scene (a tutorial for absolute Blender newbies like me). This is mostly a Python tutorial.&lt;/li&gt;
-  &lt;li&gt;How to automate a tilesheet generation in Photoshop and Gimp for Tiled (using scripts).&lt;/li&gt;
-  &lt;li&gt;How to easily make an isometric scene in Cocos2d-x.&lt;/li&gt;
+&lt;li&gt;Blender Tutorial: How to setup a fully automated Isometric tile generation Scene (a tutorial for absolute Blender newbies like me). This is mostly a Python tutorial.&lt;/li&gt;
+&lt;li&gt;How to automate a tilesheet generation in Photoshop and Gimp for Tiled (using scripts).&lt;/li&gt;
+&lt;li&gt;How to easily make an isometric scene in Cocos2d-x.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;I don’t know when I’ll be releasing these tutorials, but the first one is already started, so it certainly wont be six months (I think).&lt;/p&gt;
+&lt;p&gt;I don&amp;#39;t know when I&amp;#39;ll be releasing these tutorials, but the first one is already started, so it certainly wont be six months (I think).&lt;/p&gt;
 
-&lt;p&gt;What’s 100% true is the next post will be about the last complete game Fer and I made in College. I’ll try my best to post it by the end of January, but so far my schedule projections for this blogs are nothing but lies. If you like to give some feedback on this, feel free to &lt;a href=&quot;mailto:torresmateo@gmail.com&quot;&gt;e-mail&lt;/a&gt; me. Please refer tho the post you’re talking about.&lt;/p&gt;
+&lt;p&gt;What&amp;#39;s 100% true is the next post will be about the last complete game Fer and I made in College. I&amp;#39;ll try my best to post it by the end of January, but so far my schedule projections for this blogs are nothing but lies. If you like to give some feedback on this, feel free to &lt;a href=&quot;mailto:torresmateo@gmail.com&quot;&gt;e-mail&lt;/a&gt; me. Please refer tho the post you&amp;#39;re talking about. &lt;/p&gt;
 
-&lt;p&gt;Aaaaaaaaand I think that’s all for now, see you next time!&lt;/p&gt;
-
+&lt;p&gt;Aaaaaaaaand I think that&amp;#39;s all for now, see you next time!&lt;/p&gt;
 </description>
                                 <pubDate>Sun, 04 Jan 2015 06:25:00 +0000</pubDate>
                                 <link>http://blog.torresmateo.com//hello-world-again/</link>
@@ -405,60 +395,60 @@ muchísima gente e incluso ese fin de semana hablamos del evento en radios local
 if you have to make a game like &lt;a href=&quot;/ui-design/&quot;&gt;Bacteria&lt;/a&gt;, the obvious choice is
 &lt;a href=&quot;http://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning&quot;&gt;Alpha-Beta pruning&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;##The Story&lt;/p&gt;
+&lt;h2&gt;The Story&lt;/h2&gt;
 
-&lt;p&gt;The assignment Fer and I had was &lt;a href=&quot;http://en.wikipedia.org/wiki/Backgammon&quot;&gt;Backgammon&lt;/a&gt;. It’s a board game with checkers and dices. The
-main goal is to move your checkers from your “house” to the opponent’s. In your turn you throw a pair of dices, and move the checkers forward.
-If you’ve got the same result in both dices, you earn a double turn, moving four times.&lt;/p&gt;
+&lt;p&gt;The assignment Fer and I had was &lt;a href=&quot;http://en.wikipedia.org/wiki/Backgammon&quot;&gt;Backgammon&lt;/a&gt;. It&amp;#39;s a board game with checkers and dices. The
+main goal is to move your checkers from your &amp;quot;house&amp;quot; to the opponent&amp;#39;s. In your turn you throw a pair of dices, and move the checkers forward.
+If you&amp;#39;ve got the same result in both dices, you earn a double turn, moving four times.&lt;/p&gt;
 
-&lt;p&gt;It’s actually a boring game, compared to chess, but Fer and I learned how to play, and even watched YouTube videos of the world championship.&lt;/p&gt;
+&lt;p&gt;It&amp;#39;s actually a boring game, compared to chess, but Fer and I learned how to play, and even watched YouTube videos of the world championship.&lt;/p&gt;
 
-&lt;p&gt;When this assignment was given, one of the requirements was to use alpha-beta pruning for the AI. It didn’t feel right to me, because adding
-dices to the mix leaves you with a lot of randomness. Of course you can modify alpha-beta to deal with the randomness, but as I’ve said above,
-there are A LOT of options, and it’s part of the art of problem solving to pick the right tool for the job.&lt;/p&gt;
+&lt;p&gt;When this assignment was given, one of the requirements was to use alpha-beta pruning for the AI. It didn&amp;#39;t feel right to me, because adding
+dices to the mix leaves you with a lot of randomness. Of course you can modify alpha-beta to deal with the randomness, but as I&amp;#39;ve said above,
+there are A LOT of options, and it&amp;#39;s part of the art of problem solving to pick the right tool for the job.&lt;/p&gt;
 
-&lt;p&gt;In class, I asked our teacher about this, and he didn’t answer my question. I stayed after class to him again, and we had an argument about the
+&lt;p&gt;In class, I asked our teacher about this, and he didn&amp;#39;t answer my question. I stayed after class to him again, and we had an argument about the
 right algorithm to use for the game.&lt;/p&gt;
 
-&lt;p&gt;##The implementation&lt;/p&gt;
+&lt;h2&gt;The implementation&lt;/h2&gt;
 
-&lt;p&gt;Graphically, it’s the same as &lt;a href=&quot;/ui-design/&quot;&gt;Bacteria&lt;/a&gt;. Even the mouse handler is 90% taken from our previous
+&lt;p&gt;Graphically, it&amp;#39;s the same as &lt;a href=&quot;/ui-design/&quot;&gt;Bacteria&lt;/a&gt;. Even the mouse handler is 90% taken from our previous
 implementation, we used color masks and sprites. &lt;a href=&quot;http://alleg.sourceforge.net/&quot;&gt;Allegro&lt;/a&gt; was also the library we used again.&lt;/p&gt;
 
 &lt;p&gt;The difference was AI. We had to learn some useful strategies for backgammon. The game has two logical stages. In the first stage, the opponent
 can block your checkers, and this means a lot of computation towards avoiding that, and focusing on desirable board configurations. In the
-second stage it’s simply a “race”, the first player to reach the opponent’s “home” wins the game. We implemented a weight based heuristic for
+second stage it&amp;#39;s simply a &amp;quot;race&amp;quot;, the first player to reach the opponent&amp;#39;s &amp;quot;home&amp;quot; wins the game. We implemented a weight based heuristic for
 both stages.&lt;/p&gt;
 
 &lt;p&gt;The first heuristic was focused in achieving good board configurations, we had points for:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Distance to the opponent’s home (low priority)&lt;/li&gt;
-  &lt;li&gt;Avoid blocked checkers (medium priority)&lt;/li&gt;
-  &lt;li&gt;Block opponent’s checkers (medium priority)&lt;/li&gt;
-  &lt;li&gt;Occupy six adjacent columns (high priority)&lt;/li&gt;
+&lt;li&gt;Distance to the opponent&amp;#39;s home (low priority)&lt;/li&gt;
+&lt;li&gt;Avoid blocked checkers (medium priority)&lt;/li&gt;
+&lt;li&gt;Block opponent&amp;#39;s checkers (medium priority)&lt;/li&gt;
+&lt;li&gt;Occupy six adjacent columns (high priority)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;There were other aspects, but these four are the most important. The last one was added after watching a lot of (boring) backgammon games online.
-Professional players seemed to aim for a particular board configuration. When you have two or more checkers in the same column, the opponent can’t
-block your checkers in that column, so having six consecutive columns occupied means you own a “wall” of columns that the other player can’t
+Professional players seemed to aim for a particular board configuration. When you have two or more checkers in the same column, the opponent can&amp;#39;t
+block your checkers in that column, so having six consecutive columns occupied means you own a &amp;quot;wall&amp;quot; of columns that the other player can&amp;#39;t
 pass.&lt;/p&gt;
 
 &lt;p&gt;The second stage has the following priorities:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Distance to the opponent’s home (high priority)&lt;/li&gt;
-  &lt;li&gt;Everything else (no priority)&lt;/li&gt;
+&lt;li&gt;Distance to the opponent&amp;#39;s home (high priority)&lt;/li&gt;
+&lt;li&gt;Everything else (no priority)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Basically, it’s focused on reaching the opponent’s home.&lt;/p&gt;
+&lt;p&gt;Basically, it&amp;#39;s focused on reaching the opponent&amp;#39;s home.&lt;/p&gt;
 
-&lt;p&gt;##The tournament&lt;/p&gt;
+&lt;h2&gt;The tournament&lt;/h2&gt;
 
-&lt;p&gt;The main goal of this implementation was to make every team challenge other’s programs. It was fun, at first we won because most of our classmates’
-programs weren’t finished. We ended with 3 complete games (best of 3), the first two we won 2-0, and the last one (the final game of the tournament)
-was our program against Rafael Arias Michel and Daniel Ruffinelli’s implementation, I’ll refer to them as &lt;em&gt;Rafa&lt;/em&gt; and &lt;em&gt;Ruffo&lt;/em&gt; from now on unless they
-ask me not to, in which case I’ll probably keep calling them &lt;em&gt;Rafa&lt;/em&gt; and &lt;em&gt;Ruffo&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The main goal of this implementation was to make every team challenge other&amp;#39;s programs. It was fun, at first we won because most of our classmates&amp;#39;
+programs weren&amp;#39;t finished. We ended with 3 complete games (best of 3), the first two we won 2-0, and the last one (the final game of the tournament)
+was our program against Rafael Arias Michel and Daniel Ruffinelli&amp;#39;s implementation, I&amp;#39;ll refer to them as &lt;em&gt;Rafa&lt;/em&gt; and &lt;em&gt;Ruffo&lt;/em&gt; from now on unless they
+ask me not to, in which case I&amp;#39;ll probably keep calling them &lt;em&gt;Rafa&lt;/em&gt; and &lt;em&gt;Ruffo&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;They had a nice implementation in GTK, and if I remember correctly they had implemented Alpha-Beta Pruning. Our program won the first match, the second
 one we lost! By that moment we had an audience (about 6 classmates who were interested enough to stay and watch a bunch of nerds cheering for their
@@ -467,25 +457,24 @@ who had the advantage until the very end.&lt;/p&gt;
 
 &lt;p&gt;Luckily we won :)&lt;/p&gt;
 
-&lt;p&gt;##Video and Code&lt;/p&gt;
+&lt;h2&gt;Video and Code&lt;/h2&gt;
 
-&lt;p&gt;Last, but not least, here’s the video of me playing (and winning!) against my own implementation. The interface this time isn’t as elaborated as in
+&lt;p&gt;Last, but not least, here&amp;#39;s the video of me playing (and winning!) against my own implementation. The interface this time isn&amp;#39;t as elaborated as in
 Bacteria, but the main reasons were:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;The objective was not to make a playable PC vs Player game, we did it for completeness.&lt;/li&gt;
-  &lt;li&gt;Backgammon is boring.&lt;/li&gt;
-  &lt;li&gt;We focused on the PC vs PC tournament instead of Interface and/or Design, I think it looks OK though.&lt;/li&gt;
-  &lt;li&gt;Backgammon is boring.&lt;/li&gt;
-  &lt;li&gt;Did I mention how boring Backgammon is?&lt;/li&gt;
+&lt;li&gt;The objective was not to make a playable PC vs Player game, we did it for completeness.&lt;/li&gt;
+&lt;li&gt;Backgammon is boring.&lt;/li&gt;
+&lt;li&gt;We focused on the PC vs PC tournament instead of Interface and/or Design, I think it looks OK though.&lt;/li&gt;
+&lt;li&gt;Backgammon is boring.&lt;/li&gt;
+&lt;li&gt;Did I mention how boring Backgammon is?&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;WARNING:&lt;/strong&gt; It’s about 4 minutes of myself playing a boring game :)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WARNING:&lt;/strong&gt; It&amp;#39;s about 4 minutes of myself playing a boring game :)&lt;/p&gt;
 
-&lt;iframe width=&quot;800&quot; height=&quot;600&quot; src=&quot;//www.youtube.com/embed/dKyYiN4sj7s?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;800&quot; height=&quot;600&quot; src=&quot;//www.youtube.com/embed/dKyYiN4sj7s?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;and as always… the &lt;a href=&quot;https://github.com/torresmateo/Backgammon&quot;&gt;code&lt;/a&gt;.&lt;/p&gt;
-
+&lt;p&gt;and as always... the &lt;a href=&quot;https://github.com/torresmateo/Backgammon&quot;&gt;code&lt;/a&gt;.&lt;/p&gt;
 </description>
                                 <pubDate>Wed, 19 Mar 2014 06:10:00 +0000</pubDate>
                                 <link>http://blog.torresmateo.com//backgammon/</link>
@@ -494,106 +483,105 @@ Bacteria, but the main reasons were:&lt;/p&gt;
                 
                         <item>
                                 <title>Bacteria, Part 2: Gameplay, Drag &amp; Drop and other Stuff</title>
-                                <description>&lt;p&gt;This is the second part of the Bacteria development, I’ll focus in gameplay, and the technique we used for implementing drag and drop
+                                <description>&lt;p&gt;This is the second part of the Bacteria development, I&amp;#39;ll focus in gameplay, and the technique we used for implementing drag and drop
 with Allegro.&lt;/p&gt;
 
-&lt;p&gt;##Gameplay&lt;/p&gt;
+&lt;h2&gt;Gameplay&lt;/h2&gt;
 
-&lt;p&gt;First, I’ll give a little introduction of what gameplay is:&lt;/p&gt;
+&lt;p&gt;First, I&amp;#39;ll give a little introduction of what gameplay is:&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Gameplay is the specific way in which players interact with a game, and in particular with video games. Gameplay is the pattern defined 
-through the game rules, connection between player and the game, challenges and overcoming them, plot and player’s connection with it. 
-Video game gameplay is distinct from graphics, and audio elements.&lt;/p&gt;
-  &lt;div style=&quot;text-align:right;&quot;&gt;&amp;#8213;Random Dude in Wikipedia&lt;/div&gt;
+&lt;p&gt;Gameplay is the specific way in which players interact with a game, and in particular with video games. Gameplay is the pattern defined 
+through the game rules, connection between player and the game, challenges and overcoming them, plot and player&amp;#39;s connection with it. 
+Video game gameplay is distinct from graphics, and audio elements.
+&lt;div style=&quot;text-align:right;&quot;&gt;&amp;#8213;Random Dude in Wikipedia&lt;/div&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;That should be clear enough.&lt;/p&gt;
 
 &lt;p&gt;For our game, we wanted the player to focus in the strategic part of the game, and not to deal with an uncomfortable way of interacting
-with objects on the screen. In our previous games the player had to learn a bunch of “complicated” controls to do things, and it wasn’t
+with objects on the screen. In our previous games the player had to learn a bunch of &amp;quot;complicated&amp;quot; controls to do things, and it wasn&amp;#39;t
 fun to play that way.&lt;/p&gt;
 
-&lt;p&gt;##Drag &amp;amp; Drop&lt;/p&gt;
+&lt;h2&gt;Drag &amp;amp; Drop&lt;/h2&gt;
 
-&lt;p&gt;Since Bacteria is a board game, the intuitive way to interact with it is obviously the mouse. Here’s a list of the things you can do with
+&lt;p&gt;Since Bacteria is a board game, the intuitive way to interact with it is obviously the mouse. Here&amp;#39;s a list of the things you can do with
 any mouse:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Move pointer.&lt;/li&gt;
-  &lt;li&gt;Click.&lt;/li&gt;
-  &lt;li&gt;Right-Click.&lt;/li&gt;
+&lt;li&gt;Move pointer.&lt;/li&gt;
+&lt;li&gt;Click.&lt;/li&gt;
+&lt;li&gt;Right-Click.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Pretty limited. I didn’t include &lt;em&gt;scroll&lt;/em&gt; in that list because (sadly) not all mice have a scroll wheel. So, handling the mouse is 
-not as simple as it can appear at first sight… aaaand right-clicking sucks in a board game… so… here’s our new list:&lt;/p&gt;
+&lt;p&gt;Pretty limited. I didn&amp;#39;t include &lt;em&gt;scroll&lt;/em&gt; in that list because (sadly) not all mice have a scroll wheel. So, handling the mouse is 
+not as simple as it can appear at first sight... aaaand right-clicking sucks in a board game... so... here&amp;#39;s our new list:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Move pointer.&lt;/li&gt;
-  &lt;li&gt;Click.&lt;/li&gt;
+&lt;li&gt;Move pointer.&lt;/li&gt;
+&lt;li&gt;Click.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;But wait!! If you think about it, there are special things about the click event, and it’s all about timing. In every mouse based interface
+&lt;p&gt;But wait!! If you think about it, there are special things about the click event, and it&amp;#39;s all about timing. In every mouse based interface
 you have more options:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Double-click:&lt;/strong&gt; Click two times, fast. It’s like clicking, but if almost every time a single-click is &lt;code class=&quot;highlighter-rouge&quot;&gt;select&lt;/code&gt;, double click is &lt;code class=&quot;highlighter-rouge&quot;&gt;open&lt;/code&gt; or, 
-in a more general way: &lt;code class=&quot;highlighter-rouge&quot;&gt;interact&lt;/code&gt; with the double-clicked element.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Drag-and-Drop:&lt;/strong&gt; It’s done by pressing on the element, moving the mouse while still pressing the mouse button, and then releasing the button
+&lt;li&gt;&lt;strong&gt;Double-click:&lt;/strong&gt; Click two times, fast. It&amp;#39;s like clicking, but if almost every time a single-click is &lt;code&gt;select&lt;/code&gt;, double click is &lt;code&gt;open&lt;/code&gt; or, 
+in a more general way: &lt;code&gt;interact&lt;/code&gt; with the double-clicked element.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Drag-and-Drop:&lt;/strong&gt; It&amp;#39;s done by pressing on the element, moving the mouse while still pressing the mouse button, and then releasing the button
 in another area in the screen.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;These options are called &lt;em&gt;gestures&lt;/em&gt;. We were interested in &lt;em&gt;Drag-and-Drop&lt;/em&gt;, because it’s the simplest way to “move” one object over the scene.
-The basic idea is click and hold one of the little bacteria, and somehow give the player the feeling that s/he is “holding” the object as long
+&lt;p&gt;These options are called &lt;em&gt;gestures&lt;/em&gt;. We were interested in &lt;em&gt;Drag-and-Drop&lt;/em&gt;, because it&amp;#39;s the simplest way to &amp;quot;move&amp;quot; one object over the scene.
+The basic idea is click and hold one of the little bacteria, and somehow give the player the feeling that s/he is &amp;quot;holding&amp;quot; the object as long
 as the mouse button is pressed. We implemented this feature by doing the following:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;On mouse press:&lt;/strong&gt; Quickly swap the bacteria with a “phantom” version, useful to know the original position in the board. Also, replace the
+&lt;li&gt;&lt;strong&gt;On mouse press:&lt;/strong&gt; Quickly swap the bacteria with a &amp;quot;phantom&amp;quot; version, useful to know the original position in the board. Also, replace the
 mouse pointer, our choice was the same pointer with a bacteria attached to it, so wherever the player moved the mouse, the bacteria seemed
 to be glued to the pointer.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;On mouse release:&lt;/strong&gt; Swap the pointer image to the original (the one without the bacteria attached). If the player released in a valid cell, 
+&lt;li&gt;&lt;strong&gt;On mouse release:&lt;/strong&gt; Swap the pointer image to the original (the one without the bacteria attached). If the player released in a valid cell, 
 the original cell now looks like an empty cell, and the new cell now hold a bacteria. If the player released in any other place, the phantom
 version returns to be the normal bacteria.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;It worked like a charm!!&lt;/p&gt;
 
-&lt;p&gt;Here’s an image showing the empty cell, the “phantom” bacteria , the “infected” cell, and both pointers.&lt;/p&gt;
+&lt;p&gt;Here&amp;#39;s an image showing the empty cell, the &amp;quot;phantom&amp;quot; bacteria , the &amp;quot;infected&amp;quot; cell, and both pointers. &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/bacteria-part-2/blue_bacteria.png&quot; alt=&quot;&quot; title=&quot;Blue Bacteria&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/bacteria-part-2/blue_bacteria.png&quot; alt=&quot;&quot; title=&quot;Blue Bacteria&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;##Artificial Intelligence&lt;/p&gt;
+&lt;h2&gt;Artificial Intelligence&lt;/h2&gt;
 
 &lt;p&gt;Some words about the intelligence.&lt;/p&gt;
 
-&lt;p&gt;First of all, we knew absolutely NOTHING about game theory at the time, and I think we did pretty well taking that into account.&lt;/p&gt;
+&lt;p&gt;First of all, we knew absolutely NOTHING about game theory at the time, and I think we did pretty well taking that into account. &lt;/p&gt;
 
 &lt;p&gt;Our implementation was a tree-like decision structure. We started by assuming the enemy played the best he could, and the AI moves acted accordingly.
-It’s pretty clever after reading the code almost 4 years later =). It’s not very hard to beat the computer with this AI, but not ultra-easy though, 
-it takes to think at least two moves ahead to win.&lt;/p&gt;
+It&amp;#39;s pretty clever after reading the code almost 4 years later =). It&amp;#39;s not very hard to beat the computer with this AI, but not ultra-easy though, 
+it takes to think at least two moves ahead to win. &lt;/p&gt;
 
-&lt;p&gt;#Finally&lt;/p&gt;
+&lt;h1&gt;Finally&lt;/h1&gt;
 
-&lt;p&gt;Well… I wrote a LOT about Bacteria, and after reading it myself I decided it was long and boring, so I erased all of it and instead made a 
+&lt;p&gt;Well... I wrote a LOT about Bacteria, and after reading it myself I decided it was long and boring, so I erased all of it and instead made a 
 video of myself showing what I think are the best parts of this game:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Menus… they look AWESOME!!.&lt;/li&gt;
-  &lt;li&gt;Board Editor.&lt;/li&gt;
-  &lt;li&gt;Game.&lt;/li&gt;
-  &lt;li&gt;Instruction Pages.&lt;/li&gt;
+&lt;li&gt;Menus... they look AWESOME!!.&lt;/li&gt;
+&lt;li&gt;Board Editor.&lt;/li&gt;
+&lt;li&gt;Game.&lt;/li&gt;
+&lt;li&gt;Instruction Pages.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;It’s not a long video, and I lose (in my defense, the purpose of this wasn’t for me to win, but to show the features).&lt;/p&gt;
+&lt;p&gt;It&amp;#39;s not a long video, and I lose (in my defense, the purpose of this wasn&amp;#39;t for me to win, but to show the features).&lt;/p&gt;
 
-&lt;iframe width=&quot;800&quot; height=&quot;600&quot; src=&quot;//www.youtube.com/embed/H9hrEwQNlbw?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;800&quot; height=&quot;600&quot; src=&quot;//www.youtube.com/embed/H9hrEwQNlbw?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;#To be continued…&lt;/p&gt;
+&lt;h1&gt;To be continued...&lt;/h1&gt;
 
-&lt;p&gt;The next post is not about Bacteria. It’s about Backgammon, but only the AI part, since all the rest is pretty similar to Bacteria, the interesting
-part is the intelligence. I plan to make another video for that post, since it’s much easier for me to show the features that way, and maybe
-it’s a better experience to you to actually see the interactivity and other things that can’t be seen properly in still images.&lt;/p&gt;
-
+&lt;p&gt;The next post is not about Bacteria. It&amp;#39;s about Backgammon, but only the AI part, since all the rest is pretty similar to Bacteria, the interesting
+part is the intelligence. I plan to make another video for that post, since it&amp;#39;s much easier for me to show the features that way, and maybe
+it&amp;#39;s a better experience to you to actually see the interactivity and other things that can&amp;#39;t be seen properly in still images.&lt;/p&gt;
 </description>
                                 <pubDate>Tue, 04 Feb 2014 06:00:00 +0000</pubDate>
                                 <link>http://blog.torresmateo.com//bacteria-part-2/</link>
@@ -602,101 +590,97 @@ it’s a better experience to you to actually see the interactivity and other th
                 
                         <item>
                                 <title>Bacteria, Part 1: UI Design</title>
-                                <description>&lt;p&gt;One of the projects I feel proud about is called Bacteria (a modified version of &lt;a href=&quot;http://hexxagon.com/&quot;&gt;Hexxagon&lt;/a&gt;). It’s the first
+                                <description>&lt;p&gt;One of the projects I feel proud about is called Bacteria (a modified version of &lt;a href=&quot;http://hexxagon.com/&quot;&gt;Hexxagon&lt;/a&gt;). It&amp;#39;s the first
 serious game challenge that we (Fer and I) had in college. This post is about the first set of problems we had to deal with in
 the proccess.&lt;/p&gt;
 
-&lt;p&gt;This project covers a lot of things, and I decided to split it in at least two posts, since it’s taking me longer
+&lt;p&gt;This project covers a lot of things, and I decided to split it in at least two posts, since it&amp;#39;s taking me longer
 than expected. This post is very rich in images for those who like to watch stuff rather than read.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;WARNING: this post contains some technical words.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;#The First BIG (and scary) Project&lt;/p&gt;
+&lt;h1&gt;The First BIG (and scary) Project&lt;/h1&gt;
 
 &lt;p&gt;First of all, this project was like a titan for us at the beginning. We had absolutely no clue of what to do, nor where to start.
 There were just too many thing to take into account.&lt;/p&gt;
 
-&lt;p&gt;Hexxagon is a board game. The board is hexagonal (what??… &lt;em&gt;first challenge&lt;/em&gt;). The goal is to own more cells than the opponent.
-To make it fun, it &lt;em&gt;needs&lt;/em&gt; a good &lt;a href=&quot;http://en.wikipedia.org/wiki/Graphical_user_interface&quot;&gt;GUI&lt;/a&gt;, and a LOT of interactive features.&lt;/p&gt;
+&lt;p&gt;Hexxagon is a board game. The board is hexagonal (what??... &lt;em&gt;first challenge&lt;/em&gt;). The goal is to own more cells than the opponent.
+To make it fun, it &lt;em&gt;needs&lt;/em&gt; a good &lt;a href=&quot;http://en.wikipedia.org/wiki/Graphical_user_interface&quot;&gt;GUI&lt;/a&gt;, and a LOT of interactive features. &lt;/p&gt;
 
 &lt;p&gt;To make it easy, here is one possible board, each hexagon is a cell:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/bacteria/hexboard.png&quot; alt=&quot;&quot; title=&quot;possible board&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/bacteria/hexboard.png&quot; alt=&quot;&quot; title=&quot;possible board&quot;&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Rules:
-    &lt;ul&gt;
-      &lt;li&gt;Same as Hexxagon, two types of moves, you can &lt;em&gt;multiply&lt;/em&gt; to a cell next to yours, or you can &lt;em&gt;jump&lt;/em&gt;  over one cell
+&lt;li&gt;&lt;p&gt;Rules:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Same as Hexxagon, two types of moves, you can &lt;em&gt;multiply&lt;/em&gt; to a cell next to yours, or you can &lt;em&gt;jump&lt;/em&gt;  over one cell
 in an hexagonal board.&lt;/li&gt;
-      &lt;li&gt;The winner is the player who owns more cells when the board has no free cells.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;For our particular implementation, we had to add this:
-    &lt;ul&gt;
-      &lt;li&gt;A hint about where you can jump, or multiply.&lt;/li&gt;
-      &lt;li&gt;A board editor.&lt;/li&gt;
-      &lt;li&gt;Multiplayer Feature based on a given XML Protocol (Maybe I’ll describe the protocol in the next post).&lt;/li&gt;
-      &lt;li&gt;Sound.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+&lt;li&gt;The winner is the player who owns more cells when the board has no free cells.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;For our particular implementation, we had to add this:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A hint about where you can jump, or multiply.&lt;/li&gt;
+&lt;li&gt;A board editor.&lt;/li&gt;
+&lt;li&gt;Multiplayer Feature based on a given XML Protocol (Maybe I&amp;#39;ll describe the protocol in the next post).&lt;/li&gt;
+&lt;li&gt;Sound.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;So, at first sight, it doesn’t seem like a LOT, but we wanted to make a great game out of this.&lt;/p&gt;
+&lt;p&gt;So, at first sight, it doesn&amp;#39;t seem like a LOT, but we wanted to make a great game out of this.&lt;/p&gt;
 
-&lt;p&gt;##Rules and Logic&lt;/p&gt;
+&lt;h2&gt;Rules and Logic&lt;/h2&gt;
 
-&lt;p&gt;Programming the game logic wasn’t really hard. In the first day we had a working console implementation and we could “play” the
+&lt;p&gt;Programming the game logic wasn&amp;#39;t really hard. In the first day we had a working console implementation and we could &amp;quot;play&amp;quot; the
 game having absolutely no fun because we had to write every command to make a simple move, something like&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;multiply cell A8 to A9
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;and the output was really awful, a lot of debug using &lt;code class=&quot;highlighter-rouge&quot;&gt;printf&lt;/code&gt; and also tons of (apparently) meaningless garbage. But we were enjoying
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;multiply cell A8 to A9
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;and the output was really awful, a lot of debug using &lt;code&gt;printf&lt;/code&gt; and also tons of (apparently) meaningless garbage. But we were enjoying
 the development proccess like a child who gets a Nintendo 64 on Christmas! When it was clear that the logic was done, we were ready
 for te REAL FUN!&lt;/p&gt;
 
-&lt;p&gt;##GUI&lt;/p&gt;
+&lt;h2&gt;GUI&lt;/h2&gt;
 
 &lt;p&gt;Remember the Sudoku project we made with WinAPI? Well, we considered that UI awful. We wanted to make a game that could make
-people say “ooooohhhhh”. So we started searching for 2D game engines and libraries, and there were a few interesting options.
+people say &amp;quot;ooooohhhhh&amp;quot;. So we started searching for 2D game engines and libraries, and there were a few interesting options.
 After reading about SDL, GTK and other options we ended up using &lt;a href=&quot;http://alleg.sourceforge.net/&quot;&gt;Allegro&lt;/a&gt;, a Game Programming
 Library.&lt;/p&gt;
 
-&lt;p&gt;The first challenge was “how the hell are we going to make this pretty”. I started making drafts in paper and we would discuss with Fer
+&lt;p&gt;The first challenge was &amp;quot;how the hell are we going to make this pretty&amp;quot;. I started making drafts in paper and we would discuss with Fer
 the good and the bad of every menu and how it should work. It was clear we needed a cell that worked like a brick, so we
-can build many different boards (with holes, or two separate “islands”).&lt;/p&gt;
+can build many different boards (with holes, or two separate &amp;quot;islands&amp;quot;).&lt;/p&gt;
 
 &lt;p&gt;This image shows a possible board, the first image is our board editor, and the second is the game view with the statistics.
-I still look at this and can’t help a little smile of satisfaction and pride :’D&lt;/p&gt;
+I still look at this and can&amp;#39;t help a little smile of satisfaction and pride :&amp;#39;D&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/bacteria/board_editor.png&quot; alt=&quot;&quot; title=&quot;Our Board Editor&quot; /&gt;
-&lt;img src=&quot;http://blog.torresmateo.com/images/bacteria/game_view.png&quot; alt=&quot;&quot; title=&quot;Game View&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/bacteria/board_editor.png&quot; alt=&quot;&quot; title=&quot;Our Board Editor&quot;&gt;
+&lt;img src=&quot;http://blog.torresmateo.com/images/bacteria/game_view.png&quot; alt=&quot;&quot; title=&quot;Game View&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Note the cell borders in the game view. To draw this borders we had to step into every cell and check for adjacent objects!&lt;/p&gt;
 
-&lt;p&gt;Another Challenge was menus. Since Allegro gives you “per-pixel” control, we wanted to take advantage of that and make buttons
+&lt;p&gt;Another Challenge was menus. Since Allegro gives you &amp;quot;per-pixel&amp;quot; control, we wanted to take advantage of that and make buttons
 with nice shapes, effects and colors. We came up with a technique using color masks to detect when a user hovers or clicks inside
 a button or anything we wanted to be interactive (it turned out it was a well-known technique, but back then we feel awed by our
-own witts). Here’s an Image of the mask, and the menu with one of the buttons highlighted.&lt;/p&gt;
+own witts). Here&amp;#39;s an Image of the mask, and the menu with one of the buttons highlighted.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/bacteria/ingame_shape.jpg&quot; alt=&quot;&quot; title=&quot;Mask&quot; /&gt;
-&lt;img src=&quot;http://blog.torresmateo.com/images/bacteria/button_highlight.jpg&quot; alt=&quot;&quot; title=&quot;Button Highlighted&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/bacteria/ingame_shape.jpg&quot; alt=&quot;&quot; title=&quot;Mask&quot;&gt;
+&lt;img src=&quot;http://blog.torresmateo.com/images/bacteria/button_highlight.jpg&quot; alt=&quot;&quot; title=&quot;Button Highlighted&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Note how the mask color matches the shape of the blue bacteria. If the user clicked on our GUI, we asked for the pointer position,
-and looked what color was clicked in the mask, easy right? Here’s a visual explanation, the red line is intended to show how
+and looked what color was clicked in the mask, easy right? Here&amp;#39;s a visual explanation, the red line is intended to show how
 mask and design share positions.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/bacteria/explanation.png&quot; alt=&quot;&quot; title=&quot;Mask and GUI Overlay&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/bacteria/explanation.png&quot; alt=&quot;&quot; title=&quot;Mask and GUI Overlay&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;##To be continued..&lt;/p&gt;
+&lt;h2&gt;To be continued..&lt;/h2&gt;
 
-&lt;p&gt;That’s all for the moment, I have a draft of the second part, it’s about how we faced gameplay, drag and drop, networking, and
+&lt;p&gt;That&amp;#39;s all for the moment, I have a draft of the second part, it&amp;#39;s about how we faced gameplay, drag and drop, networking, and
 artificial intelligence. Give me feedback if you want me to explain a little further any aspect, maybe with code explanation or
 in a tutorial-like format.&lt;/p&gt;
 
-&lt;p&gt;Aaaaaaaaaaaaaaaaaaand last, but not least… here’s the &lt;a href=&quot;https://github.com/torresmateo/Bacteria&quot;&gt;code&lt;/a&gt;.&lt;/p&gt;
-
+&lt;p&gt;Aaaaaaaaaaaaaaaaaaand last, but not least... here&amp;#39;s the &lt;a href=&quot;https://github.com/torresmateo/Bacteria&quot;&gt;code&lt;/a&gt;.&lt;/p&gt;
 </description>
                                 <pubDate>Fri, 10 Jan 2014 22:10:00 +0000</pubDate>
                                 <link>http://blog.torresmateo.com//ui-design/</link>
@@ -709,73 +693,72 @@ in a tutorial-like format.&lt;/p&gt;
 opposite sides of a thick wall:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;On one side all you can see is the result: programs, websites, Operating Systems, yadda, yadda, yadda.&lt;/li&gt;
-  &lt;li&gt;On the other side though, you can see the clockwork of all that, and by seeing it, you can &lt;em&gt;understand&lt;/em&gt; what’s going on! You begin to appreciate the quality of 
-the structures, the speed, the design, and the challenge that it must have demanded from the developers.&lt;/li&gt;
+&lt;li&gt;On one side all you can see is the result: programs, websites, Operating Systems, yadda, yadda, yadda. &lt;/li&gt;
+&lt;li&gt;On the other side though, you can see the clockwork of all that, and by seeing it, you can &lt;em&gt;understand&lt;/em&gt; what&amp;#39;s going on! You begin to appreciate the quality of 
+the structures, the speed, the design, and the challenge that it must have demanded from the developers. &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;It’s how I think the cooks probably can appreciate food better than most of us who can barely make a sandwich.&lt;/p&gt;
+&lt;p&gt;It&amp;#39;s how I think the cooks probably can appreciate food better than most of us who can barely make a sandwich.&lt;/p&gt;
 
-&lt;p&gt;#Baby Steps&lt;/p&gt;
+&lt;h1&gt;Baby Steps&lt;/h1&gt;
 
-&lt;p&gt;##Gooey??&lt;/p&gt;
+&lt;h2&gt;Gooey??&lt;/h2&gt;
 
 &lt;p&gt;When I started coding, I did a lot of basic programs, and that felt great. But the first one I really enjoyed was this little project in college. We had to write
 a program that let the player:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Play a game of &lt;a href=&quot;http://en.wikipedia.org/wiki/Sudoku&quot;&gt;Sudoku&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Resume a previous game.&lt;/li&gt;
-  &lt;li&gt;Show the mistakes.&lt;/li&gt;
-  &lt;li&gt;Keep a Score.&lt;/li&gt;
+&lt;li&gt;Play a game of &lt;a href=&quot;http://en.wikipedia.org/wiki/Sudoku&quot;&gt;Sudoku&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Resume a previous game.&lt;/li&gt;
+&lt;li&gt;Show the mistakes.&lt;/li&gt;
+&lt;li&gt;Keep a Score.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Pretty basic, thinking of it now, but back then was a serious challenge. My friend (and classmate) Fernando Minardi (who I will call &lt;em&gt;Fer&lt;/em&gt; from here) was my partner in 
-the project, and we decided to give the player a &lt;a href=&quot;http://en.wikipedia.org/wiki/Graphical_user_interface&quot;&gt;GUI&lt;/a&gt; &lt;em&gt;(graphical user interface)&lt;/em&gt; (it wasn’t &lt;em&gt;necessary&lt;/em&gt; for 
-the evaluation, but we wanted to “get our hands dirty”). We started coding and it was really fun! It ended up like this (it’s in spanish since I live in Paraguay!):&lt;/p&gt;
+the project, and we decided to give the player a &lt;a href=&quot;http://en.wikipedia.org/wiki/Graphical_user_interface&quot;&gt;GUI&lt;/a&gt; &lt;em&gt;(graphical user interface)&lt;/em&gt; (it wasn&amp;#39;t &lt;em&gt;necessary&lt;/em&gt; for 
+the evaluation, but we wanted to &amp;quot;get our hands dirty&amp;quot;). We started coding and it was really fun! It ended up like this (it&amp;#39;s in spanish since I live in Paraguay!):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/baby-steps/sudoku.png&quot; alt=&quot;&quot; title=&quot;Our First GUI!!&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/baby-steps/sudoku.png&quot; alt=&quot;&quot; title=&quot;Our First GUI!!&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;I won’t lie… I don’t like it that much either. But back then it was &lt;em&gt;AWESOME!!&lt;/em&gt; … Man!! our first GUI!! And it does what it’s supposed to do!! (it didn’t crash
+&lt;p&gt;I won&amp;#39;t lie... I don&amp;#39;t like it that much either. But back then it was &lt;em&gt;AWESOME!!&lt;/em&gt; ... Man!! our first GUI!! And it does what it&amp;#39;s supposed to do!! (it didn&amp;#39;t crash
 randomly like our first attempts!). We were happy, and run to my family as we finished the program in my house to show how amazing it was. With tears of joy in our eyes
-we went to the dining room, laptop in our hands, and showed them! :’D …. The reaction was this:&lt;/p&gt;
+we went to the dining room, laptop in our hands, and showed them! :&amp;#39;D .... The reaction was this:&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;This… is….. hmmmm… niiiice&lt;/em&gt; (read with the least convincing voice you can imagine).&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This... is..... hmmmm... niiiice&lt;/em&gt; (read with the least convincing voice you can imagine). &lt;/p&gt;
 
-&lt;p&gt;That’s when I first realized it wasn’t easy to get other people excited about this kind of stuff. Sure, it wasn’t Crysis or Uncharted, but it was &lt;em&gt;hard&lt;/em&gt; to make. But
+&lt;p&gt;That&amp;#39;s when I first realized it wasn&amp;#39;t easy to get other people excited about this kind of stuff. Sure, it wasn&amp;#39;t Crysis or Uncharted, but it was &lt;em&gt;hard&lt;/em&gt; to make. But
 among our classmates, our program was one of the best.&lt;/p&gt;
 
-&lt;p&gt;##OK, now make it &lt;em&gt;think&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;OK, now make it &lt;em&gt;think&lt;/em&gt;&lt;/h2&gt;
 
 &lt;p&gt;I think it’s important to mention that Fer was always my coding partner in college. So, our next game-related assignment was Batalla Naval ++, an implementation of 
-&lt;a href=&quot;http://en.wikipedia.org/wiki/Battleship_\(game\)&quot;&gt;Battleship&lt;/a&gt; with some modifications:&lt;/p&gt;
+&lt;a href=&quot;http://en.wikipedia.org/wiki/Battleship_(game)&quot;&gt;Battleship&lt;/a&gt; with some modifications:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;2 levels for each player (surface and submarine)&lt;/li&gt;
-  &lt;li&gt;The player has 2 submarines (3 squares) and can move them, sink them or put them in the surface.&lt;/li&gt;
-  &lt;li&gt;If a submarine is damaged, automatically goes to the surface.&lt;/li&gt;
-  &lt;li&gt;New Tools:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Spy Aircraft&lt;/strong&gt; (2): the player selects a row, a column, or a diagonal, and can see everything in there for a turn.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Spy Bomb&lt;/strong&gt; (3): the player selects a square, and the spy bomb shows everything in there for three turns.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Ballistic Missile&lt;/strong&gt; (∞): the one from the original game, you select a square, shoot, and if hits, it’s your turn again.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+&lt;li&gt;2 levels for each player (surface and submarine)&lt;/li&gt;
+&lt;li&gt;The player has 2 submarines (3 squares) and can move them, sink them or put them in the surface.&lt;/li&gt;
+&lt;li&gt;If a submarine is damaged, automatically goes to the surface.&lt;/li&gt;
+&lt;li&gt;New Tools:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Spy Aircraft&lt;/strong&gt; (2): the player selects a row, a column, or a diagonal, and can see everything in there for a turn.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Spy Bomb&lt;/strong&gt; (3): the player selects a square, and the spy bomb shows everything in there for three turns.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ballistic Missile&lt;/strong&gt; (&amp;infin;): the one from the original game, you select a square, shoot, and if hits, it&amp;#39;s your turn again.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;And the program must fulfill these requirements:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;The usage of &lt;code class=&quot;highlighter-rouge&quot;&gt;conio.h&lt;/code&gt;, a Windows library for console interfaces ( no GUI this time T_T )&lt;/li&gt;
-  &lt;li&gt;AI …. &lt;strong&gt;ARTIFICIAL INTELLIGENCE&lt;/strong&gt; (OMG!! As a must, our program had to &lt;em&gt;play&lt;/em&gt; against a human player! &lt;em&gt;A W E S O M E !!!&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;The usage of &lt;code&gt;conio.h&lt;/code&gt;, a Windows library for console interfaces ( no GUI this time T_T )&lt;/li&gt;
+&lt;li&gt;AI .... &lt;strong&gt;ARTIFICIAL INTELLIGENCE&lt;/strong&gt; (OMG!! As a must, our program had to &lt;em&gt;play&lt;/em&gt; against a human player! &lt;em&gt;A W E S O M E !!!&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;So, we started playing  the modified version of the game on a piece of paper, thinking about some strategies for the AI. We ended with a nice one, which was pretty clever. 
-We started with the airplanes, and then the bombs, and then firing at everything that we found.&lt;/p&gt;
+We started with the airplanes, and then the bombs, and then firing at everything that we found. &lt;/p&gt;
 
 &lt;p&gt;This is one of the spying layouts, it maximizes the spied area:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;|a|_|_|_|X|X|X|_|_|b|
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;|a|_|_|_|X|X|X|_|_|b|
 |_|A|_|_|X|E|X|_|B|_|
 |_|_|X|_|X|X|X|X|_|_|
 |X|X|X|X|_|_|X|_|_|_|
@@ -785,24 +768,21 @@ We started with the airplanes, and then the bombs, and then firing at everything
 |_|_|X|_|_|_|_|X|_|_|
 |_|X|_|_|_|_|_|_|X|_|
 |X|_|_|_|_|_|_|_|_|X|
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;And it looked like this:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/baby-steps/battleship.png&quot; alt=&quot;&quot; title=&quot;Our First AI!!&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/baby-steps/battleship.png&quot; alt=&quot;&quot; title=&quot;Our First AI!!&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Writing those programs was incredibly fun!! We were learning a lot about coding, and when our own game got to beat us 9 of every 10 matches, we felt very proud (In 
 some cases, if the CPU got the first turn, it would play a perfect game, and beat us at the second turn!)&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Note for geeks:&lt;/p&gt;
+&lt;p&gt;Note for geeks:&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;You can download Sudoku’s source code from &lt;a href=&quot;https://github.com/torresmateo/TAI1-Sudoku&quot;&gt;here&lt;/a&gt;, and Batalla-Naval from &lt;a href=&quot;https://github.com/torresmateo/Batalla-Naval&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can download Sudoku&amp;#39;s source code from &lt;a href=&quot;https://github.com/torresmateo/TAI1-Sudoku&quot;&gt;here&lt;/a&gt;, and Batalla-Naval from &lt;a href=&quot;https://github.com/torresmateo/Batalla-Naval&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Both programs were written in C, and using only &lt;em&gt;ONE FILE&lt;/em&gt; per project (&lt;code class=&quot;highlighter-rouge&quot;&gt;main.c&lt;/code&gt;)… I know, that’s bad. But hey!! We were absolute beginners!!&lt;/p&gt;
-
+&lt;p&gt;Both programs were written in C, and using only &lt;em&gt;ONE FILE&lt;/em&gt; per project (&lt;code&gt;main.c&lt;/code&gt;)... I know, that&amp;#39;s bad. But hey!! We were absolute beginners!!&lt;/p&gt;
 </description>
                                 <pubDate>Fri, 20 Dec 2013 11:17:00 +0000</pubDate>
                                 <link>http://blog.torresmateo.com//baby-steps/</link>
