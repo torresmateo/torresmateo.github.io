@@ -14,4 +14,11 @@ categories: en
             {% endif %}
         {% endfor %}
     </ul>
+    {% comment %}
+    <h1>Categories</h1>
+    {% for category in site.categories %}
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+        <a href="" class="category-link">{{ category_name }}</a>
+    {% endfor %}
+    {% endcomment %}
 </div>

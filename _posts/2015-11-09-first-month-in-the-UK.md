@@ -2,7 +2,7 @@
 layout: post
 title: "First Month in the UK"
 date: 2015-11-09 20:19:00
-categories: life uk
+categories: travel
 ---
 
 It's been a while since I updated this thingy... Hello!

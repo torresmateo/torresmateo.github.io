@@ -2,7 +2,7 @@
 layout: post
 title:  "Bacteria, Part 2: Gameplay, Drag & Drop and other Stuff"
 date:   2014-02-04 06:00:00
-categories: evolution gaming dev
+categories: gaming dev
 ---
 
 This is the second part of the Bacteria development, I'll focus in gameplay, and the technique we used for implementing drag and drop

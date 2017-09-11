@@ -3,8 +3,8 @@
         <channel>
                 <title>blog.torresmateo.com</title>
                 <description>A place to find rants and some videogame dev stuff!</description>
-                <link>http://blog.torresmateo.com</link>
-                <atom:link href="http://blog.torresmateo.com/feed.xml" rel="self" type="application/rss+xml" />
+                <link>http://localhost:4000</link>
+                <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
                 
                         <item>
                                 <title>Particle WHAT?!</title>
@@ -97,8 +97,8 @@
 &lt;p&gt;If you&amp;#39;re not happy with this explanation contact me as well and I&amp;#39;ll try to improve it!&lt;/p&gt;
 </description>
                                 <pubDate>Sat, 19 Nov 2016 06:00:00 +0000</pubDate>
-                                <link>http://blog.torresmateo.com//mopso/</link>
-                                <guid isPermaLink="true">http://blog.torresmateo.com//mopso/</guid>
+                                <link>http://localhost:4000//mopso/</link>
+                                <guid isPermaLink="true">http://localhost:4000//mopso/</guid>
                         </item>
                 
                         <item>
@@ -132,8 +132,8 @@
 &lt;p&gt;Quizás el punto principal y más importante del juez digital es que no propongo un juez perfecto. Sólo propongo un juez que sea más justo y eficiente que el sistema actual. Estoy muy de acuerdo en que la tarea de hacer un juez automático que compita con un ser humano incorruptible es casi imposible. Pero teniendo en cuenta que hoy en día la justicia en Paraguay es en muchos casos un absurdo extremo, no veo porqué no darle una oportunidad a esta idea. Al final de cuentas, a este juez no se le va a poder comprar.&lt;/p&gt;
 </description>
                                 <pubDate>Sat, 23 Apr 2016 07:17:00 +0100</pubDate>
-                                <link>http://blog.torresmateo.com//un-buen-juez/</link>
-                                <guid isPermaLink="true">http://blog.torresmateo.com//un-buen-juez/</guid>
+                                <link>http://localhost:4000//un-buen-juez/</link>
+                                <guid isPermaLink="true">http://localhost:4000//un-buen-juez/</guid>
                         </item>
                 
                         <item>
@@ -152,28 +152,28 @@
 
 &lt;p&gt;One of the things I am proud of is the fact that I can actually cook! (And this means more than assemble some ingredients into a sandwich or a pizza at best). But behold!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/fugazza.jpg&quot; alt=&quot;&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/uk/first-month/fugazza.jpg&quot; alt=&quot;&quot;&gt;
 This is a fugazza I made on the second weekend (and I realised I didn&amp;#39;t have a rolling pin!). It tasted very good! &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/tuna-thing.jpg&quot; alt=&quot;&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/uk/first-month/tuna-thing.jpg&quot; alt=&quot;&quot;&gt;
 This is.. a ... tuna thing! (or tuna cake, or tuna bread). I tried in the first weekend here when I went to my supervisor&amp;#39;s house for a party. We were all so delighted by this that we asked for the recipe and I made it! (It wasn&amp;#39;t as good as the original one, but it tasted good nonetheless).&lt;/p&gt;
 
 &lt;h1&gt;The Place&lt;/h1&gt;
 
 &lt;p&gt;I live in Egham, just outside London. It is far greener than I expected and walking is easier than in Asunción (because weather is not inhumanly hot). Here are 4 pictures of my first walk around Egham and Englefield Green (the town next to Egham).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/egham1.jpg&quot; alt=&quot;&quot;&gt;
-&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/egham2.jpg&quot; alt=&quot;&quot;&gt;
-&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/egham3.jpg&quot; alt=&quot;&quot;&gt;
-&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/egham4.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/uk/first-month/egham1.jpg&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;http://localhost:4000/images/uk/first-month/egham2.jpg&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;http://localhost:4000/images/uk/first-month/egham3.jpg&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;http://localhost:4000/images/uk/first-month/egham4.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 
 &lt;h1&gt;Royal Holloway, University of London&lt;/h1&gt;
 
 &lt;p&gt;It is beyond my ability to find the right words to describe the University, so... pictures!
-&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/rhul1.jpg&quot; alt=&quot;&quot;&gt;
-&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/rhul2.jpg&quot; alt=&quot;&quot;&gt;
-&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/rhul3.jpg&quot; alt=&quot;&quot;&gt;
-&lt;img src=&quot;http://blog.torresmateo.com/images/uk/first-month/rhul4.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;img src=&quot;http://localhost:4000/images/uk/first-month/rhul1.jpg&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;http://localhost:4000/images/uk/first-month/rhul2.jpg&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;http://localhost:4000/images/uk/first-month/rhul3.jpg&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;http://localhost:4000/images/uk/first-month/rhul4.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 
 &lt;h1&gt;The Lab&lt;/h1&gt;
 
@@ -182,8 +182,8 @@ This is.. a ... tuna thing! (or tuna cake, or tuna bread). I tried in the first 
 &lt;p&gt;People here is amazing, right now we are mostly from Paraguay (check the &amp;quot;people&amp;quot; section in the website) and I feel very good working with everybody! Also, I get to work in the same place as the creator of the amazing tool &lt;a href=&quot;http://igraph.org&quot;&gt;igraph&lt;/a&gt; used to work, which is AWESOME!!&lt;/p&gt;
 </description>
                                 <pubDate>Mon, 09 Nov 2015 20:19:00 +0000</pubDate>
-                                <link>http://blog.torresmateo.com//first-month-in-the-UK/</link>
-                                <guid isPermaLink="true">http://blog.torresmateo.com//first-month-in-the-UK/</guid>
+                                <link>http://localhost:4000//first-month-in-the-UK/</link>
+                                <guid isPermaLink="true">http://localhost:4000//first-month-in-the-UK/</guid>
                         </item>
                 
                         <item>
@@ -232,8 +232,8 @@ para la vida.&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
                                 <pubDate>Tue, 21 Jul 2015 07:17:00 +0100</pubDate>
-                                <link>http://blog.torresmateo.com//quedarse-colgado/</link>
-                                <guid isPermaLink="true">http://blog.torresmateo.com//quedarse-colgado/</guid>
+                                <link>http://localhost:4000//quedarse-colgado/</link>
+                                <guid isPermaLink="true">http://localhost:4000//quedarse-colgado/</guid>
                         </item>
                 
                         <item>
@@ -316,8 +316,8 @@ muchísima gente e incluso ese fin de semana hablamos del evento en radios local
 &lt;/ul&gt;
 </description>
                                 <pubDate>Wed, 17 Jun 2015 07:17:00 +0100</pubDate>
-                                <link>http://blog.torresmateo.com//ingenieria-la-vida-y-wow/</link>
-                                <guid isPermaLink="true">http://blog.torresmateo.com//ingenieria-la-vida-y-wow/</guid>
+                                <link>http://localhost:4000//ingenieria-la-vida-y-wow/</link>
+                                <guid isPermaLink="true">http://localhost:4000//ingenieria-la-vida-y-wow/</guid>
                         </item>
                 
                         <item>
@@ -385,8 +385,8 @@ muchísima gente e incluso ese fin de semana hablamos del evento en radios local
 &lt;p&gt;Aaaaaaaaand I think that&amp;#39;s all for now, see you next time!&lt;/p&gt;
 </description>
                                 <pubDate>Sun, 04 Jan 2015 06:25:00 +0000</pubDate>
-                                <link>http://blog.torresmateo.com//hello-world-again/</link>
-                                <guid isPermaLink="true">http://blog.torresmateo.com//hello-world-again/</guid>
+                                <link>http://localhost:4000//hello-world-again/</link>
+                                <guid isPermaLink="true">http://localhost:4000//hello-world-again/</guid>
                         </item>
                 
                         <item>
@@ -477,8 +477,8 @@ Bacteria, but the main reasons were:&lt;/p&gt;
 &lt;p&gt;and as always... the &lt;a href=&quot;https://github.com/torresmateo/Backgammon&quot;&gt;code&lt;/a&gt;.&lt;/p&gt;
 </description>
                                 <pubDate>Wed, 19 Mar 2014 06:10:00 +0000</pubDate>
-                                <link>http://blog.torresmateo.com//backgammon/</link>
-                                <guid isPermaLink="true">http://blog.torresmateo.com//backgammon/</guid>
+                                <link>http://localhost:4000//backgammon/</link>
+                                <guid isPermaLink="true">http://localhost:4000//backgammon/</guid>
                         </item>
                 
                         <item>
@@ -549,7 +549,7 @@ version returns to be the normal bacteria.&lt;/li&gt;
 
 &lt;p&gt;Here&amp;#39;s an image showing the empty cell, the &amp;quot;phantom&amp;quot; bacteria , the &amp;quot;infected&amp;quot; cell, and both pointers. &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/bacteria-part-2/blue_bacteria.png&quot; alt=&quot;&quot; title=&quot;Blue Bacteria&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/bacteria-part-2/blue_bacteria.png&quot; alt=&quot;&quot; title=&quot;Blue Bacteria&quot;&gt;&lt;/p&gt;
 
 &lt;h2&gt;Artificial Intelligence&lt;/h2&gt;
 
@@ -584,8 +584,8 @@ part is the intelligence. I plan to make another video for that post, since it&a
 it&amp;#39;s a better experience to you to actually see the interactivity and other things that can&amp;#39;t be seen properly in still images.&lt;/p&gt;
 </description>
                                 <pubDate>Tue, 04 Feb 2014 06:00:00 +0000</pubDate>
-                                <link>http://blog.torresmateo.com//bacteria-part-2/</link>
-                                <guid isPermaLink="true">http://blog.torresmateo.com//bacteria-part-2/</guid>
+                                <link>http://localhost:4000//bacteria-part-2/</link>
+                                <guid isPermaLink="true">http://localhost:4000//bacteria-part-2/</guid>
                         </item>
                 
                         <item>
@@ -609,7 +609,7 @@ To make it fun, it &lt;em&gt;needs&lt;/em&gt; a good &lt;a href=&quot;http://en.
 
 &lt;p&gt;To make it easy, here is one possible board, each hexagon is a cell:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/bacteria/hexboard.png&quot; alt=&quot;&quot; title=&quot;possible board&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/bacteria/hexboard.png&quot; alt=&quot;&quot; title=&quot;possible board&quot;&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Rules:&lt;/p&gt;
@@ -655,8 +655,8 @@ can build many different boards (with holes, or two separate &amp;quot;islands&a
 &lt;p&gt;This image shows a possible board, the first image is our board editor, and the second is the game view with the statistics.
 I still look at this and can&amp;#39;t help a little smile of satisfaction and pride :&amp;#39;D&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/bacteria/board_editor.png&quot; alt=&quot;&quot; title=&quot;Our Board Editor&quot;&gt;
-&lt;img src=&quot;http://blog.torresmateo.com/images/bacteria/game_view.png&quot; alt=&quot;&quot; title=&quot;Game View&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/bacteria/board_editor.png&quot; alt=&quot;&quot; title=&quot;Our Board Editor&quot;&gt;
+&lt;img src=&quot;http://localhost:4000/images/bacteria/game_view.png&quot; alt=&quot;&quot; title=&quot;Game View&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Note the cell borders in the game view. To draw this borders we had to step into every cell and check for adjacent objects!&lt;/p&gt;
 
@@ -665,14 +665,14 @@ with nice shapes, effects and colors. We came up with a technique using color ma
 a button or anything we wanted to be interactive (it turned out it was a well-known technique, but back then we feel awed by our
 own witts). Here&amp;#39;s an Image of the mask, and the menu with one of the buttons highlighted.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/bacteria/ingame_shape.jpg&quot; alt=&quot;&quot; title=&quot;Mask&quot;&gt;
-&lt;img src=&quot;http://blog.torresmateo.com/images/bacteria/button_highlight.jpg&quot; alt=&quot;&quot; title=&quot;Button Highlighted&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/bacteria/ingame_shape.jpg&quot; alt=&quot;&quot; title=&quot;Mask&quot;&gt;
+&lt;img src=&quot;http://localhost:4000/images/bacteria/button_highlight.jpg&quot; alt=&quot;&quot; title=&quot;Button Highlighted&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Note how the mask color matches the shape of the blue bacteria. If the user clicked on our GUI, we asked for the pointer position,
 and looked what color was clicked in the mask, easy right? Here&amp;#39;s a visual explanation, the red line is intended to show how
 mask and design share positions.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/bacteria/explanation.png&quot; alt=&quot;&quot; title=&quot;Mask and GUI Overlay&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/bacteria/explanation.png&quot; alt=&quot;&quot; title=&quot;Mask and GUI Overlay&quot;&gt;&lt;/p&gt;
 
 &lt;h2&gt;To be continued..&lt;/h2&gt;
 
@@ -683,8 +683,8 @@ in a tutorial-like format.&lt;/p&gt;
 &lt;p&gt;Aaaaaaaaaaaaaaaaaaand last, but not least... here&amp;#39;s the &lt;a href=&quot;https://github.com/torresmateo/Bacteria&quot;&gt;code&lt;/a&gt;.&lt;/p&gt;
 </description>
                                 <pubDate>Fri, 10 Jan 2014 22:10:00 +0000</pubDate>
-                                <link>http://blog.torresmateo.com//ui-design/</link>
-                                <guid isPermaLink="true">http://blog.torresmateo.com//ui-design/</guid>
+                                <link>http://localhost:4000//ui-design/</link>
+                                <guid isPermaLink="true">http://localhost:4000//ui-design/</guid>
                         </item>
                 
                         <item>
@@ -718,7 +718,7 @@ a program that let the player:&lt;/p&gt;
 the project, and we decided to give the player a &lt;a href=&quot;http://en.wikipedia.org/wiki/Graphical_user_interface&quot;&gt;GUI&lt;/a&gt; &lt;em&gt;(graphical user interface)&lt;/em&gt; (it wasn&amp;#39;t &lt;em&gt;necessary&lt;/em&gt; for 
 the evaluation, but we wanted to &amp;quot;get our hands dirty&amp;quot;). We started coding and it was really fun! It ended up like this (it&amp;#39;s in spanish since I live in Paraguay!):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/baby-steps/sudoku.png&quot; alt=&quot;&quot; title=&quot;Our First GUI!!&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/baby-steps/sudoku.png&quot; alt=&quot;&quot; title=&quot;Our First GUI!!&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;I won&amp;#39;t lie... I don&amp;#39;t like it that much either. But back then it was &lt;em&gt;AWESOME!!&lt;/em&gt; ... Man!! our first GUI!! And it does what it&amp;#39;s supposed to do!! (it didn&amp;#39;t crash
 randomly like our first attempts!). We were happy, and run to my family as we finished the program in my house to show how amazing it was. With tears of joy in our eyes
@@ -771,7 +771,7 @@ We started with the airplanes, and then the bombs, and then firing at everything
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;And it looked like this:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://blog.torresmateo.com/images/baby-steps/battleship.png&quot; alt=&quot;&quot; title=&quot;Our First AI!!&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/baby-steps/battleship.png&quot; alt=&quot;&quot; title=&quot;Our First AI!!&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Writing those programs was incredibly fun!! We were learning a lot about coding, and when our own game got to beat us 9 of every 10 matches, we felt very proud (In 
 some cases, if the CPU got the first turn, it would play a perfect game, and beat us at the second turn!)&lt;/p&gt;
@@ -785,8 +785,8 @@ some cases, if the CPU got the first turn, it would play a perfect game, and bea
 &lt;p&gt;Both programs were written in C, and using only &lt;em&gt;ONE FILE&lt;/em&gt; per project (&lt;code&gt;main.c&lt;/code&gt;)... I know, that&amp;#39;s bad. But hey!! We were absolute beginners!!&lt;/p&gt;
 </description>
                                 <pubDate>Fri, 20 Dec 2013 11:17:00 +0000</pubDate>
-                                <link>http://blog.torresmateo.com//baby-steps/</link>
-                                <guid isPermaLink="true">http://blog.torresmateo.com//baby-steps/</guid>
+                                <link>http://localhost:4000//baby-steps/</link>
+                                <guid isPermaLink="true">http://localhost:4000//baby-steps/</guid>
                         </item>
                 
         </channel>

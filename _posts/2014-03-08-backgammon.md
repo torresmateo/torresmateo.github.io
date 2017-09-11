@@ -2,7 +2,7 @@
 layout: post
 title:  "Backgammon Madness"
 date:   2014-03-19 06:10:00
-categories: evolution gaming dev
+categories: gaming dev
 ---
 
 Artificial Intelligence is the heart of a Player vs. PC game, and there are a lot of options to have a program *thinking*. For instance,

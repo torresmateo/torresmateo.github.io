@@ -1,0 +1,13 @@
+---
+layout: home
+---
+
+<div id="home">
+    <h1>Categories</h1>
+    {% for category in site.categories %}
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+        {% if category_name != 'ES' %}
+        <a href="/categories/{{ category_name }}" class="category-link">{{ category_name }}</a>
+        {% endif %}
+    {% endfor %}
+</div>

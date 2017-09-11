@@ -2,7 +2,7 @@
 layout: post
 title:  "Baby Steps: GUI, Console and Artificial \"Intelligence\""
 date:   2013-12-20 11:17:00
-categories: evolution gaming dev
+categories: gaming dev
 ---
 
 When you start coding, your entire world can change in little time. Or at least that happened to me. I can only describe it like being in
