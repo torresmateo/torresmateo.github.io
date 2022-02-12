@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to setup Zotero on multiple computers and OSs"
-date: 2021-02-15 6:00:00
+date: 2022-02-11 23:30:00
 categories: dev tutorial zotero
 ---
 
