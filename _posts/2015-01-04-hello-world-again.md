@@ -23,7 +23,7 @@ I've also been working in web development as always, it's still fun, thanks for 
 
 Now to the important business
 
-##IGDA Paraguay
+## IGDA Paraguay
 
 Here in Paraguay the game development industry is almost nonexistent. I mean, there are many game developers and a lot of them are incredibly capable, but sadly there is almost no market here and we have some serious limitations like not being able to sell in Google Play (unless we partner with someone from another country). 
 
@@ -31,25 +31,25 @@ The IGDA (International Game Developers Association) is the largest non-profit m
 
 I've been given the honor of collaborating on this amazing project as secretary!
 
-##My Personal Projects
+## My Personal Projects
 
 While not writing this blog, or writing my thesis, or working, or doing survival related things like eating or sleeping.... I've been programming some games (kind of).
 
-###Wolfenstein 3D Clone
+### Wolfenstein 3D Clone
 
 This project started as a way to teach myself "proper" 3D and OpenGL. I though "I should start with the very basic". I know an infinite number of clones of this game are already out there, but I don't care, the process was unbelievably fun and I learned a lot. I'm not sure about releasing this because there's nothing really exciting about the game itself. Also, I didn't make a lot of effort in the assets of the game and it doesn't look very pretty. I'm not sure... maybe I'll do it in the future. Who knows?
 
-###Mini Engine
+### Mini Engine
 
 After finishing the Wolf3D clone, I wanted to keep learning OpenGL and I came across [this](https://www.youtube.com/user/thebennybox) YouTube Channel (which I then realised contains a tutorial on how to do a Wolf3D clone, kudos to me for not googling before coding!). It really is an invaluable source of knowledge for beginners who want to build a 3D game engine from scratch.
 
-###Mobile Project
+### Mobile Project
 
 The latest project is a mobile (or rather multi-platform) game. I'm using [Cocos2d-x](http://www.cocos2d-x.org/), which is an open source 2D (and now 3D) game engine written in C++. So far it's been amazingly easy and it lets me focus on the game mechanics rather than deal with the rendering and technical issues.
 
 The main idea is to make a simple game but actually finish it and release it as a commercial product this year, or maybe in 2016. We'll see. I'll probably make a dev blog starting in march, when I expect to be working at least half time on this.
 
-#This Blog
+# This Blog
 
 The original idea remains (except the "one post every two weeks" part to be realistic). But there are some changes:
 

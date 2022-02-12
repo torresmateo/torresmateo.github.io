@@ -14,9 +14,9 @@ the structures, the speed, the design, and the challenge that it must have deman
 
 It's how I think the cooks probably can appreciate food better than most of us who can barely make a sandwich.
 
-#Baby Steps
+# Baby Steps
 
-##Gooey??
+## Gooey??
 
 When I started coding, I did a lot of basic programs, and that felt great. But the first one I really enjoyed was this little project in college. We had to write
 a program that let the player:

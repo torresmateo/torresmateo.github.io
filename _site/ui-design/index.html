@@ -1,157 +1,162 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Bacteria, Part 1: UI Design</title>
-		<meta name="viewport" content="width=device-width">
-		<meta property="fb:admins" content="618356035"/>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bacteria, Part 1: UI Design</title>
+    <meta name="viewport" content="width=device-width">
+    <meta property="fb:admins" content="618356035" />
 
-		<!-- syntax highlighting CSS -->
-		<!--link rel="stylesheet" href="/css/syntax.css"-->
+    <!-- syntax highlighting CSS -->
+    <!--link rel="stylesheet" href="/css/syntax.css"-->
 
-		<!-- Custom CSS -->
-		<!--link rel="stylesheet" href="/css/main.css"-->
-		<script type="text/javascript" src="//use.typekit.net/zhh0uta.js"></script>
-		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <!-- Custom CSS -->
+    <script type="text/javascript" src="//use.typekit.net/zhh0uta.js"></script>
+    <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
 
-		<link rel="stylesheet" href="/stylesheets/styles.css">
-		<link rel="stylesheet" href="/stylesheets/pygment_trac.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script src="/javascripts/respond.js"></script>
-		<!--[if lt IE 9]>
-			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<!--[if lt IE 8]>
-		<link rel="stylesheet" href="stylesheets/ie.css">
-		<![endif]-->
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	</head>
-	<body>
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    
+        <link rel="stylesheet" href="/stylesheets/post.css">
+    
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel=' stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel=' stylesheet' type='text/css'>
 
-		  ga('create', 'UA-58189384-1', 'auto');
-		  ga('send', 'pageview');
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+    <body>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-		</script>
-		<div id="fb-root"></div>
-		<script>
-			(function(d, s, id) {
-				var js, fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id)) return;
-				js = d.createElement(s); js.id = id;
-				js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=382699801876314";
-				fjs.parentNode.insertBefore(js, fjs);
-			}(document, "script", "facebook-jssdk"));
-		</script>
-		
-		<div class="wrapper">
-			<section>  
-				<div id="title">
-					<h1><a href="/">blog.torresmateo.com</a></h1>
-					<p>A place to find rants and some videogame dev stuff!</p>
-					<hr>
-					<span class="credits left">GitHub: <a href="https://github.com/torresmateo">torresmateo</a></span>
-					<span class="credits right">twitter: <a href="http://twitter.com/#!/torresmateo">torresmateo</a></span>
-				</div>
-				<h1>Bacteria, Part 1: UI Design</h1>
+            ga('create', 'UA-58189384-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+        <div id="fb-root"></div>
+        <script>
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=382699801876314";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, "script", "facebook-jssdk"));
+        </script>
+
+        <div class="wrapper">
+            <main>
+                <div id="title">
+                    <h1>post</h1>
+                    <h1><a href="/">blog.torresmateo.com</a></h1>
+                    <p>A place to find rants and some videogame dev stuff!</p>
+                    <hr>
+                    <a class="fa fa-github fa-lg main-list-item-icon" href="https://github.com/torresmateo/"></a>
+                    <a class="fa fa-twitter fa-lg main-list-item-icon" href="https://twitter.com/#!/torresmateo"></a>
+                </div>
+                <h1>Bacteria, Part 1: UI Design</h1>
 <p class="date">10 Jan 2014</p>
 <div class="post">
-	<p>One of the projects I feel proud about is called Bacteria (a modified version of <a href="http://hexxagon.com/">Hexxagon</a>). It&#39;s the first
+	<p>One of the projects I feel proud about is called Bacteria (a modified version of <a href="http://hexxagon.com/">Hexxagon</a>). It’s the first
 serious game challenge that we (Fer and I) had in college. This post is about the first set of problems we had to deal with in
 the proccess.</p>
 
-<p>This project covers a lot of things, and I decided to split it in at least two posts, since it&#39;s taking me longer
+<p>This project covers a lot of things, and I decided to split it in at least two posts, since it’s taking me longer
 than expected. This post is very rich in images for those who like to watch stuff rather than read.</p>
 
 <p><strong>WARNING: this post contains some technical words.</strong></p>
 
-<h1>The First BIG (and scary) Project</h1>
+<h1 id="the-first-big-and-scary-project">The First BIG (and scary) Project</h1>
 
 <p>First of all, this project was like a titan for us at the beginning. We had absolutely no clue of what to do, nor where to start.
 There were just too many thing to take into account.</p>
 
-<p>Hexxagon is a board game. The board is hexagonal (what??... <em>first challenge</em>). The goal is to own more cells than the opponent.
-To make it fun, it <em>needs</em> a good <a href="http://en.wikipedia.org/wiki/Graphical_user_interface">GUI</a>, and a LOT of interactive features. </p>
+<p>Hexxagon is a board game. The board is hexagonal (what??… <em>first challenge</em>). The goal is to own more cells than the opponent.
+To make it fun, it <em>needs</em> a good <a href="http://en.wikipedia.org/wiki/Graphical_user_interface">GUI</a>, and a LOT of interactive features.</p>
 
 <p>To make it easy, here is one possible board, each hexagon is a cell:</p>
 
-<p><img src="http://localhost:4000/images/bacteria/hexboard.png" alt="" title="possible board"></p>
+<p><img src="http://localhost:4000/images/bacteria/hexboard.png" alt="" title="possible board" /></p>
 
 <ul>
-<li><p>Rules:</p>
-
-<ul>
-<li>Same as Hexxagon, two types of moves, you can <em>multiply</em> to a cell next to yours, or you can <em>jump</em>  over one cell
+  <li>Rules:
+    <ul>
+      <li>Same as Hexxagon, two types of moves, you can <em>multiply</em> to a cell next to yours, or you can <em>jump</em>  over one cell
 in an hexagonal board.</li>
-<li>The winner is the player who owns more cells when the board has no free cells.</li>
-</ul></li>
-<li><p>For our particular implementation, we had to add this:</p>
-
-<ul>
-<li>A hint about where you can jump, or multiply.</li>
-<li>A board editor.</li>
-<li>Multiplayer Feature based on a given XML Protocol (Maybe I&#39;ll describe the protocol in the next post).</li>
-<li>Sound.</li>
-</ul></li>
+      <li>The winner is the player who owns more cells when the board has no free cells.</li>
+    </ul>
+  </li>
+  <li>For our particular implementation, we had to add this:
+    <ul>
+      <li>A hint about where you can jump, or multiply.</li>
+      <li>A board editor.</li>
+      <li>Multiplayer Feature based on a given XML Protocol (Maybe I’ll describe the protocol in the next post).</li>
+      <li>Sound.</li>
+    </ul>
+  </li>
 </ul>
 
-<p>So, at first sight, it doesn&#39;t seem like a LOT, but we wanted to make a great game out of this.</p>
+<p>So, at first sight, it doesn’t seem like a LOT, but we wanted to make a great game out of this.</p>
 
-<h2>Rules and Logic</h2>
+<h2 id="rules-and-logic">Rules and Logic</h2>
 
-<p>Programming the game logic wasn&#39;t really hard. In the first day we had a working console implementation and we could &quot;play&quot; the
+<p>Programming the game logic wasn’t really hard. In the first day we had a working console implementation and we could “play” the
 game having absolutely no fun because we had to write every command to make a simple move, something like</p>
-<div class="highlight"><pre><code class="language-" data-lang="">multiply cell A8 to A9
-</code></pre></div>
-<p>and the output was really awful, a lot of debug using <code>printf</code> and also tons of (apparently) meaningless garbage. But we were enjoying
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>multiply cell A8 to A9
+</code></pre></div></div>
+
+<p>and the output was really awful, a lot of debug using <code class="language-plaintext highlighter-rouge">printf</code> and also tons of (apparently) meaningless garbage. But we were enjoying
 the development proccess like a child who gets a Nintendo 64 on Christmas! When it was clear that the logic was done, we were ready
 for te REAL FUN!</p>
 
-<h2>GUI</h2>
+<h2 id="gui">GUI</h2>
 
 <p>Remember the Sudoku project we made with WinAPI? Well, we considered that UI awful. We wanted to make a game that could make
-people say &quot;ooooohhhhh&quot;. So we started searching for 2D game engines and libraries, and there were a few interesting options.
+people say “ooooohhhhh”. So we started searching for 2D game engines and libraries, and there were a few interesting options.
 After reading about SDL, GTK and other options we ended up using <a href="http://alleg.sourceforge.net/">Allegro</a>, a Game Programming
 Library.</p>
 
-<p>The first challenge was &quot;how the hell are we going to make this pretty&quot;. I started making drafts in paper and we would discuss with Fer
+<p>The first challenge was “how the hell are we going to make this pretty”. I started making drafts in paper and we would discuss with Fer
 the good and the bad of every menu and how it should work. It was clear we needed a cell that worked like a brick, so we
-can build many different boards (with holes, or two separate &quot;islands&quot;).</p>
+can build many different boards (with holes, or two separate “islands”).</p>
 
 <p>This image shows a possible board, the first image is our board editor, and the second is the game view with the statistics.
-I still look at this and can&#39;t help a little smile of satisfaction and pride :&#39;D</p>
+I still look at this and can’t help a little smile of satisfaction and pride :’D</p>
 
-<p><img src="http://localhost:4000/images/bacteria/board_editor.png" alt="" title="Our Board Editor">
-<img src="http://localhost:4000/images/bacteria/game_view.png" alt="" title="Game View"></p>
+<p><img src="http://localhost:4000/images/bacteria/board_editor.png" alt="" title="Our Board Editor" />
+<img src="http://localhost:4000/images/bacteria/game_view.png" alt="" title="Game View" /></p>
 
 <p>Note the cell borders in the game view. To draw this borders we had to step into every cell and check for adjacent objects!</p>
 
-<p>Another Challenge was menus. Since Allegro gives you &quot;per-pixel&quot; control, we wanted to take advantage of that and make buttons
+<p>Another Challenge was menus. Since Allegro gives you “per-pixel” control, we wanted to take advantage of that and make buttons
 with nice shapes, effects and colors. We came up with a technique using color masks to detect when a user hovers or clicks inside
 a button or anything we wanted to be interactive (it turned out it was a well-known technique, but back then we feel awed by our
-own witts). Here&#39;s an Image of the mask, and the menu with one of the buttons highlighted.</p>
+own witts). Here’s an Image of the mask, and the menu with one of the buttons highlighted.</p>
 
-<p><img src="http://localhost:4000/images/bacteria/ingame_shape.jpg" alt="" title="Mask">
-<img src="http://localhost:4000/images/bacteria/button_highlight.jpg" alt="" title="Button Highlighted"></p>
+<p><img src="http://localhost:4000/images/bacteria/ingame_shape.jpg" alt="" title="Mask" />
+<img src="http://localhost:4000/images/bacteria/button_highlight.jpg" alt="" title="Button Highlighted" /></p>
 
 <p>Note how the mask color matches the shape of the blue bacteria. If the user clicked on our GUI, we asked for the pointer position,
-and looked what color was clicked in the mask, easy right? Here&#39;s a visual explanation, the red line is intended to show how
+and looked what color was clicked in the mask, easy right? Here’s a visual explanation, the red line is intended to show how
 mask and design share positions.</p>
 
-<p><img src="http://localhost:4000/images/bacteria/explanation.png" alt="" title="Mask and GUI Overlay"></p>
+<p><img src="http://localhost:4000/images/bacteria/explanation.png" alt="" title="Mask and GUI Overlay" /></p>
 
-<h2>To be continued..</h2>
+<h2 id="to-be-continued">To be continued..</h2>
 
-<p>That&#39;s all for the moment, I have a draft of the second part, it&#39;s about how we faced gameplay, drag and drop, networking, and
+<p>That’s all for the moment, I have a draft of the second part, it’s about how we faced gameplay, drag and drop, networking, and
 artificial intelligence. Give me feedback if you want me to explain a little further any aspect, maybe with code explanation or
 in a tutorial-like format.</p>
 
-<p>Aaaaaaaaaaaaaaaaaaand last, but not least... here&#39;s the <a href="https://github.com/torresmateo/Bacteria">code</a>.</p>
+<p>Aaaaaaaaaaaaaaaaaaand last, but not least… here’s the <a href="https://github.com/torresmateo/Bacteria">code</a>.</p>
+
 
 		<!--hr>
 		<h3>Comments</h3>
@@ -165,17 +170,19 @@ in a tutorial-like format.</p>
                 <script type="text/javascript">
                     /* * * CONFIGURATION VARIABLES * * */
                     var disqus_shortname = 'torresmateo';
-                    
+
                     /* * * DON'T EDIT BELOW THIS LINE * * */
-                    (function() {
+                    (function () {
                         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
                         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
                         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
                     })();
                 </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-			</section>  
-		</div>
-        
-	</body>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"
+                        rel="nofollow">comments powered by Disqus.</a></noscript>
+            </main>
+        </div>
+
+    </body>
+
 </html>

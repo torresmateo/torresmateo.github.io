@@ -9,7 +9,7 @@ Artificial Intelligence is the heart of a Player vs. PC game, and there are a lo
 if you have to make a game like [Bacteria]({% post_url 2014-01-10-ui-design %}), the obvious choice is
 [Alpha-Beta pruning](http://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning).
 
-##The Story
+## The Story
 
 The assignment Fer and I had was [Backgammon](http://en.wikipedia.org/wiki/Backgammon). It's a board game with checkers and dices. The
 main goal is to move your checkers from your "house" to the opponent's. In your turn you throw a pair of dices, and move the checkers forward.
@@ -24,7 +24,7 @@ there are A LOT of options, and it's part of the art of problem solving to pick 
 In class, I asked our teacher about this, and he didn't answer my question. I stayed after class to him again, and we had an argument about the
 right algorithm to use for the game.
 
-##The implementation
+## The implementation
 
 Graphically, it's the same as [Bacteria]({% post_url 2014-01-10-ui-design %}). Even the mouse handler is 90% taken from our previous
 implementation, we used color masks and sprites. [Allegro](http://alleg.sourceforge.net/) was also the library we used again.
@@ -53,7 +53,7 @@ The second stage has the following priorities:
 
 Basically, it's focused on reaching the opponent's home.
 
-##The tournament
+## The tournament
 
 The main goal of this implementation was to make every team challenge other's programs. It was fun, at first we won because most of our classmates'
 programs weren't finished. We ended with 3 complete games (best of 3), the first two we won 2-0, and the last one (the final game of the tournament)
@@ -67,7 +67,7 @@ who had the advantage until the very end.
 
 Luckily we won :)
 
-##Video and Code
+## Video and Code
 
 Last, but not least, here's the video of me playing (and winning!) against my own implementation. The interface this time isn't as elaborated as in
 Bacteria, but the main reasons were:

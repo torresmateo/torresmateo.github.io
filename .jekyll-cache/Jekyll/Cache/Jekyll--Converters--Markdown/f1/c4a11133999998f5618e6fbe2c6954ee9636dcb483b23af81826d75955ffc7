@@ -1,0 +1,98 @@
+I"<p>When you start coding, your entire world can change in little time. Or at least that happened to me. I can only describe it like being in
+opposite sides of a thick wall:</p>
+
+<ul>
+  <li>On one side all you can see is the result: programs, websites, Operating Systems, yadda, yadda, yadda.</li>
+  <li>On the other side though, you can see the clockwork of all that, and by seeing it, you can <em>understand</em> what’s going on! You begin to appreciate the quality of 
+the structures, the speed, the design, and the challenge that it must have demanded from the developers.</li>
+</ul>
+
+<p>It’s how I think the cooks probably can appreciate food better than most of us who can barely make a sandwich.</p>
+
+<h1 id="baby-steps">Baby Steps</h1>
+
+<h2 id="gooey">Gooey??</h2>
+
+<p>When I started coding, I did a lot of basic programs, and that felt great. But the first one I really enjoyed was this little project in college. We had to write
+a program that let the player:</p>
+
+<ul>
+  <li>Play a game of <a href="http://en.wikipedia.org/wiki/Sudoku">Sudoku</a>.</li>
+  <li>Resume a previous game.</li>
+  <li>Show the mistakes.</li>
+  <li>Keep a Score.</li>
+</ul>
+
+<p>Pretty basic, thinking of it now, but back then was a serious challenge. My friend (and classmate) Fernando Minardi (who I will call <em>Fer</em> from here) was my partner in 
+the project, and we decided to give the player a <a href="http://en.wikipedia.org/wiki/Graphical_user_interface">GUI</a> <em>(graphical user interface)</em> (it wasn’t <em>necessary</em> for 
+the evaluation, but we wanted to “get our hands dirty”). We started coding and it was really fun! It ended up like this (it’s in spanish since I live in Paraguay!):</p>
+
+<p><img src="http://localhost:4000/images/baby-steps/sudoku.png" alt="" title="Our First GUI!!" /></p>
+
+<p>I won’t lie… I don’t like it that much either. But back then it was <em>AWESOME!!</em> … Man!! our first GUI!! And it does what it’s supposed to do!! (it didn’t crash
+randomly like our first attempts!). We were happy, and run to my family as we finished the program in my house to show how amazing it was. With tears of joy in our eyes
+we went to the dining room, laptop in our hands, and showed them! :’D …. The reaction was this:</p>
+
+<p><em>This… is….. hmmmm… niiiice</em> (read with the least convincing voice you can imagine).</p>
+
+<p>That’s when I first realized it wasn’t easy to get other people excited about this kind of stuff. Sure, it wasn’t Crysis or Uncharted, but it was <em>hard</em> to make. But
+among our classmates, our program was one of the best.</p>
+
+<p>##OK, now make it <em>think</em></p>
+
+<p>I think it’s important to mention that Fer was always my coding partner in college. So, our next game-related assignment was Batalla Naval ++, an implementation of 
+<a href="http://en.wikipedia.org/wiki/Battleship_\(game\)">Battleship</a> with some modifications:</p>
+
+<ul>
+  <li>2 levels for each player (surface and submarine)</li>
+  <li>The player has 2 submarines (3 squares) and can move them, sink them or put them in the surface.</li>
+  <li>If a submarine is damaged, automatically goes to the surface.</li>
+  <li>New Tools:
+    <ul>
+      <li><strong>Spy Aircraft</strong> (2): the player selects a row, a column, or a diagonal, and can see everything in there for a turn.</li>
+      <li><strong>Spy Bomb</strong> (3): the player selects a square, and the spy bomb shows everything in there for three turns.</li>
+      <li><strong>Ballistic Missile</strong> (∞): the one from the original game, you select a square, shoot, and if hits, it’s your turn again.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>And the program must fulfill these requirements:</p>
+
+<ul>
+  <li>The usage of <code class="language-plaintext highlighter-rouge">conio.h</code>, a Windows library for console interfaces ( no GUI this time T_T )</li>
+  <li>AI …. <strong>ARTIFICIAL INTELLIGENCE</strong> (OMG!! As a must, our program had to <em>play</em> against a human player! <em>A W E S O M E !!!</em>.</li>
+</ul>
+
+<p>So, we started playing  the modified version of the game on a piece of paper, thinking about some strategies for the AI. We ended with a nice one, which was pretty clever. 
+We started with the airplanes, and then the bombs, and then firing at everything that we found.</p>
+
+<p>This is one of the spying layouts, it maximizes the spied area:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|a|_|_|_|X|X|X|_|_|b|
+|_|A|_|_|X|E|X|_|B|_|
+|_|_|X|_|X|X|X|X|_|_|
+|X|X|X|X|_|_|X|_|_|_|
+|X|E|X|_|X|X|_|X|X|X|
+|X|X|X|_|X|X|_|X|E|X|
+|_|_|_|X|_|_|X|X|X|X|
+|_|_|X|_|_|_|_|X|_|_|
+|_|X|_|_|_|_|_|_|X|_|
+|X|_|_|_|_|_|_|_|_|X|
+</code></pre></div></div>
+
+<p>And it looked like this:</p>
+
+<p><img src="http://localhost:4000/images/baby-steps/battleship.png" alt="" title="Our First AI!!" /></p>
+
+<p>Writing those programs was incredibly fun!! We were learning a lot about coding, and when our own game got to beat us 9 of every 10 matches, we felt very proud (In 
+some cases, if the CPU got the first turn, it would play a perfect game, and beat us at the second turn!)</p>
+
+<blockquote>
+  <p>Note for geeks:</p>
+</blockquote>
+
+<p>You can download Sudoku’s source code from <a href="https://github.com/torresmateo/TAI1-Sudoku">here</a>, and Batalla-Naval from <a href="https://github.com/torresmateo/Batalla-Naval">here</a></p>
+
+<p>Both programs were written in C, and using only <em>ONE FILE</em> per project (<code class="language-plaintext highlighter-rouge">main.c</code>)… I know, that’s bad. But hey!! We were absolute beginners!!</p>
+
+:ET

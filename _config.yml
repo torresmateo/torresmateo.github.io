@@ -1,7 +1,7 @@
 name: blog.torresmateo.com
-markdown: redcarpet
+markdown: kramdown
 highlighter: rouge
-description: A place to find rants and some videogame dev stuff!
+description: Rants, computational biology, and software development.
 url: http://blog.torresmateo.com
 timezone: "Europe/London"
 permalink: /:title/

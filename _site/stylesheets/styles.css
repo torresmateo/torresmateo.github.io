@@ -557,7 +557,7 @@ body {
   font-weight: 400;
   font-size: 13px;
   /*color: #f0e7d5;*/
-  color:#A7A7A7;
+  color:#c3c3c3;
   /*font-weight: normal;*/
   background: #121212;
   background-attachment: fixed !important;
@@ -622,9 +622,16 @@ a small {
   display: block;
 }
 
-ul {
+/* ul {
   list-style-image: url("../images/bullet.png");
+} */
+
+.post {
+  max-width: 94%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 /*
 strong {
   font-family: 'OpenSansBold', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
@@ -632,7 +639,7 @@ strong {
 }
 */
 .wrapper {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
   padding: 0 50px;
@@ -640,7 +647,7 @@ strong {
   -webkit-box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.56);
   -moz-box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.56);
   box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.56);
-  font-size:2em;
+  font-size:1.7em;
   line-height:1.5em;
 }
 
@@ -820,7 +827,7 @@ dt {
 }
 
 section {
-  max-width: 800px;
+  max-width: 1100px;
   /*padding: 30px 0px 50px 0px;
   margin: 20px 0;*/
   padding-top: 70px;

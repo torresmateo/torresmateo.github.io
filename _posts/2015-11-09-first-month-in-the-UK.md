@@ -9,13 +9,13 @@ It's been a while since I updated this thingy... Hello!
 
 Tonight it's all about my first month in the UK. For a brief summary: I'm starting a PhD in Computer Science (Bioinformatics) at Royal Holloway, University of London. It will take four years counting from September 2015 (yes, I arrived a little bit late, more details below).
 
-#I'm going on an adventure!
+# I'm going on an adventure!
 
 Leaving home is always exiting and frankly quite scary, especially since I never really spent long periods of time away from home. I was especially aware of everything thanks to both my mother and my sister (who are the ones that usually travel a lot in my family) who literally packed a lot of stuff in the suitcases that I thought were unnecessary but I was (obviously) utterly wrong.
 
 Arriving here was quite a challenge, even after I had accepted the offer from Royal Holloway. The visa process takes a really long time and I had to go to Buenos Aires just to provide the required documents, and after that they process everything in Bogotá! (I hope they have a very good reason to spend so much in posting documents around instead of hiring some people to process the documents locally, but that's not the point today). Nevertheless, I made it! 
 
-#I can cook after all
+# I can cook after all
 
 One of the things I am proud of is the fact that I can actually cook! (And this means more than assemble some ingredients into a sandwich or a pizza at best). But behold!
 
@@ -25,7 +25,7 @@ This is a fugazza I made on the second weekend (and I realised I didn't have a r
 ![][tuna-thing]
 This is.. a ... tuna thing! (or tuna cake, or tuna bread). I tried in the first weekend here when I went to my supervisor's house for a party. We were all so delighted by this that we asked for the recipe and I made it! (It wasn't as good as the original one, but it tasted good nonetheless).
 
-#The Place
+# The Place
 
 I live in Egham, just outside London. It is far greener than I expected and walking is easier than in Asunción (because weather is not inhumanly hot). Here are 4 pictures of my first walk around Egham and Englefield Green (the town next to Egham).
 
@@ -34,7 +34,7 @@ I live in Egham, just outside London. It is far greener than I expected and walk
 ![][egham3]
 ![][egham4]
 
-#Royal Holloway, University of London
+# Royal Holloway, University of London
 
 It is beyond my ability to find the right words to describe the University, so... pictures!
 ![][rhul1]
@@ -42,7 +42,7 @@ It is beyond my ability to find the right words to describe the University, so..
 ![][rhul3]
 ![][rhul4]
 
-#The Lab
+# The Lab
 
 I'm currently in the Computer Science Department at Royal Holloway, working in [PaccanaroLab](http://www.paccanarolab.org) (run by Alberto Paccanaro, my supervisor).
 

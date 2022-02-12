@@ -8,7 +8,7 @@ categories: gaming dev
 This is the second part of the Bacteria development, I'll focus in gameplay, and the technique we used for implementing drag and drop
 with Allegro.
 
-##Gameplay
+## Gameplay
 
 First, I'll give a little introduction of what gameplay is:
 
@@ -23,7 +23,7 @@ For our game, we wanted the player to focus in the strategic part of the game, a
 with objects on the screen. In our previous games the player had to learn a bunch of "complicated" controls to do things, and it wasn't
 fun to play that way.
 
-##Drag & Drop
+## Drag & Drop
 
 Since Bacteria is a board game, the intuitive way to interact with it is obviously the mouse. Here's a list of the things you can do with
 any mouse:
@@ -63,7 +63,7 @@ Here's an image showing the empty cell, the "phantom" bacteria , the "infected" 
 
 ![][blue_bacteria]
 
-##Artificial Intelligence
+## Artificial Intelligence
 
 Some words about the intelligence.
 
@@ -73,7 +73,7 @@ Our implementation was a tree-like decision structure. We started by assuming th
 It's pretty clever after reading the code almost 4 years later =). It's not very hard to beat the computer with this AI, but not ultra-easy though, 
 it takes to think at least two moves ahead to win. 
 
-#Finally
+# Finally
 
 Well... I wrote a LOT about Bacteria, and after reading it myself I decided it was long and boring, so I erased all of it and instead made a 
 video of myself showing what I think are the best parts of this game:
@@ -87,7 +87,7 @@ It's not a long video, and I lose (in my defense, the purpose of this wasn't for
 
 <iframe width="800" height="600" src="//www.youtube.com/embed/H9hrEwQNlbw?rel=0" frameborder="0" allowfullscreen></iframe>
 
-#To be continued...
+# To be continued...
 
 The next post is not about Bacteria. It's about Backgammon, but only the AI part, since all the rest is pretty similar to Bacteria, the interesting
 part is the intelligence. I plan to make another video for that post, since it's much easier for me to show the features that way, and maybe
