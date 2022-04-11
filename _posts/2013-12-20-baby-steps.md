@@ -41,7 +41,7 @@ we went to the dining room, laptop in our hands, and showed them! :'D .... The r
 That's when I first realized it wasn't easy to get other people excited about this kind of stuff. Sure, it wasn't Crysis or Uncharted, but it was *hard* to make. But
 among our classmates, our program was one of the best.
 
-##OK, now make it *think*
+## OK, now make it *think*
 
 I think it’s important to mention that Fer was always my coding partner in college. So, our next game-related assignment was Batalla Naval ++, an implementation of 
 [Battleship]( http://en.wikipedia.org/wiki/Battleship_\(game\) ) with some modifications:

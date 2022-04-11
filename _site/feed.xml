@@ -7,6 +7,98 @@
                 <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
                 
                         <item>
+                                <title>Manual del Parser de Hesaka</title>
+                                <description>&lt;p&gt;Esta es una guía paso a paso para el &lt;a href=&quot;https://github.com/torresmateo/parser-hesaka&quot;&gt;parser simple&lt;/a&gt; que escribí para parsear &lt;a href=&quot;https://www.asuncion.gov.py/hesaka&quot;&gt;PDFs intencionalmente ofuscados&lt;/a&gt; por la Municipalidad de Asunción con el único objetivo de minimizar la transparencia de las gestiones.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-software-instalar&quot;&gt;Qué software instalar:&lt;/h2&gt;
+
+&lt;p&gt;El parser es un parser de texto, y no un parser de imágenes. Para obtener el texto, necesitamos instalar dos herramientas gratuitas que nos sirven para un proceso de dos pasos:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Transformar el PDF a imágenes (una imágen por página)&lt;/li&gt;
+  &lt;li&gt;Detectar el texto en las imágenes, manteniendo los espacios entre las columnas.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;El primer paso lo hacemos con el comando &lt;a href=&quot;https://www.xpdfreader.com/pdftopng-man.html&quot;&gt;pdftopng&lt;/a&gt;, para lo cual debemos instalar &lt;a href=&quot;https://www.xpdfreader.com/download.html&quot;&gt;XpdfReader&lt;/a&gt; (o alguna herramienta que pueda transformar pdf a imágenes &lt;a href=&quot;&quot;&gt;hay&lt;/a&gt; &lt;a href=&quot;&quot;&gt;muchas&lt;/a&gt; &lt;a href=&quot;&quot;&gt;opciones&lt;/a&gt;. Instrucciones para instalr XpdfReader (en inglés) en &lt;a href=&quot;&quot;&gt;este link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;El segundo paso lo hacemos con un software que reconoce caracteres en imágenes. Esto se conoce como OCR, del inglés &lt;em&gt;Optical Character Recognition&lt;/em&gt;. Yo elegí usar &lt;a href=&quot;https://github.com/tesseract-ocr/tesseract&quot;&gt;tesseract&lt;/a&gt;, ya que es gratis y open source, pero existen [muchas alternativas] para este propósito. Lo único que necesitamos es transformar las imágenes a texto.&lt;/p&gt;
+
+&lt;h2 id=&quot;paso-1--transoformar-pdf-a-varias-imágenes&quot;&gt;Paso 1 – Transoformar pdf a varias imágenes&lt;/h2&gt;
+
+&lt;p&gt;Usando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdftopng&lt;/code&gt; el comando a correr (en una terminal) es el siguiente:&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;~$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;pdftopng &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; 600 Febrero_2022.pdf febrero-2022
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Este comando generará una imágen por cada página a 600 &lt;a href=&quot;https://es.wikipedia.org/wiki/Puntos_por_pulgada&quot;&gt;DPI&lt;/a&gt;, y las va a nombrar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;febrero-2022-000001.png&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;febrero-2022-000002.png&lt;/code&gt;, etc. Desde luego, el nombre del PDF va a cambiar dependiendo del PDF que uno quiera analizar, y lo mismo con el último argumento.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Los archivos de la Municipalidad tienen cientos de páginas, y 600 DPI es una imagen de alta calidad, por lo tanto el comando puede tardar varios minutos, dependiendo de la capacidad de la computadora.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Una vez que el comando termine, estamos listos para reconocer el texto usando tesseract.&lt;/p&gt;
+
+&lt;h2 id=&quot;paso-2--reconocimiento-de-caracteres&quot;&gt;Paso 2 – Reconocimiento de caracteres&lt;/h2&gt;
+
+&lt;p&gt;Como estamos lidiando con cientos de imágenes, antes de correr tesseract en si, es conveniente crear primero un archivo para indicarle a tesseract los archivos que debe procesar. Para esto, corremos el siguiente comando en la carpeta donde corrimos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdftopng&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;~$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$PWD&lt;/span&gt;/febrero-2022-&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.png &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; tesseract_input.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Con este comando, estamos indicando a la computadora que liste todas las imágenes que creamos usando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdftopng&lt;/code&gt;, y que guarde esta lista en el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tesseract_input.txt&lt;/code&gt;. Una vez que este archivo exista en la computadora, podemos llamar a tesseract:&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;~$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;tesseract &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; spa tesseract_input.txt febrero-2022 &lt;span class=&quot;nt&quot;&gt;--psm&lt;/span&gt; 6 &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;preserve_interword_spaces&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;En este comando le decimos a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tesseract&lt;/code&gt; que:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Procese la lista que escribimos en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tesseract_input.txt&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Guarde los resultados en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;febreto-2022.txt&lt;/code&gt; (la extension &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.txt&lt;/code&gt; se agrega sola)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--psm 6&lt;/code&gt; indica que queremos que la imagen se interprete como un bloque de texto único (es decir, va a leer cada línea hasta el final, en lugar de intentar detectar columnas)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-c preserve_interword_spaces=1&lt;/code&gt; indica que queremos mantener la separación entre palabras, incluso si eso significa agregar una cantidad anormal de espacios.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Posiblemente esta sea la parte más lenta del proceso, ya que procesar la imágenes se hace con un modelo de machine learning que require relativamente mucho poder computacional.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;paso-3--usar-el-parser-para-extraer-los-datos-a-excel&quot;&gt;Paso 3 – Usar el parser para extraer los datos a excel&lt;/h2&gt;
+
+&lt;p&gt;El parser está escrito en python, y requiere de que se instalen algunas bibliotecas específicas para funcionar. Para instalar las bibliotecas requeridas, en la terminal se debe escribir:&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;~$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;pip &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; requirements.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;IMPORTANTE: dependiendo de tu experiencia con python puede ser una buena idea crear un entorno virtual primero&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Una vez que las dependencias están instaladas, para exportar un excel&lt;/p&gt;
+
+&lt;h2 id=&quot;la-estructura-de-las-imágenes-de-hesaka&quot;&gt;La estructura de las imágenes de Hesaka.&lt;/h2&gt;
+
+&lt;p&gt;La estructura de todas las páginas de los archivos de Hesaka se ven como la siguiente imágen:
+&lt;img src=&quot;/images/manual-hesaka/screenshot-pdf.png&quot; alt=&quot;screenshot-pdf&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Es decir, tenemos las columnas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Cédula (un número)&lt;/li&gt;
+  &lt;li&gt;Nombre&lt;/li&gt;
+  &lt;li&gt;Relación Laboral&lt;/li&gt;
+  &lt;li&gt;Monto&lt;/li&gt;
+  &lt;li&gt;Concepto&lt;/li&gt;
+  &lt;li&gt;Dependencia&lt;/li&gt;
+  &lt;li&gt;Cargo (opcional)&lt;/li&gt;
+  &lt;li&gt;Año de Ingreso (completa en esta figura, pero a veces no está especificado, entonces también opcional)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                                <pubDate>Mon, 11 Apr 2022 00:00:00 +0100</pubDate>
+                                <link>http://localhost:4000//manual-hesaka/</link>
+                                <guid isPermaLink="true">http://localhost:4000//manual-hesaka/</guid>
+                        </item>
+                
+                        <item>
                                 <title>How to setup Zotero on multiple computers and OSs</title>
                                 <description>&lt;p&gt;Since the beginning of the PhD, I knew I needed a better way to handle a library than collecting a huge file with BibTeX entries. However, I was not happy with most reference management software. Mostly because rather sooner than later it felt like I could not really have the control I wanted. Unless (of course) I started paying them for features such as storing my files in the cloud, or syncing the entries across multiple computers.&lt;/p&gt;
 
@@ -387,19 +479,19 @@ año.&lt;/p&gt;
 más factores dentro del contexto de la conversación. El efecto de esto? Estoy ahi como una computadora cuando se cuelga… &lt;em&gt;sin un
 output&lt;/em&gt; que de evidencia de que sigo en el “mundo real”.&lt;/p&gt;
 
-&lt;p&gt;#¿Es esto algo negativo?&lt;/p&gt;
+&lt;h1 id=&quot;es-esto-algo-negativo&quot;&gt;¿Es esto algo negativo?&lt;/h1&gt;
 
 &lt;p&gt;Si. Mantener una conversación fluida es un aspecto muy importante de la vida del ser humano. Y pensar mucho en algo innecesario es una
 pérdida de energía y tiempo que finalmente no lleva a nada. Ciertamente nada es absoluto y hay ocasiones en las que uno tiene que 
 considerar muchas cosas antes de responder (como por ejemplo una entrevista de trabajo, un debate, etc.)&lt;/p&gt;
 
-&lt;p&gt;#¿Que puedo hacer al respecto?&lt;/p&gt;
+&lt;h1 id=&quot;que-puedo-hacer-al-respecto&quot;&gt;¿Que puedo hacer al respecto?&lt;/h1&gt;
 
 &lt;p&gt;Personalmente, trato conscientemente de no irme mucho por las ramas de pensamiento cuando estoy conversando. Cuando creo que es algo
 demasiado importante como para evitar pensar bastante antes de responder, trato de dar algún tipo de &lt;em&gt;feedback&lt;/em&gt; al interlocutor (algo
 como “Dejame pensar un ratito” o ponerme un una típica pose de pensador, como agarrarme la barba).&lt;/p&gt;
 
-&lt;p&gt;#¿Eso funciona?&lt;/p&gt;
+&lt;h1 id=&quot;eso-funciona&quot;&gt;¿Eso funciona?&lt;/h1&gt;
 
 &lt;p&gt;Más o menos. Este ejercicio mental hace que disminuya en cierto grado el corte en la fluidez de las conversaciones que tengo 
 cotidianamente. Si te pasa algo similar, te cuento que es un poco frustrante no tener la libertad de pensar mucho antes de responder 
@@ -436,7 +528,7 @@ no incluí en otros posts porque no quería mezclar tanto temas generales con de
   &lt;p&gt;Algunas cosas van a cambiar en el futuro, sobre todo cuando decida dedicarme un poco más a la parte visual del blog. Por ahora me parece cómodo de leer :)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;#Ingeniería!&lt;/p&gt;
+&lt;h1 id=&quot;ingeniería&quot;&gt;Ingeniería!&lt;/h1&gt;
 
 &lt;p&gt;Altas probabilidades de que si me conocés sabes que hace mas o menos un mes finalmente defendí la tesis :D. Fue un proceso largo (un poco más de dos años)
 y al principio los resultados eran poco favorables y desanimadores, pero finalmente defendí y saqué la máxima calificación posible.&lt;/p&gt;
@@ -482,7 +574,7 @@ pero una nomas abre cada candado?”. Era prácticamente un juego para mi… Inv
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;#El #GAMEDEVPY&lt;/p&gt;
+&lt;h1 id=&quot;el-gamedevpy&quot;&gt;El #GAMEDEVPY&lt;/h1&gt;
 
 &lt;p&gt;Yo defendía la tesis un lunes… y el jueves de esa misma semana tenía que dar una charla acerca de música para videojuegos en un evento organizado por IGDA Paraguay.&lt;/p&gt;
 
@@ -491,7 +583,7 @@ muchísima gente e incluso ese fin de semana hablamos del evento en radios local
 
 &lt;p&gt;Para evitar alargar mucho este (ya medio kilométrico post) les dejo el &lt;a href=&quot;https://youtu.be/1iDo7U9VR7Y&quot;&gt;video&lt;/a&gt; de la charla y &lt;a href=&quot;https://www.facebook.com/media/set/?set=a.443927162434811.1073741833.301346146692914&amp;amp;type=3&quot;&gt;fotos&lt;/a&gt; del evento!&lt;/p&gt;
 
-&lt;p&gt;#La vida después de la tesis (World of Warcraft)&lt;/p&gt;
+&lt;h1 id=&quot;la-vida-después-de-la-tesis-world-of-warcraft&quot;&gt;La vida después de la tesis (World of Warcraft)&lt;/h1&gt;
 
 &lt;p&gt;Una breve lista de las cosas principales estoy haciendo por ahora:&lt;/p&gt;
 
@@ -670,114 +762,6 @@ Bacteria, but the main reasons were:&lt;/p&gt;
                                 <pubDate>Wed, 19 Mar 2014 06:10:00 +0000</pubDate>
                                 <link>http://localhost:4000//backgammon/</link>
                                 <guid isPermaLink="true">http://localhost:4000//backgammon/</guid>
-                        </item>
-                
-                        <item>
-                                <title>Bacteria, Part 2: Gameplay, Drag &amp; Drop and other Stuff</title>
-                                <description>&lt;p&gt;This is the second part of the Bacteria development, I’ll focus in gameplay, and the technique we used for implementing drag and drop
-with Allegro.&lt;/p&gt;
-
-&lt;h2 id=&quot;gameplay&quot;&gt;Gameplay&lt;/h2&gt;
-
-&lt;p&gt;First, I’ll give a little introduction of what gameplay is:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Gameplay is the specific way in which players interact with a game, and in particular with video games. Gameplay is the pattern defined 
-through the game rules, connection between player and the game, challenges and overcoming them, plot and player’s connection with it. 
-Video game gameplay is distinct from graphics, and audio elements.&lt;/p&gt;
-  &lt;div style=&quot;text-align:right;&quot;&gt;&amp;#8213;Random Dude in Wikipedia&lt;/div&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;That should be clear enough.&lt;/p&gt;
-
-&lt;p&gt;For our game, we wanted the player to focus in the strategic part of the game, and not to deal with an uncomfortable way of interacting
-with objects on the screen. In our previous games the player had to learn a bunch of “complicated” controls to do things, and it wasn’t
-fun to play that way.&lt;/p&gt;
-
-&lt;h2 id=&quot;drag--drop&quot;&gt;Drag &amp;amp; Drop&lt;/h2&gt;
-
-&lt;p&gt;Since Bacteria is a board game, the intuitive way to interact with it is obviously the mouse. Here’s a list of the things you can do with
-any mouse:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Move pointer.&lt;/li&gt;
-  &lt;li&gt;Click.&lt;/li&gt;
-  &lt;li&gt;Right-Click.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Pretty limited. I didn’t include &lt;em&gt;scroll&lt;/em&gt; in that list because (sadly) not all mice have a scroll wheel. So, handling the mouse is 
-not as simple as it can appear at first sight… aaaand right-clicking sucks in a board game… so… here’s our new list:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Move pointer.&lt;/li&gt;
-  &lt;li&gt;Click.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;But wait!! If you think about it, there are special things about the click event, and it’s all about timing. In every mouse based interface
-you have more options:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Double-click:&lt;/strong&gt; Click two times, fast. It’s like clicking, but if almost every time a single-click is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;select&lt;/code&gt;, double click is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;open&lt;/code&gt; or, 
-in a more general way: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;interact&lt;/code&gt; with the double-clicked element.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Drag-and-Drop:&lt;/strong&gt; It’s done by pressing on the element, moving the mouse while still pressing the mouse button, and then releasing the button
-in another area in the screen.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;These options are called &lt;em&gt;gestures&lt;/em&gt;. We were interested in &lt;em&gt;Drag-and-Drop&lt;/em&gt;, because it’s the simplest way to “move” one object over the scene.
-The basic idea is click and hold one of the little bacteria, and somehow give the player the feeling that s/he is “holding” the object as long
-as the mouse button is pressed. We implemented this feature by doing the following:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;On mouse press:&lt;/strong&gt; Quickly swap the bacteria with a “phantom” version, useful to know the original position in the board. Also, replace the
-mouse pointer, our choice was the same pointer with a bacteria attached to it, so wherever the player moved the mouse, the bacteria seemed
-to be glued to the pointer.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;On mouse release:&lt;/strong&gt; Swap the pointer image to the original (the one without the bacteria attached). If the player released in a valid cell, 
-the original cell now looks like an empty cell, and the new cell now hold a bacteria. If the player released in any other place, the phantom
-version returns to be the normal bacteria.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It worked like a charm!!&lt;/p&gt;
-
-&lt;p&gt;Here’s an image showing the empty cell, the “phantom” bacteria , the “infected” cell, and both pointers.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/bacteria-part-2/blue_bacteria.png&quot; alt=&quot;&quot; title=&quot;Blue Bacteria&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;artificial-intelligence&quot;&gt;Artificial Intelligence&lt;/h2&gt;
-
-&lt;p&gt;Some words about the intelligence.&lt;/p&gt;
-
-&lt;p&gt;First of all, we knew absolutely NOTHING about game theory at the time, and I think we did pretty well taking that into account.&lt;/p&gt;
-
-&lt;p&gt;Our implementation was a tree-like decision structure. We started by assuming the enemy played the best he could, and the AI moves acted accordingly.
-It’s pretty clever after reading the code almost 4 years later =). It’s not very hard to beat the computer with this AI, but not ultra-easy though, 
-it takes to think at least two moves ahead to win.&lt;/p&gt;
-
-&lt;h1 id=&quot;finally&quot;&gt;Finally&lt;/h1&gt;
-
-&lt;p&gt;Well… I wrote a LOT about Bacteria, and after reading it myself I decided it was long and boring, so I erased all of it and instead made a 
-video of myself showing what I think are the best parts of this game:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Menus… they look AWESOME!!.&lt;/li&gt;
-  &lt;li&gt;Board Editor.&lt;/li&gt;
-  &lt;li&gt;Game.&lt;/li&gt;
-  &lt;li&gt;Instruction Pages.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It’s not a long video, and I lose (in my defense, the purpose of this wasn’t for me to win, but to show the features).&lt;/p&gt;
-
-&lt;iframe width=&quot;800&quot; height=&quot;600&quot; src=&quot;//www.youtube.com/embed/H9hrEwQNlbw?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h1 id=&quot;to-be-continued&quot;&gt;To be continued…&lt;/h1&gt;
-
-&lt;p&gt;The next post is not about Bacteria. It’s about Backgammon, but only the AI part, since all the rest is pretty similar to Bacteria, the interesting
-part is the intelligence. I plan to make another video for that post, since it’s much easier for me to show the features that way, and maybe
-it’s a better experience to you to actually see the interactivity and other things that can’t be seen properly in still images.&lt;/p&gt;
-
-</description>
-                                <pubDate>Tue, 04 Feb 2014 06:00:00 +0000</pubDate>
-                                <link>http://localhost:4000//bacteria-part-2/</link>
-                                <guid isPermaLink="true">http://localhost:4000//bacteria-part-2/</guid>
                         </item>
                 
         </channel>

@@ -24,19 +24,19 @@ Me parece que un efecto de estar mucho tiempo pensando de esta manera, hace que 
 más factores dentro del contexto de la conversación. El efecto de esto? Estoy ahi como una computadora cuando se cuelga... *sin un
 output* que de evidencia de que sigo en el "mundo real". 
 
-#¿Es esto algo negativo?
+# ¿Es esto algo negativo?
 
 Si. Mantener una conversación fluida es un aspecto muy importante de la vida del ser humano. Y pensar mucho en algo innecesario es una
 pérdida de energía y tiempo que finalmente no lleva a nada. Ciertamente nada es absoluto y hay ocasiones en las que uno tiene que 
 considerar muchas cosas antes de responder (como por ejemplo una entrevista de trabajo, un debate, etc.)
 
-#¿Que puedo hacer al respecto?
+# ¿Que puedo hacer al respecto?
 
 Personalmente, trato conscientemente de no irme mucho por las ramas de pensamiento cuando estoy conversando. Cuando creo que es algo
 demasiado importante como para evitar pensar bastante antes de responder, trato de dar algún tipo de _feedback_ al interlocutor (algo
 como "Dejame pensar un ratito" o ponerme un una típica pose de pensador, como agarrarme la barba).
 
-#¿Eso funciona?
+# ¿Eso funciona?
 
 Más o menos. Este ejercicio mental hace que disminuya en cierto grado el corte en la fluidez de las conversaciones que tengo 
 cotidianamente. Si te pasa algo similar, te cuento que es un poco frustrante no tener la libertad de pensar mucho antes de responder 

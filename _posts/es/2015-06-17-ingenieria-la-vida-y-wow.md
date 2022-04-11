@@ -19,7 +19,7 @@ no incluí en otros posts porque no quería mezclar tanto temas generales con de
 >
 > Algunas cosas van a cambiar en el futuro, sobre todo cuando decida dedicarme un poco más a la parte visual del blog. Por ahora me parece cómodo de leer :)
 
-#Ingeniería!
+# Ingeniería!
 
 Altas probabilidades de que si me conocés sabes que hace mas o menos un mes finalmente defendí la tesis :D. Fue un proceso largo (un poco más de dos años)
 y al principio los resultados eran poco favorables y desanimadores, pero finalmente defendí y saqué la máxima calificación posible. 
@@ -58,7 +58,7 @@ Como este no es un post técnico, simplemente voy a listar algunas cosas que apr
     "¿cómo funciona la heladera? porque... osea... CREA frio ¿entendés?" "¿la fotocopiadora tiene un ojo o algo así verdad?" "¿cómo lo que las llaves son todas parecidas
     pero una nomas abre cada candado?". Era prácticamente un juego para mi... Investigar es la expansión de ese juego!!
 
-#El #GAMEDEVPY
+# El #GAMEDEVPY
 
 Yo defendía la tesis un lunes... y el jueves de esa misma semana tenía que dar una charla acerca de música para videojuegos en un evento organizado por IGDA Paraguay.
 
@@ -67,7 +67,7 @@ muchísima gente e incluso ese fin de semana hablamos del evento en radios local
 
 Para evitar alargar mucho este (ya medio kilométrico post) les dejo el [video](https://youtu.be/1iDo7U9VR7Y) de la charla y [fotos](https://www.facebook.com/media/set/?set=a.443927162434811.1073741833.301346146692914&type=3) del evento!
 
-#La vida después de la tesis (World of Warcraft)
+# La vida después de la tesis (World of Warcraft)
 
 Una breve lista de las cosas principales estoy haciendo por ahora:
 

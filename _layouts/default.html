@@ -2,34 +2,18 @@
 <html>
     {% include head.html %}
     <body>
-        <script>
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-            ga('create', 'UA-58189384-1', 'auto');
-            ga('send', 'pageview');
-
-        </script>
-        <div id="fb-root"></div>
-        <script>
-            (function (d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=382699801876314";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, "script", "facebook-jssdk"));
-        </script>
-
+        {% include google_analytics.html %}
+        {% include facebook.html %}
         <div class="wrapper">
             <main>
                 <div id="title">
-                    <h1><a href="/">{{ site.name }}</a></h1>
-                    <p>A place to find rants and some videogame dev stuff!</p>
+                    {% if page.categories contains "ES" %}
+                        <h1><a href="/es">{{ site.name }}</a></h1>
+                        <p>{{ site.description_es }}</p>
+                    {% else %}
+                        <h1><a href="/">{{ site.name }}</a></h1>
+                        <p>{{ site.description }}</p>
+                    {% endif %}
                     <hr>
                     <a class="fa fa-github fa-lg main-list-item-icon" href="https://github.com/torresmateo/"></a>
                     <a class="fa fa-twitter fa-lg main-list-item-icon" href="https://twitter.com/#!/torresmateo"></a>

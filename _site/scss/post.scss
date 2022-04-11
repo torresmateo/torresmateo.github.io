@@ -18,3 +18,11 @@ main{
 img {
 	width: 100%;
 }
+
+.highlight{
+    border-radius: 5px;
+    padding: 2px 19px;
+    white-space: pre-wrap;
+}
+
+@import "pygments_tango.css"
