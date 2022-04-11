@@ -3,6 +3,6 @@ markdown: kramdown
 highlighter: rouge
 description: Rants, computational biology, and software development.
 description_es: Plagueos, biología computacional, y desarrollo de software.
-url: http://blog.torresmateo.com
+url: https://blog.torresmateo.com
 timezone: "Europe/London"
 permalink: /:title/
