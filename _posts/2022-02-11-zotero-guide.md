@@ -7,7 +7,7 @@ categories: dev tutorial zotero
 
 Since the beginning of the PhD, I knew I needed a better way to handle a library than collecting a huge file with BibTeX entries. However, I was not happy with most reference management software. Mostly because rather sooner than later it felt like I could not really have the control I wanted. Unless (of course) I started paying them for features such as storing my files in the cloud, or syncing the entries across multiple computers.
 
-As usual, I went with the not-so-fully-featured-but-free option: [Zotero](zotero.org), and never looked back. Configuring it for my use case, however, was not an easy task. I needed:
+As usual, I went with the not-so-fully-featured-but-free option: [Zotero](https://zotero.org), and never looked back. Configuring it for my use case, however, was not an easy task. I needed:
 * A library that I can access from my laptop (a Mac), my lab workstation (dual boot Windows and Ubuntu), and the iPad.
 * My annotations to be synced across all of these platforms (so, all of them should be pointing to the same version of the file)
 * A solution compatible with Google Drive.
